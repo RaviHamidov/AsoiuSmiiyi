@@ -188,3 +188,25 @@ $route['admin_updateItem_reAct/(.*)'] = 'Item9Controller/updateItemAct/$1';
 $route['admin_deleteItem_re/(.*)']    = 'Item9Controller/delete/$1';
 $route['admin_detail_form_re/(.*)']   = 'Item9Controller/detail_form/$1';
 $route['admin_is_active_set_item_re'] = 'Item9Controller/isActiveSet';
+
+//view routes
+$route['contact']                            = 'UserController/contact';
+$route['index']                            	 = 'UserController/index';
+$route['uni_admission']						 = 'UserController/uni_admission';
+
+$route['rector']                             = 'UserController/about_rector';
+$route['smiiyi']                             = 'UserController/about_smiiyi';
+$route['asoiu']                            	 = 'UserController/about_asoiu';
+
+$route['tekrar_tehsil_tedris_plani']		 = 'UserController/tt_tedris_plani';
+$route['tekrar_tehsil_ixtisaslar']           = 'UserController/tt_ixtisaslar';
+
+$route['yeni_h_tedris_plani']           	 = 'UserController/yh_tedris_plani';
+$route['yeni_h_tedris_qrafiki']        		 = 'UserController/yh_tedris_qrafiki';
+$route['yeni_hazir_imtahan_sual']            = 'UserController/yh_imtahan_sual';
+$route['yh_ixtisaslar']           			 = 'UserController/yh_ixtisaslar';
+
+$route['login']           			 		 = 'UserController/login';
+$route['cabinet']           			 	 = 'UserController/cabinet';
+
+$route['announcement']           			 = 'UserController/announcement';
