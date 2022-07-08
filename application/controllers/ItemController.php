@@ -95,7 +95,7 @@ class ItemController extends CI_Controller{
 
             $this->upload->initialize($config);
 
-            if ($this->upload->do_upload('user_file')){
+            if ($this->upload->do_upload('user_img')){
                 $data     = $this->upload->data('file_name');
                 $data_ext = $this->upload->data('file_ext');
 

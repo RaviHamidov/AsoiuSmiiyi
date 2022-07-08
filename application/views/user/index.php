@@ -1,54 +1,46 @@
 
-<?php $this->load->view('user/includes/header'); ?>
-      <section class="section mar" style="padding-top: 2rem !important">
-        <div class="container">
-          <div
+<?php $this->load->view('user/includes/header');?>
+<section class="section mar" style="padding-top: 2rem !important">
+        <div class="container-fluid">
+         <div class="row">
+         <div
             id="carousel-example-generic"
             class="carousel slide"
             data-ride="carousel"
           >
             <ol class="carousel-indicators">
+          <?php $itemCount = 0;foreach ($items as $item){
+            ?>
               <li
                 data-target="#carousel-example-generic"
-                data-slide-to="0"
-                class="active"
+                data-slide-to="<?php echo $itemCount++; ?>"
+                <?php if($item['sl_category'] == 1){echo 'class = "active"';}?>
               ></li>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="2"
-              ></li>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="3"
-              ></li>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="4"
-              ></li>
+              <?php }?>
             </ol>
 
+
+            <style>
+              .imgHeightSlider{
+                width:100%!important;
+                height: 700px!important;
+                object-fit:cover;
+              }
+
+              @media screen and (max-width: 768px) {
+                .imgHeightSlider {
+                  height: 350px!important;
+                }
+              }
+            </style>
+
             <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img
-                  src="<?php echo base_url('assets/user/img/') ?>Clio_2020-Blog_Image-Programming_for_Lawyers.png"
-                />
+            <?php foreach ($items as $item){?>
+              <div class="item  <?php if($item['sl_category'] == 1){echo 'active';}?>">
+                <img class="imgHeightSlider" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"/>
               </div>
-              <div class="item">
-                <img src="https://unsplash.it/1400/600?image=62" />
-              </div>
-              <div class="item">
-                <img src="https://unsplash.it/1400/600?image=315" />
-              </div>
-              <div class="item">
-                <img src="https://unsplash.it/1400/600?image=622" />
-              </div>
-              <div class="item">
-                <img src="https://unsplash.it/1400/600?image=401" />
-              </div>
+              
+              <?php }?>
             </div>
 
             <a
@@ -76,6 +68,7 @@
               <span class="sr-only">İrəli</span>
             </a>
           </div>
+         </div>
         </div>
       </section>
 

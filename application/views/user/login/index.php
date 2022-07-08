@@ -7,22 +7,35 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/') ?>/login.css" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/'); ?>/login.css" />
     <title>Smiiyi.Az | İstifadəçi Girişi</title>
   </head>
   <body>
+
+
+
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="<?php echo base_url('cabinet') ?>" class="sign-in-form">
+          
+  <?php if($this->session->flashdata('success')){ ?>
+    <b><p style="color:green; text-align:center;"><?php echo $this->session->flashdata('success') ?></p></b>
+  <?php } ?>
+
+
+  <?php if($this->session->flashdata('err')){ ?>
+    <b><p style="color:red; text-align:center;"><?php echo $this->session->flashdata('err') ?></p></b>
+  <?php } ?>
+          <form action="<?php echo base_url('login_act'); ?>" method="post" class="sign-in-form">
+          <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
             <h2 class="title">İstifadəçi Girişi</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" name="username" placeholder="Username" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" name="password" placeholder="Password" />
             </div>
             <input type="submit" value="Daxil Ol" class="btn solid" />
           </form>

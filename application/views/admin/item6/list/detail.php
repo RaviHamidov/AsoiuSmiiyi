@@ -64,11 +64,11 @@
 <div class="row">
     <div class="col-md-12">
         <div class="main-card mb-3 card">
-            <div class="card-header">Slider Detail
+            <div class="card-header">Slider
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
                         <a href="<?php echo base_url('admin_item_sl_list'); ?>">
-                            <button class="btn btn-info">Back</button>
+                            <button class="btn btn-info">Geri</button>
                         </a>
                     </div>
                 </div>
@@ -81,76 +81,15 @@
                     </div>
                 <?php } ?>
 
-
-                     <ul class="tabs">
-                        <li class="tab-link current" data-tab="aze">Az</li>
-                        <li class="tab-link" data-tab="eng">En</li>
-                        <li class="tab-link" data-tab="rus">Ru</li>
-                        <li class="tab-link" data-tab="tur">Tr</li>
-                    </ul>
-                    <br>
-
-
-
-
-
-                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 noBlock">
-                    <div id="aze" class="tab-content current">
-                        <label for="taze"><b>TITLE AZ</b></label>
-                        <p><?php echo $single_item->sl_title; ?></p>
-
-                        <br>
-
-                        <label for="daze"><b>DESCRIPTION AZ</b></label>
-                        <p><?php echo $single_item->sl_description; ?></p>
-
-                        <br>
-                    </div>
-                    <div id="eng" class="tab-content">
-                        <label for="teng"><b>TITLE EN</b></label>
-                        <p><?php echo $single_item->sl_title_en; ?></p>
-                        <br>
-
-                        <label for="deng"><b>DESCRIPTION EN</b></label>
-                        <p><?php echo $single_item->sl_description_en; ?></p>
-                        <br>
-                    </div>
-                    <div id="rus" class="tab-content">
-                        <label for="trus"><b>TITLE RU</b></label>
-                        <p><?php echo $single_item->sl_title_ru; ?></p>
-                        <br>
-
-                        <label for="drus"><b>DESCRIPTION RU</b></label>
-                        <p><?php echo $single_item->sl_description_ru; ?></p>
-                        <br>
-                    </div>
-                    <div id="tur" class="tab-content">
-                        <label for="ttre"><b>TITLE TR</b></label>
-                        <p><?php echo $single_item->sl_title_tr; ?></p>
-                        <br>
-
-                        <label for="dtur"><b>DESCRIPTION TR</b></label>
-                        <p><?php echo $single_item->sl_description_tr; ?></p>
-                        <br>
-                    </div>
-
-
-
-
-
-
-                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 noBlock" style="padding: 0px">
-                        <label for="date"><b>DATE</b></label>
-                        <p><?php echo date("d-m-Y", strtotime($single_item->sl_date)); ?></p>
-                    </div>
-
+             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 noBlock">
+                   
                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 noBlock">
-                        <label for="status"><b>STATUS</b></label>
+                        <label for="status"><b>Status</b></label>
                         <p><?php echo $single_item->i_s_name; ?></p>
                     </div>
 
                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 noBlock">
-                        <label for="cate"><b>CATEGORY</b></label>
+                        <label for="cate"><b>Kateqoriya</b></label>
                         <p><?php echo $single_item->i_c6_name; ?></p>
                     </div>
 

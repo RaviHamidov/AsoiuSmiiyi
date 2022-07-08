@@ -6,7 +6,7 @@
                         <div class="tagline-message page-title text-center">
                             <h3>Elanlar</h3>
                             <ul class="breadcrumb">
-                                <li><a href="../index.html">Ana Səhifə</a></li>
+                                <li><a href="<?php echo base_url('index');?>">Ana Səhifə</a></li>
                                 <li class="active">Elanlar</li>
                             </ul>
                         </div>
@@ -18,35 +18,41 @@
             <div class="container">
                 <div class="boxed boxedp4">
                     <div class="row blog-grid">
+                        
+                    
+                    <?php foreach($event as $events){ ?>
+                        
                         <div class="col-md-4">
+                       
                             <div class="course-box">
                                 <div class="image-wrap entry">
-                                    <img src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg" alt="dgd" class="img-responsive">
+                                    <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" alt="image not found" class="img-responsive">
                                     <div class="magnifier">
-                                        <a href="ann.html" title=""><i class="flaticon-add"></i></a>
+                                        <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><i class="flaticon-add"></i></a>
                                     </div>
                                 </div>
                                 <div class="course-details">
                                     <h4>
 
-                                        <a href="ann.html" title="">Azərbaycan-Fransız Universitetində Məzun günü
+                                        <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><?php echo $events['title']; ?>
                                         </a>
                                     </h4>
-                                    <p>İyunun 28-də Azərbaycan Dövlət Neft və Sənaye Universitetinin (ADNSU) nəzdində fəaliyyət göstərən Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü keçirilib. </p>
+                                    <p><?php echo $events['description']; ?></p>
                                 </div>
                                 <div class="course-footer clearfix">
                                     <div class="pull-left">
                                         <ul class="list-inline">
-                                            <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                                            <li><a href="#"><i class="fa fa-eye"></i> 122 Baxış</a></li>
+                                            <li><i class="fa fa-clock-o"></i> <?php echo date('d-m-Y', strtotime($events['date']));?></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
                             </div>
+                           
                         </div>
-
+                        <?php } ?>
                         <hr class="invis">
-
+                        
                         <div class="row">
                             <div class="col-md-12 text-center">
                                 <ul class="pagination ">
@@ -60,6 +66,9 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
+                    
                 </div>
                 <div class="dark-light fabs">
                     <i class='bx bx-moon moon fab'></i>

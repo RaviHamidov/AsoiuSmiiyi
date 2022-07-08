@@ -113,6 +113,14 @@ if (empty($adminInfo['a_id'])){
                                 </li>
 
 
+                                <li>
+                                    <a href="<?php echo base_url ('exam_list');?>" >
+                                        <i class="metismenu-icon pe-7s-rocket"></i>
+                                        Cədvəllər
+                                    </a>
+                                </li>
+
+
                                 <!-- <li class="app-sidebar__heading">UI Components</li> -->
                                <!--  <li>
                                     <a href="#">

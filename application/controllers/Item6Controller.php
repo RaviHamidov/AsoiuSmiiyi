@@ -47,19 +47,6 @@ class Item6Controller extends CI_Controller{
 
     public function createItemAct(){
 
-        $this->form_validation->set_rules("title_az", "TITLE AZ", "required|trim");
-        $this->form_validation->set_rules("descr_az", "DESCRIPTION AZ", "required|trim");
-
-        // $this->form_validation->set_rules("title_en", "TITLE EN", "required|trim");
-        // $this->form_validation->set_rules("descr_en", "DESCRIPTION EN", "required|trim");
-
-        // $this->form_validation->set_rules("title_ru", "TITLE RU", "required|trim");
-        // $this->form_validation->set_rules("descr_ru", "DESCRIPTION RU", "required|trim");
-
-        // $this->form_validation->set_rules("title_tr", "TITLE TR", "required|trim");
-        // $this->form_validation->set_rules("descr_tr", "DESCRIPTION TR", "required|trim");
-
-        $this->form_validation->set_rules("date", "DATE", "required|trim");
         $this->form_validation->set_rules("category", "CATEGORY", "required|trim");
         $this->form_validation->set_rules("status", "STATUS", "required|trim");
 
@@ -73,24 +60,12 @@ class Item6Controller extends CI_Controller{
         $validate = $this->form_validation->run();
 
         if($validate){
-            $title_az = $_POST['title_az'];
-            $descr_az = $_POST['descr_az'];
-
-            $title_en = $_POST['title_en'];
-            $descr_en = $_POST['descr_en'];
-
-            $title_ru = $_POST['title_ru'];
-            $descr_ru = $_POST['descr_ru'];
-
-            $title_tr = $_POST['title_tr'];
-            $descr_tr = $_POST['descr_tr'];
-
-            $date     = $_POST['date'];
             $category = $_POST['category'];
             $status   = $_POST['status'];
 
             $config['upload_path']      = 'upload/slider/';
             $config['allowed_types']    = 'gif|jpg|png|pdf|jpeg';
+            $config['encrypt_name']     = true;
 
             $this->load->library('upload', $config);
 
@@ -98,32 +73,17 @@ class Item6Controller extends CI_Controller{
 
             if ($this->upload->do_upload('user_file')){
                 $data     = $this->upload->data('file_name');
-                $data_ext = $this->upload->data('file_ext');
 
                 $img_name = $data;
-                $img_ext = $data_ext;
             }else{
 
                 $img_name = '';
-                $img_ext = '.png';
             }
 
             $data = [
-                'sl_title'          => $title_az,
-                'sl_title_en'       => $title_en,
-                'sl_title_ru'       => $title_ru,
-                'sl_title_tr'       => $title_tr,
-                'sl_description'    => $descr_az,
-                'sl_description_en' => $descr_en,
-                'sl_description_ru' => $descr_ru,
-                'sl_description_tr' => $descr_tr,
-                'sl_date'           => $date,
                 'sl_category'       => $category,
                 'sl_img'            => $img_name,
-                'sl_img_ext'        => $img_ext,
-                'sl_status'         => $status,
-                'sl_creater_id'     => $_SESSION['admin_id'],
-                'sl_creat_date'     => date("Y-m-d H:i:s"),
+                'sl_status'         => $status
             ];
 
             $data = $this->security->xss_clean($data);
@@ -188,9 +148,6 @@ class Item6Controller extends CI_Controller{
 
     public function updateItemAct($id){
 
-        $this->form_validation->set_rules("title_az", "TITLE AZ", "required|trim");
-        $this->form_validation->set_rules("descr_az", "DESCRIPTION AZ", "required|trim");
-        $this->form_validation->set_rules("date", "DATE", "required|trim");
         $this->form_validation->set_rules("category", "CATEGORY", "required|trim");
         $this->form_validation->set_rules("status", "STATUS", "required|trim");
 
@@ -204,19 +161,6 @@ class Item6Controller extends CI_Controller{
         $validate = $this->form_validation->run();
 
         if($validate){
-            $title_az = $_POST['title_az'];
-            $descr_az = $_POST['descr_az'];
-
-            $title_en = $_POST['title_en'];
-            $descr_en = $_POST['descr_en'];
-
-            $title_ru = $_POST['title_ru'];
-            $descr_ru = $_POST['descr_ru'];
-
-            $title_tr = $_POST['title_tr'];
-            $descr_tr = $_POST['descr_tr'];
-
-            $date     = $_POST['date'];
             $category = $_POST['category'];
             $status   = $_POST['status'];
 
@@ -227,6 +171,7 @@ class Item6Controller extends CI_Controller{
 
             $config['upload_path']      = 'upload/slider/';
             $config['allowed_types']    = 'gif|jpg|png|pdf|jpeg';
+            $config['encrypt_name']     = true;
 
             $this->load->library('upload', $config);
 
@@ -234,10 +179,8 @@ class Item6Controller extends CI_Controller{
 
             if ($this->upload->do_upload('user_file')){
                 $data     = $this->upload->data('file_name');
-                $data_ext = $this->upload->data('file_ext');
 
                 $img_name = $data;
-                $img_ext = $data_ext;
             }else{
 
                 $get_current_img = $this->item6_model->get_single(
@@ -245,25 +188,12 @@ class Item6Controller extends CI_Controller{
                 );
 
                 $img_name = $get_current_img->sl_img;
-                $img_ext  = $get_current_img->sl_img_ext;
             }
 
             $data = [
-                'sl_title'          => $title_az,
-                'sl_title_en'       => $title_en,
-                'sl_title_ru'       => $title_ru,
-                'sl_title_tr'       => $title_tr,
-                'sl_description'    => $descr_az,
-                'sl_description_en' => $descr_en,
-                'sl_description_ru' => $descr_ru,
-                'sl_description_tr' => $descr_tr,
-                'sl_date'           => $date,
                 'sl_category'       => $category,
                 'sl_img'            => $img_name,
-                'sl_img_ext'        => $img_ext,
                 'sl_status'         => $status,
-                'sl_updater_id'     => $_SESSION['admin_id'],
-                'sl_update_date'    => date("Y-m-d H:i:s"),
             ];
 
             $data = $this->security->xss_clean($data);

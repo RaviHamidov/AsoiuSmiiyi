@@ -4,7 +4,9 @@ class UserController extends CI_controller
 {
 	public function index()
 	{
-		$this->load->view('user/index');
+		$data['items']  = $this->db->order_by('sl_id','DESC')->get('items6')->result_array();
+	
+		$this->load->view('user/index',$data);
 	}
 	
 	public function single()
@@ -64,23 +66,106 @@ class UserController extends CI_controller
 	{
 		$this->load->view('user/login/index');
 	}
+
+	public function login_act(){
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+
+
+		if(!empty($username) && !empty($password)){
+
+			$data = [
+				's_email' 	 => $username,
+				's_password' => sha1(md5(sha1($password.'345')))
+			];
+		
+			$data = $this->security->xss_clean($data);
+			
+			$check_user = $this->db->where($data)->get('items2')->row_array();
+			
+			if($check_user){
+
+			
+				$_SESSION['user_id']       = $check_user['c_id'];
+				$_SESSION['user_status']   = $check_user['status'];
+				redirect(base_url('cabinet'));
+
+			}else{
+				$this->session->set_flashdata('err',"Diqqət! E-poçt və ya şifrə yalnışdır!");
+				redirect(base_url('login'));
+			}
+			
+			
+
+		}else{
+			$this->session->set_flashdata('err',"Boşluq buraxmayın!");
+			redirect(base_url('login'));
+		}
+	}
+
+	public function logout(){
+		unset($_SESSION['user_id']);
+		unset($_SESSION['user_status']);
+		$this->session->set_flashdata('success',"Sizi bir daha gözləyəcəyik :)");
+		redirect(base_url('login'));
+	}
+
 	public function cabinet()
 	{
-		$this->load->view('user/cabinet/index');
+		if(isset($_SESSION['user_id'])){
+			$data['student'] = $this->db
+            ->join('item_category2', 'item_category2.group_id = items2.s_group_id')
+            ->join('item_status', 'item_status.i_s_id = items2.status')
+            ->join('speciality', 'speciality.speciality_id = item_category2.i_speciality_id')
+            ->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
+
+			$user_id = $this->db->select('s_group_id')->where('c_id',$_SESSION['user_id'])->get('items2')->row_array();
+			$data['exam_list'] = $this->db->where("le_group_no",$user_id['s_group_id'])->get('lesson_exam_table')->row_array();
+
+			$data['std_subject'] =  $this->db
+			->join('items9','items9.re_group_no = items2.s_group_id')
+			->join('items4','items4.ab_id = items9.re_subject_id')
+			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
+
+			$data['std_points'] =  $this->db
+			->join('items8','items8.ce_student_id = items2.c_id')
+			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
+			$this->load->view('user/cabinet/index',$data);
+
+		
+			// print_r('<pre>');
+			// print_r($user_id);
+			// die();
+		
+			// print_r('<pre>');
+			// print_r($data['exam_list']);
+			// die();
+		}else{
+			$this->session->set_flashdata('err',"Diqqət! E-poçt və ya şifrə yalnışdır!");
+			redirect(base_url('login'));
+		}
 	}
 
 	public function announcement()
 	{
-		$this->load->view('user/announcement/index');
+		$data['event']  = $this->db->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+		
+		$this->load->view('user/announcement/index',$data);
 	}
 
 	public function uni_admission()
 	{
 		$this->load->view('user/uni-admission');
 	}
+	public function ann_form($id)
+	{
+		$data['x']  = $this->db->where('id',$id)->order_by('id','DESC')->get('items')->row();
+		$this->load->view('user/announcement/ann',$data);
+	}
+
+
+
+	
+
 }
-
-
-
-
- ?>
+?>

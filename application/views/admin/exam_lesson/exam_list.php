@@ -16,19 +16,19 @@
     <div class="col-md-12">
 
         <div class="main-card mb-3 card">
-            <div class="card-header">Slider
+            <div class="card-header">Exam
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
-                        <a href="<?php echo base_url('admin_create_item_sl'); ?>">
+                        <a href="<?php echo base_url('exam_lesson'); ?>">
                           <button class="btn btn-outline-success">Yeni</button>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <?php if(empty($items)){ ?>
+            <?php if(empty($exam_data)){ ?>
                 <div style="margin: 20px" class="alert alert-info text-center">
-                <span>Hər hansı bir məlumat tapılmadı. Məlumat daxil etmək üçün <a href="<?php echo base_url('admin_create_item_sl'); ?>" style="color: green">əlavə et</a></span>
+                <span>Hər hansı bir məlumat tapılmadı. Məlumat daxil etmək üçün <a href="<?php echo base_url('exam_lesson'); ?>" style="color: green">əlavə et</a></span>
             </div>
             <?php }else{ ?>
                 <div class="table-responsive">
@@ -36,49 +36,45 @@
                         <thead>
                         <tr>
                             <th class="text-center">#</th>
-                            <th class="text-center">Şəkil</th>
-                            <th class="text-center">Kateqoriya</th>
-                            <th>Status</th>
-                            <th class="text-center">Alətlər</th>
+                            <th>Qrup</th>
+                            <th class="text-center">Imtahan cədvəli</th>
+                            <th class="text-center">Dərs cədvəli</th>
+                            <th class="text-center">Əməliyyatlar</th>
                         </tr>
                         </thead>
                         <tbody>
 
-
-                            <?php $itemCount = 1; $for_switch=0; foreach ($items as $item){ $for_switch++; ?>
+                            <?php $itemCount = 1; $for_switch=0; foreach ($exam_data as $item){ $for_switch++; ?>
                                 <tr>
-                                    <td class="text-center text-muted"><?php echo $itemCount++; ?></td>                                
+                                    <td class="text-center text-muted"><?php echo $itemCount++; ?></td>
+                                    <td><?php echo $item->group_no; ?></td>
                                     <td class="text-center">
-                                        <?php if($item->sl_img){ ?>
-                                            <img width="50" src="<?php echo base_url('upload/slider/'.$item->sl_img); ?>">
+                                        <?php if($item->lesson_ext == '.pdf'){ ?>
+                                            <img width='30px' src="https://www.loanezi.com.au/wp-content/uploads/2018/12/PDF-Icon.png" alt="">
                                         <?php }else{ ?>
-                                            <img width="50" src="<?php echo base_url('assets/admin/assets/images/no-img.png'); ?>">
+                                            <img width='30px' src="<?php echo base_url('upload/exam/'.$item->lesson_table); ?>" alt="">
                                         <?php } ?>
-
+                                        
                                     </td>
-                                    <td><?php if($item->sl_category == 1){
-                                            echo 'ilk görünən';
-                                            }else{
-                                                echo 'digər';
-                                            }
-                                        ?></td>
-                                    <td>
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" class="toggle_Switch" id="switchbox<?php echo $for_switch; ?>" <?php echo ($item->sl_status == 1) ? "checked" : ""; ?> data-toggle="toggle">
-                                        </label>
+                                    <td class="text-center">
+                                    <?php if($item->exam_ext == '.pdf'){ ?>
+                                            <img width='30px' src="https://www.loanezi.com.au/wp-content/uploads/2018/12/PDF-Icon.png" alt="">
+                                        <?php }else{ ?>
+                                            <img width='30px' src="<?php echo base_url('upload/exam/'.$item->exam_table); ?>" alt="">
+                                        <?php } ?>
+                                    
+                                    
                                     </td>
+                                    
                                 
                                     <td class="text-center">
-                                        <a style="text-decoration: none;" href="<?php echo base_url('admin_detail_form_sl/'.$item->sl_id); ?>">
-                                            <button type="button" id="PopoverCustomT-1" class="btn btn-outline-primary">Ətraflı</button>
-                                        </a>
-
-                                        <a style="text-decoration: none;" href="<?php echo base_url('admin_update_form_sl/'.$item->sl_id); ?>">
+                                    
+                                        <a style="text-decoration: none;" href="<?php echo base_url('admin_update_form_c/'.$item->le_id); ?>">
                                             <button class="btn-wide btn btn-outline-warning">Redaktə</button>
                                         </a>
 
                                             <button
-                                                    data-url="<?php echo base_url('admin_deleteItem_sl/'.$item->sl_id); ?>"
+                                                    data-url="<?php echo base_url('exam_delete/'.$item->le_id); ?>"
                                                     class="mr-2 btn-icon btn-icon-only btn btn-outline-danger button_remove">
                                                     <i class="pe-7s-trash btn-icon-wrapper"> </i>
                                             </button>
@@ -92,7 +88,7 @@
                                         csrfHash = '<?php echo $this->security->get_csrf_hash(); ?>';
                                         $("#switchbox<?php echo $for_switch; ?>").change(function(){
 
-                                            var post_id = <?php echo $item->sl_id; ?>;
+                                            var post_id = <?php echo $item->c_id; ?>;
                                             var checkbox_val;
                                             if(this.checked) {
                                                 checkbox_val = '1';
@@ -104,7 +100,7 @@
                                             // var dataJson = { checkbox_val: checkbox_val };
 
                                             $.ajax({
-                                                url : "<?php echo base_url('admin_is_active_set_item_sl'); ?>",
+                                                url : "<?php echo base_url('admin_is_active_set_item_c'); ?>",
                                                 type: 'post',
                                                 data: dataJson,            
                                                 success : function(data)

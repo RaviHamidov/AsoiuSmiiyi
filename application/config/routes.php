@@ -207,6 +207,17 @@ $route['yeni_hazir_imtahan_sual']            = 'UserController/yh_imtahan_sual';
 $route['yh_ixtisaslar']           			 = 'UserController/yh_ixtisaslar';
 
 $route['login']           			 		 = 'UserController/login';
+$route['login_act']           			 	 = 'UserController/login_act';
+$route['logout']           			 	 	 = 'UserController/logout';
+
 $route['cabinet']           			 	 = 'UserController/cabinet';
 
 $route['announcement']           			 = 'UserController/announcement';
+
+$route['ann_detail_form/(.*)']   	         = 'UserController/ann_form/$1';
+
+
+$route['exam_lesson']           			 = 'Lesson_exam_table/index';
+$route['index_act']           			 	 = 'Lesson_exam_table/index_act';
+$route['exam_list']           			 	 = 'Lesson_exam_table/exam_list';
+$route['exam_delete/(.*)']           		 = 'Lesson_exam_table/exam_delete/$1';
