@@ -2,8 +2,8 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jul 06, 2022 at 08:49 AM
+-- Host: 127.0.0.1
+-- Generation Time: Jul 08, 2022 at 01:56 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -94,7 +94,8 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `title`, `title_en`, `title_ru`, `description`, `description_en`, `description_ru`, `date`, `img`, `file`, `img_ext`, `status`) VALUES
-(34, 'wleilfilj', 'rwliwrjog', 'rejhkurhu3t', '<p>felijeligjrelijgli</p>', '<p>jrjeilerjgeij</p>', '<figure class=\"table\"><table><tbody><tr><td>ljnliljijijilj</td><td>l</td><td>jli</td><td>jil</td></tr><tr><td>j</td><td>lij</td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr></tbody></table></figure>', '2022-06-28', 'f31345f75dc25ef3c0787ba0ad6632ec.png', '9a83cb5055321d26e658f39696ae8bac.png', '.png', 1);
+(34, 'wleilfilj', 'rwliwrjog', 'rejhkurhu3t', '<p>felijeligjrelijgli</p>', '<p>jrjeilerjgeij</p>', '<figure class=\"table\"><table><tbody><tr><td>ljnliljijijilj</td><td>l</td><td>jli</td><td>jil</td></tr><tr><td>j</td><td>lij</td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr></tbody></table></figure>', '2022-06-28', 'f31345f75dc25ef3c0787ba0ad6632ec.png', '9a83cb5055321d26e658f39696ae8bac.png', '.png', 1),
+(38, 'fdeq', 'wefwf', 'wefwef', '<p>ewfwefw</p>', '<p>wfwefw</p>', '<p>wfwff</p>', '2022-07-05', '1e14c473e710510347eb095fc74ebe30.jpeg', '3b6178f062f3cb62d07cb79f1139361a.docx', '.jpeg', 1);
 
 -- --------------------------------------------------------
 
@@ -108,6 +109,7 @@ CREATE TABLE `items2` (
   `s_surname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `s_patronimic` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `s_email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `s_password` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `s_phone` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `s_group_id` tinyint(2) NOT NULL,
   `status` tinyint(4) NOT NULL
@@ -117,9 +119,9 @@ CREATE TABLE `items2` (
 -- Dumping data for table `items2`
 --
 
-INSERT INTO `items2` (`c_id`, `s_name`, `s_surname`, `s_patronimic`, `s_email`, `s_phone`, `s_group_id`, `status`) VALUES
-(7, 'Fakri', 'N', 'F', 'kjdj@kjdsj', '190201201209', 2, 2),
-(8, 'Fakhri', 'Nifdalizada', 'Fariz', 'fnifdalizade@dalaj', '10912091209', 2, 1);
+INSERT INTO `items2` (`c_id`, `s_name`, `s_surname`, `s_patronimic`, `s_email`, `s_password`, `s_phone`, `s_group_id`, `status`) VALUES
+(7, 'Fakri', 'N', 'F', 'kjdj@kjdsj', '30f6dd0eb6557d643e272d9cf071e717a0f374a7', '190201201209', 2, 2),
+(8, 'Fakhri', 'Nifdalizada', 'Fariz', 'fnifdalizade@dalaj', '30f6dd0eb6557d643e272d9cf071e717a0f374a7', '10912091209', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -207,34 +209,18 @@ INSERT INTO `items5` (`co_id`, `co_group_no`, `co_subject_id`, `co_status`) VALU
 
 CREATE TABLE `items6` (
   `sl_id` int(11) NOT NULL,
-  `sl_url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_title_en` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_title_ru` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_title_tr` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_description` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `sl_description_en` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `sl_description_ru` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `sl_description_tr` longtext COLLATE utf8_unicode_ci NOT NULL,
-  `sl_rank` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_date` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_category` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `sl_category` tinyint(4) NOT NULL,
   `sl_img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_img_ext` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_status` tinyint(4) NOT NULL,
-  `sl_creater_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_creat_date` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_updater_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `sl_update_date` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+  `sl_status` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `items6`
 --
 
-INSERT INTO `items6` (`sl_id`, `sl_url`, `sl_title`, `sl_title_en`, `sl_title_ru`, `sl_title_tr`, `sl_description`, `sl_description_en`, `sl_description_ru`, `sl_description_tr`, `sl_rank`, `sl_date`, `sl_category`, `sl_img`, `sl_img_ext`, `sl_status`, `sl_creater_id`, `sl_creat_date`, `sl_updater_id`, `sl_update_date`) VALUES
-(2, '', 'z1', 'z2', 'z3', 'z4', '<p>zz1</p>', '<p>zz22</p>', '<p>zz33</p>', '<p>zz33</p>', '', '2022-06-17', '1', 'images.jpg', '.jpg', 2, '21', '2022-06-17 15:57:42', '', ''),
-(3, '', 'k12', 'k2', 'k3', 'k4', '<p>kk12</p>', '<p>kk2</p>', '<p>kk3</p>', '<p>kk4</p>', '', '2022-06-18', '2', 'download.png', '.png', 1, '21', '2022-06-17 15:58:59', '21', '2022-06-17 16:01:48');
+INSERT INTO `items6` (`sl_id`, `sl_category`, `sl_img`, `sl_status`) VALUES
+(5, 2, '5d2cf444671ef3da857ad7153433ba5e.jpeg', 1),
+(6, 1, 'download3.png', 1);
 
 -- --------------------------------------------------------
 
@@ -276,11 +262,7 @@ CREATE TABLE `items8` (
 --
 
 INSERT INTO `items8` (`ce_id`, `ce_student_id`, `ce_subject_id`, `ce_enter-point`, `ce_exam_point`) VALUES
-(6, 7, 4, 32, 23),
-(7, 7, 8, 127, 127),
-(8, 7, 4, 22, 33),
-(9, 7, 8, 127, 127),
-(10, 7, 4, 34, 45);
+(1, 7, 4, 13, 33);
 
 -- --------------------------------------------------------
 
@@ -300,7 +282,8 @@ CREATE TABLE `items9` (
 --
 
 INSERT INTO `items9` (`re_id`, `re_group_no`, `re_subject_id`, `re_status`) VALUES
-(6, 2, 4, 1);
+(6, 2, 4, 1),
+(8, 2, 8, 1);
 
 -- --------------------------------------------------------
 
@@ -417,8 +400,8 @@ CREATE TABLE `item_category6` (
 --
 
 INSERT INTO `item_category6` (`i_c6_id`, `i_c6_name`) VALUES
-(1, 'slider1'),
-(2, 'slider2');
+(1, 'birinci görünsün'),
+(2, 'digərləri');
 
 -- --------------------------------------------------------
 
@@ -499,10 +482,34 @@ INSERT INTO `item_status` (`i_s_id`, `i_s_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `SCIENTIFIC_LEVEL`
+-- Table structure for table `lesson_exam_table`
 --
 
-CREATE TABLE `SCIENTIFIC_LEVEL` (
+CREATE TABLE `lesson_exam_table` (
+  `le_id` int(11) NOT NULL,
+  `lesson_table` varchar(255) NOT NULL,
+  `lesson_ext` varchar(100) NOT NULL,
+  `exam_table` varchar(255) NOT NULL,
+  `exam_ext` varchar(100) NOT NULL,
+  `le_group_no` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `lesson_exam_table`
+--
+
+INSERT INTO `lesson_exam_table` (`le_id`, `lesson_table`, `lesson_ext`, `exam_table`, `exam_ext`, `le_group_no`) VALUES
+(2, 'e21d69355c3cf2393a08b7fdf438c4bf.jpeg', '.jpeg', 'e093fb041c69bc8789b96af0515f6d9b.pdf', '.pdf', 1),
+(3, '41208cf3623d065cebe4ebbe157b488a.jpg', '.jpg', 'e093fb041c69bc8789b96af0515f6d9b.pdf', '.pdf', 2),
+(6, '', '', 'e093fb041c69bc8789b96af0515f6d9b.pdf', '.pdf', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `scientific_level`
+--
+
+CREATE TABLE `scientific_level` (
   `SCIENTIFIC_ID` int(11) NOT NULL,
   `SCIENTIFIC_LEVEL` varchar(22) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -679,9 +686,15 @@ ALTER TABLE `item_status`
   ADD PRIMARY KEY (`i_s_id`);
 
 --
--- Indexes for table `SCIENTIFIC_LEVEL`
+-- Indexes for table `lesson_exam_table`
 --
-ALTER TABLE `SCIENTIFIC_LEVEL`
+ALTER TABLE `lesson_exam_table`
+  ADD PRIMARY KEY (`le_id`);
+
+--
+-- Indexes for table `scientific_level`
+--
+ALTER TABLE `scientific_level`
   ADD PRIMARY KEY (`SCIENTIFIC_ID`),
   ADD KEY `SCIENTIFIC_ID` (`SCIENTIFIC_ID`),
   ADD KEY `SCIENTIFIC_ID_2` (`SCIENTIFIC_ID`);
@@ -712,7 +725,7 @@ ALTER TABLE `admincategory`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `items2`
@@ -742,7 +755,7 @@ ALTER TABLE `items5`
 -- AUTO_INCREMENT for table `items6`
 --
 ALTER TABLE `items6`
-  MODIFY `sl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `sl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `items7`
@@ -760,7 +773,7 @@ ALTER TABLE `items8`
 -- AUTO_INCREMENT for table `items9`
 --
 ALTER TABLE `items9`
-  MODIFY `re_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `re_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `item_category`
@@ -823,9 +836,15 @@ ALTER TABLE `item_status`
   MODIFY `i_s_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `SCIENTIFIC_LEVEL`
+-- AUTO_INCREMENT for table `lesson_exam_table`
 --
-ALTER TABLE `SCIENTIFIC_LEVEL`
+ALTER TABLE `lesson_exam_table`
+  MODIFY `le_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `scientific_level`
+--
+ALTER TABLE `scientific_level`
   MODIFY `SCIENTIFIC_ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
