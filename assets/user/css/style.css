@@ -353,7 +353,7 @@ blockquote:before {
 
 .modal-backdrop.in {
     opacity: 1;
-    background: url(../images/pattern.png) repeat center center rgba(0, 0, 0, 1);
+    background: url(../img/pattern.png) repeat center center rgba(0, 0, 0, 1);
 }
 
 .modal-header {
@@ -1004,7 +1004,7 @@ SECTIONS
     left: 0;
     bottom: 0;
     z-index: 1;
-    background: url(../images/pattern.png) repeat center center rgba(0, 0, 0, 0.7);
+    background: url(../img/pattern.png) repeat center center rgba(0, 0, 0, 0.7);
 }
 
 .video-section {

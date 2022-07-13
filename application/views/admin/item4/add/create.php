@@ -138,6 +138,16 @@
                             <input hidden type="file" name="exam" id="exam" class="form-control">
                             
                     </div>
+
+                    <div class="col-xs-6 col-sm-1 col-md-1 col-lg-1 noBlock">
+                        
+                            <label for="exam_answers">İmtahan cavabları <br>
+                                <img width="50px" src="https://www.iphonefaq.org/files/styles/large/public/files-a.jpg">
+                            </label>
+                            <input hidden type="file" name="exam_answers" id="exam_answers" class="form-control">
+                            
+                    </div>
+
                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 noBlock">
                             <button type="submit" class="btn btn-info btn-block" style="margin-top: 23px; height: 40px;">Göndər</button>
                     </div>

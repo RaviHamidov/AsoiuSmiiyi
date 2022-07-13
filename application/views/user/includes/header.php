@@ -38,6 +38,7 @@
     <link href="<?php echo base_url('assets/user/css/') ?>font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url('assets/user/css/') ?>carousel.css" rel="stylesheet">
     <link href="<?php echo base_url('assets/user/css/') ?>animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/') ?>prettyPhoto.css" />
     <link href="<?php echo base_url('assets/user/css/') ?>style.css" rel="stylesheet">
 
 

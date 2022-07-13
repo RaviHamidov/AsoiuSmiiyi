@@ -36,7 +36,7 @@
                         <thead>
                         <tr>
                             <th class="text-center">#</th>
-                            <th>Qrup</th>
+                            <th>Tələbə</th>
                             <th class="text-center">Fənn</th>
                             <th>Status</th>
                             <th class="text-center">Alətlər</th>

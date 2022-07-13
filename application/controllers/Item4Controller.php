@@ -96,12 +96,23 @@ class Item4Controller extends CI_Controller{
 
                 $exam = '';
             }
+
+            if ($this->upload->do_upload('exam_answers')){
+                $data_exam_answers     = $this->upload->data('file_name');
+
+                $exam_answers = $data_exam_answers;
+            }else{
+
+                $exam_answers = '';
+            }
+
             $data = [
                 'subject_name'      => $subject,
                 'ab_status'         => $status,
                 'syllabs'           => $syllabs,
                 'lecture'           => $lecture,
                 'exam'              => $exam,
+                'exam_answers'      =>$exam_answers
             ];
 
             $data = $this->security->xss_clean($data);
@@ -223,12 +234,28 @@ class Item4Controller extends CI_Controller{
 
                 $exam = $get_current_exam->exam;
             }
+
+            if ($this->upload->do_upload('exam_answers')){
+                $data_exam_answers     = $this->upload->data('file_name');
+
+                $exam_answers = $data_exam_answers;
+            }else{
+
+                $get_current_exam = $this->item4_model->get_single(
+                    array("ab_id" => $id)
+                );
+
+                $exam_answers = $get_current_exam->exam_answers;
+
+            }
+
             $data = [
                 'subject_name'      => $subject,
                 'ab_status'         => $status,
                 'syllabs'           => $syllabs,
                 'lecture'           => $lecture,
                 'exam'              => $exam,
+                'exam_answers'      => $exam_answers,
             ];
 
             $data = $this->security->xss_clean($data);

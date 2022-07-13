@@ -110,7 +110,7 @@ class UserController extends CI_controller
 		redirect(base_url('login'));
 	}
 
-	public function cabinet()
+	public function cabinet() 
 	{
 		if(isset($_SESSION['user_id'])){
 			$data['student'] = $this->db
@@ -122,13 +122,16 @@ class UserController extends CI_controller
 			$user_id = $this->db->select('s_group_id')->where('c_id',$_SESSION['user_id'])->get('items2')->row_array();
 			$data['exam_list'] = $this->db->where("le_group_no",$user_id['s_group_id'])->get('lesson_exam_table')->row_array();
 
-			$data['std_subject'] =  $this->db
-			->join('items9','items9.re_group_no = items2.s_group_id')
-			->join('items4','items4.ab_id = items9.re_subject_id')
+			$data['std_subject'] =  $this->db->
+			select('subject_name,syllabs,lecture,exam,exam_answers')
+			->join('items5','items5.co_group_no = items2.s_group_id')
+			->join('items4','items4.ab_id = items5.co_subject_id')
 			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
 
-			$data['std_points'] =  $this->db
+			$data['std_points'] =  $this->db->
+			select('subject_name,ce_enter_point,ce_exam_point')
 			->join('items8','items8.ce_student_id = items2.c_id')
+			->join('items4','items4.ab_id = items8.ce_subject_id')
 			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
 			$this->load->view('user/cabinet/index',$data);
 
