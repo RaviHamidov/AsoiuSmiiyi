@@ -164,7 +164,7 @@
                             <td><?php echo $st_p["ce_exam_point"];?></td>
                             <td><?php echo $st_p["ce_enter_point"]+$st_p["ce_exam_point"];?></td>
                         </tr>
-                        <?php }?>
+                        <?php }?><br>
                     </tbody>
                 </table>
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2022 at 01:56 PM
+-- Generation Time: Jul 13, 2022 at 08:38 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 -- Database: `smiiyi`
 --
 
--- --------------------------------------------------------
+-- -------------------------------------salam-------------------
 
 --
 -- Table structure for table `admin`
@@ -120,7 +120,7 @@ CREATE TABLE `items2` (
 --
 
 INSERT INTO `items2` (`c_id`, `s_name`, `s_surname`, `s_patronimic`, `s_email`, `s_password`, `s_phone`, `s_group_id`, `status`) VALUES
-(7, 'Fakri', 'N', 'F', 'kjdj@kjdsj', '30f6dd0eb6557d643e272d9cf071e717a0f374a7', '190201201209', 2, 2),
+(7, 'Fakri', 'N', 'F', 'kjdj@kjdsj', '30f6dd0eb6557d643e272d9cf071e717a0f374a7', '190201201209', 2, 1),
 (8, 'Fakhri', 'Nifdalizada', 'Fariz', 'fnifdalizade@dalaj', '30f6dd0eb6557d643e272d9cf071e717a0f374a7', '10912091209', 2, 1);
 
 -- --------------------------------------------------------
@@ -170,6 +170,7 @@ CREATE TABLE `items4` (
   `syllabs` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `lecture` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `exam` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `exam_answers` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `ab_status` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -177,9 +178,9 @@ CREATE TABLE `items4` (
 -- Dumping data for table `items4`
 --
 
-INSERT INTO `items4` (`ab_id`, `subject_name`, `syllabs`, `lecture`, `exam`, `ab_status`) VALUES
-(4, 'salam', '', '', '', 1),
-(8, 'Database', 'cf7bd98d9f759f9dee906db608b93abf.png', '2fdef61134d2671e41a44dd800289804.docx', '74f114d6b018c3c4d3d0ad7043149694.png', 1);
+INSERT INTO `items4` (`ab_id`, `subject_name`, `syllabs`, `lecture`, `exam`, `exam_answers`, `ab_status`) VALUES
+(8, 'Database', 'cf7bd98d9f759f9dee906db608b93abf.png', '2fdef61134d2671e41a44dd800289804.docx', '74f114d6b018c3c4d3d0ad7043149694.png', '4e931cef0e032be9fa43102be0bb3e0a.jpg', 1),
+(10, 'Infosec', '124bffc4c0b64845906782e1cbe18efb.docx', 'eb6fdf57f379d010e5f4e809b4d54c62.docx', '274f3182c3572c3a46134aff832db874.gif', '36462442488a4bac4adc9bd663864c2b.gif', 1);
 
 -- --------------------------------------------------------
 
@@ -199,7 +200,9 @@ CREATE TABLE `items5` (
 --
 
 INSERT INTO `items5` (`co_id`, `co_group_no`, `co_subject_id`, `co_status`) VALUES
-(8, 2, 4, 1);
+(9, 1, 8, 1),
+(10, 2, 10, 1),
+(11, 2, 8, 1);
 
 -- --------------------------------------------------------
 
@@ -253,7 +256,7 @@ CREATE TABLE `items8` (
   `ce_id` int(11) NOT NULL,
   `ce_student_id` tinyint(4) NOT NULL,
   `ce_subject_id` tinyint(4) NOT NULL,
-  `ce_enter-point` tinyint(4) NOT NULL,
+  `ce_enter_point` tinyint(4) NOT NULL,
   `ce_exam_point` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -261,8 +264,9 @@ CREATE TABLE `items8` (
 -- Dumping data for table `items8`
 --
 
-INSERT INTO `items8` (`ce_id`, `ce_student_id`, `ce_subject_id`, `ce_enter-point`, `ce_exam_point`) VALUES
-(1, 7, 4, 13, 33);
+INSERT INTO `items8` (`ce_id`, `ce_student_id`, `ce_subject_id`, `ce_enter_point`, `ce_exam_point`) VALUES
+(1, 7, 8, 13, 33),
+(11, 7, 10, 44, 50);
 
 -- --------------------------------------------------------
 
@@ -743,13 +747,13 @@ ALTER TABLE `items3`
 -- AUTO_INCREMENT for table `items4`
 --
 ALTER TABLE `items4`
-  MODIFY `ab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `items5`
 --
 ALTER TABLE `items5`
-  MODIFY `co_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `co_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `items6`
@@ -767,7 +771,7 @@ ALTER TABLE `items7`
 -- AUTO_INCREMENT for table `items8`
 --
 ALTER TABLE `items8`
-  MODIFY `ce_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ce_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `items9`
