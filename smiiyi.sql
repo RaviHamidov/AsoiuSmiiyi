@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 13, 2022 at 08:38 AM
+-- Generation Time: Jul 15, 2022 at 02:21 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 -- Database: `smiiyi`
 --
 
--- -------------------------------------salam-------------------
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `admin`
@@ -95,7 +95,11 @@ CREATE TABLE `items` (
 
 INSERT INTO `items` (`id`, `title`, `title_en`, `title_ru`, `description`, `description_en`, `description_ru`, `date`, `img`, `file`, `img_ext`, `status`) VALUES
 (34, 'wleilfilj', 'rwliwrjog', 'rejhkurhu3t', '<p>felijeligjrelijgli</p>', '<p>jrjeilerjgeij</p>', '<figure class=\"table\"><table><tbody><tr><td>ljnliljijijilj</td><td>l</td><td>jli</td><td>jil</td></tr><tr><td>j</td><td>lij</td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td><td> </td></tr></tbody></table></figure>', '2022-06-28', 'f31345f75dc25ef3c0787ba0ad6632ec.png', '9a83cb5055321d26e658f39696ae8bac.png', '.png', 1),
-(38, 'fdeq', 'wefwf', 'wefwef', '<p>ewfwefw</p>', '<p>wfwefw</p>', '<p>wfwff</p>', '2022-07-05', '1e14c473e710510347eb095fc74ebe30.jpeg', '3b6178f062f3cb62d07cb79f1139361a.docx', '.jpeg', 1);
+(38, 'fdeq', 'wefwf', 'wefwef', '<p>ewfwefw</p>', '<p>wfwefw</p>', '<p>wfwff</p>', '2022-07-05', '1e14c473e710510347eb095fc74ebe30.jpeg', '3b6178f062f3cb62d07cb79f1139361a.docx', '.jpeg', 1),
+(39, 'Azərbaycan Dövlət Neft və Sənaye Universitetinin təkrar ali təhsil üzrə qiyabi şöbəsində təhsil alan tələbələrin 2021/2022-ci tədris ilinin yaz semestrində imtahana qədər topladığı BALLAR CƏDVƏLI (II Mərhələ)', '', '', '<p><strong>050608– Elektroenergetika mühəndisliyi ixtisasının    </strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EYgU7rzD5RRNrc9nPBzvEIQBql1qSgoxYScxbO-ZkNp0Kw?e=ZE4fIA\"><strong>Semestr: IV              Qr.№: EM 2.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EUiBoS0ftEBKk_TRu1IDkw8Br6acRu9QuMgTfv3-pAc_Kw?e=hKybyU\"><strong>Semestr: VI              Qr.№: EEM 3.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EWPx6EJNG3xPsn1CszzKBIUBXVXpGzJFnxDk2HaElvcsXw?e=tQGKS0\"><strong>Semestr: VI              Qr.№: EM  2.20.1</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EUq-EHp29MVDnOT_B4nY72EB9AL_VkTJGCxPIY7HBkUmtA?e=MpiCgs\"><strong>Semestr: VI              Qr.№: EM  2.20.2</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EXGG6MaIyjxDqW5Yo1Tq4sABemtxMkNjt7nIQPVgRo9m2Q?e=uBZ66W\"><strong>Semestr: VIII            Qr.№: EM  3.20</strong></a><br><strong>050626– Elektrik mühəndisliyi ixtisasının</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EQnlEagygF9MiE9JpOGfnSIBBpvatCy50D-PWefh_7yzvA?e=va4U6m\"><strong>Semestr:  VIII          Qr.№: EM  2.19.1</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EXrBMnpR8apAvi0PcY5-edgBxOz3Io8rEiqWXcWeeVIscA?e=QIa7Dc\"><strong>Semestr:  VIII          Qr.№: EM 2.19.2</strong></a><br><a href=\"http://www.smiiyi.az//tedris/2022/Girishbal/merhele2/Girish_bal_Mer2_EM-3_19.pdf\"><strong>Semestr:  X              Qr.№: EM  3.19</strong></a><br><strong>050641– Kimya mühəndisliyi ixtisasının</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/Ea3DwkOVhklHqbMeg-SuHFgB3LfVobry5mKFwKWYkUmjxg?e=17sD5N\"><strong>Semestr  IV             Qr.№  KM-2.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/ERW8BQMjfAFBov-bqUZ8u_cB7OQlaayr_Ofj5bRzsf7oJw?e=MaQuE9\"><strong>Semestr  VI             Qr.№  KM-2.20</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EaIyCH4Ze9JAgicuoSp1tAEB7zplEN1N6EjHewCnUnpDUQ?e=HofdFn\"><strong>Semestr  VIII           Qr.№  KM-2.19</strong></a><br><strong>050607–Neft- qaz qurğuları mühəndisliyi ixtisasının</strong><br><a href=\"http://www.smiiyi.az//tedris/2022/Girishbal/merhele2/Girish_bal_Mer2_NQQM-2_19.pdf\"><strong>Semestr:   VIII         Qr.№: NQQM 2.19</strong></a></p>', '', '', '2022-06-19', '7a1f5dbea98bcc81e87a55e63b7d17fd.png', '', '.png', 1),
+(40, 'wefwefwefwe', '', '', '<p>wfwefwefwfwefwefwefwef</p>', '', '', '2022-07-21', 'f5f3d889fb28593616f15f7e74f6f87c.png', '', '.png', 1),
+(41, 'Azərbaycan Dövlət Neft və Sənaye Universitetinin  əlavə təhsil üzrə qiyabi şöbəsində təhsil alan tələbələrin 2021/2022-ci tədris ilinin yaz dərs sessiyasının imtahan  <br>C Ə D V Ə L İ  III mərhələ', '', '', '<figure class=\"table\"><table><tbody><tr><td><p>       Qruplar</p><p>Tarix</p></td><td>050405 İqtisadiyyat İQ 2.21 II Kurs</td><td>050616 İnformasiya texnologiyaları İT 2.21 II kurs</td><td>050655 İnformasiya texnologiyaları İT 2.19 III kurs</td><td>050655 İnformasiya texnologiyaları İT 2.20 III kurs</td><td>050509 Kompüter elmləri KE 2.21 II kurs</td></tr><tr><td>13.07.2022</td><td>Makroiqtisadiyyat Dos.Rüstəmov İlham Saat 14.00 Otaq 1 </td><td>Kompüter arxitekturası Ass.Ağazadə Jalə Saat 9.00 Otaq 4 </td><td>Kommunikasiya vasitələri Dos.Sərdarov Yaqub Saat.9.00 Otaq 3</td><td> Sistem mühəndisliyi Dos.Abdullayev Vüqar Saat 9.00 Otaq 5* </td><td>Kompleks analiz Prof.Əliyev Araz Saat 9.00 Otaq 5</td></tr><tr><td>14.07.2022</td><td>Ehtimal nəzəriyyəsi Prof.Əliyev Araz Saat 14.00 Otaq 1/ İKT Dos.Qasımov Sərdar Saat 12.00 Otaq 2</td><td>Kompüter arxitekturası Ass.Ağazadə Jalə Saat 9.00 Otaq 4</td><td>İnformasiya sistemlərin layihələndirməsi Dos.Məmmədov Vaqif Saat 9.00 Otaq 3</td><td>Verilənlərin strukturu və alqoritmləri Dos.Hacıyev Faiq Saat 9.00 Otaq 5*</td><td>Riyazi analiz 2 Dos. Hüseynov Hamlet Saat 9.00 Otaq 4</td></tr><tr><td>15.07.2022</td><td>Xarici dildə işgüzar və akademiyası Dos.Əliyeva Sevil Saat 9.00 Otaq 1*</td><td>Kompüter arxitekturası Ass.Ağazadə Jalə Saat 9.00 Otaq 4</td><td>Rəqəmsal sistemlər Dos.Abdullayev Vüqar Saat 9.00 Otaq 3</td><td>Əməliyyat sistemləri Dos.Abdullayev Vüqar Saat 14.00 Otaq 5*</td><td>Proqramlaşdırmanın əsasları Dos.Nağıyev Həsən Saat 9.00 Otaq 4*</td></tr><tr><td>16.07.2022</td><td>Azərbaycan dilində işgüzar yazışmalar b/m Əliyev Rəfael saat 9.00 Otaq6</td><td>Fizika Prof.Musayev Musavər Saat 9.00 Otaq 4</td><td>Korporativ informasiya sistemləri Dos.Əsgərova Bahar Saat 9.00 Otaq 3</td><td>Menecmentin əsasları Ass.Kamilov İlham Saat.9.00 Otaq 5*</td><td>Əməliyyat sistemi Dos.Nağıyev Həsən Saat 9.00 Otaq 4</td></tr><tr><td>18.07.2022</td><td>Statistika Ass.Hüseynov Səfər Saat.9.00 Otaq 6</td><td>Azərbaycan dilində işgüzar yazışmalar b/m Əliyev Rəfael saat 9.00 Otaq 6</td><td>Hesablama təcrübələri Dos.Əliyeva Yeganə Saat 9.00 Otaq 3</td><td> </td><td>Xarici dildə işgüzar yazışmalar b/m Şıxıyeva Sevda saat 9.00 Otaq 4</td></tr></tbody></table></figure><p> </p>', '', '', '2022-07-05', '6f8008905fc4891b9b8808201cc37fb7.jpeg', '', '.jpeg', 1),
+(42, '2d2', '', '', '<p>wqdd</p>', '', '', '2022-07-22', '', '', '.png', 1);
 
 -- --------------------------------------------------------
 
@@ -214,6 +218,7 @@ CREATE TABLE `items6` (
   `sl_id` int(11) NOT NULL,
   `sl_category` tinyint(4) NOT NULL,
   `sl_img` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `ann_id` int(11) NOT NULL,
   `sl_status` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -221,9 +226,9 @@ CREATE TABLE `items6` (
 -- Dumping data for table `items6`
 --
 
-INSERT INTO `items6` (`sl_id`, `sl_category`, `sl_img`, `sl_status`) VALUES
-(5, 2, '5d2cf444671ef3da857ad7153433ba5e.jpeg', 1),
-(6, 1, 'download3.png', 1);
+INSERT INTO `items6` (`sl_id`, `sl_category`, `sl_img`, `ann_id`, `sl_status`) VALUES
+(6, 1, 'download3.png', 0, 1),
+(8, 2, 'ca1daa8d5ede95bca3498446d19c5fc5.png', 39, 1);
 
 -- --------------------------------------------------------
 
@@ -286,8 +291,8 @@ CREATE TABLE `items9` (
 --
 
 INSERT INTO `items9` (`re_id`, `re_group_no`, `re_subject_id`, `re_status`) VALUES
-(6, 2, 4, 1),
-(8, 2, 8, 1);
+(8, 2, 8, 1),
+(9, 2, 10, 1);
 
 -- --------------------------------------------------------
 
@@ -729,7 +734,7 @@ ALTER TABLE `admincategory`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `items2`
@@ -759,7 +764,7 @@ ALTER TABLE `items5`
 -- AUTO_INCREMENT for table `items6`
 --
 ALTER TABLE `items6`
-  MODIFY `sl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `sl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `items7`
@@ -777,7 +782,7 @@ ALTER TABLE `items8`
 -- AUTO_INCREMENT for table `items9`
 --
 ALTER TABLE `items9`
-  MODIFY `re_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `re_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `item_category`
