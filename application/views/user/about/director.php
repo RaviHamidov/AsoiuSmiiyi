@@ -7,7 +7,7 @@
               <div class="tagline-message page-title text-center">
                 <h3>Direktor haqqında</h3>
                 <ul class="breadcrumb">
-                    <li><a href="../index.html">Ana Səhifə</a></li>
+                    <li><a href="<?php echo base_url('index')?>">Ana Səhifə</a></li>
                     <li class="active">
                       Direktor haqqında
                     </li>
@@ -33,7 +33,7 @@
                         <div class="col-md-32 shop-media">
                           <div class="img-responsive article-head-img director">
                             <img
-                              src="../images/hamlet6.jpg"
+                              src="<?php echo base_url('assets/user/img/')?>hamlet6.jpg"
                               alt=""
                               class="img-responsive img-rounded mustafa-babanli"
                             />

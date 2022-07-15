@@ -72,8 +72,7 @@
                          (012) 498-07-57 <br>
                          (012)598-29-12 <br>
                          (070) 498-03-93 <br><br>
-                         E-mail: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDXXlkpnvsklpjlVhBrpkDhpDkxdZgRlNPvDjzzRjHjQFqxfJTbjNWBGtRDcnNVfPLMXDvV"> smiiyi@bk.ru</a> <br>
-                         Sayt: www.smiiyi.az'<br>
+                         E-mail: <a href="mailto:smiiyi@asoiu.edu.az">smiiyi@asoiu.edu.az</a> <br>
                          Qəbul Komissiyası. <br>                        
                         </h4>
                        <hr class="invis" />

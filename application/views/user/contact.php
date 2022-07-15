@@ -42,7 +42,7 @@
                     498-07-57<br> (050) 242-84-15</small
                   >
                   <small>Faks: (994 12) 498-07-57</small>
-                  <p><a href="mail:to">smiiyi@asoiu.edu.az</a></p>
+                  <p><a href="mailto:smiiyi@asoiu.edu.az">smiiyi@asoiu.edu.az</a></p>
                 </div>
                 <!-- end small-box -->
               </div>

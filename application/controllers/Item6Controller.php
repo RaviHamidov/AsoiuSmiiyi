@@ -32,7 +32,8 @@ class Item6Controller extends CI_Controller{
 
     public function createItem(){
         $viewData = new stdClass();
-
+        $get_all_item_ann = $this->item6_model->get_all_item_ann();
+        $viewData->get_all_item_ann      = $get_all_item_ann;
         $get_all_item_category = $this->item6_model->get_all_item_category();
         $get_all_item_status   = $this->item6_model->get_all_item_status();
         $viewData->get_all_item_category = $get_all_item_category;
@@ -61,7 +62,8 @@ class Item6Controller extends CI_Controller{
 
         if($validate){
             $category = $_POST['category'];
-            $status   = $_POST['status'];
+            $status   = $_POST['status']; 
+            $ann_id   = $_POST['ann_id'];
 
             $config['upload_path']      = 'upload/slider/';
             $config['allowed_types']    = 'gif|jpg|png|pdf|jpeg';
@@ -83,7 +85,8 @@ class Item6Controller extends CI_Controller{
             $data = [
                 'sl_category'       => $category,
                 'sl_img'            => $img_name,
-                'sl_status'         => $status
+                'sl_status'         => $status,
+                'ann_id'            => $ann_id
             ];
 
             $data = $this->security->xss_clean($data);
@@ -103,7 +106,8 @@ class Item6Controller extends CI_Controller{
 
         }else{
             $viewData = new stdClass();
-
+            $get_all_item_ann = $this->item6_model->get_all_item_ann();
+            $viewData->get_all_item_ann      = $get_all_item_ann;
             $get_all_item_category = $this->item6_model->get_all_item_category();
             $get_all_item_status   = $this->item6_model->get_all_item_status();
             $viewData->get_all_item_category = $get_all_item_category;
@@ -131,10 +135,11 @@ class Item6Controller extends CI_Controller{
         );
 
         $get_all_item_category = $this->item6_model->get_all_item_category();
+        $get_all_item_ann = $this->item6_model->get_all_item_ann();
         $get_all_item_status   = $this->item6_model->get_all_item_status();
         $viewData->get_all_item_category = $get_all_item_category;
         $viewData->get_all_item_status   = $get_all_item_status;
-
+        $viewData->get_all_item_ann      = $get_all_item_ann;
         $viewData->single_item   = $item;
 
 
@@ -163,6 +168,7 @@ class Item6Controller extends CI_Controller{
         if($validate){
             $category = $_POST['category'];
             $status   = $_POST['status'];
+            $ann_id   = $_POST['ann_id'];
 
             $data_id = [
                 "sl_id" =>$id,
@@ -194,6 +200,7 @@ class Item6Controller extends CI_Controller{
                 'sl_category'       => $category,
                 'sl_img'            => $img_name,
                 'sl_status'         => $status,
+                'ann_id'            => $ann_id
             ];
 
             $data = $this->security->xss_clean($data);
@@ -216,7 +223,8 @@ class Item6Controller extends CI_Controller{
             $item = $this->item6_model->get_single(
                 array("sl_id" => $id)
             );
-
+            $get_all_item_ann = $this->item6_model->get_all_item_ann();
+            $viewData->get_all_item_ann      = $get_all_item_ann;
             $get_all_item_category = $this->item6_model->get_all_item_category();
             $get_all_item_status   = $this->item6_model->get_all_item_status();
             $viewData->get_all_item_category = $get_all_item_category;
@@ -258,10 +266,12 @@ class Item6Controller extends CI_Controller{
             array("sl_id" => $id)
         );
 
-//        $get_all_item_category = $this->item6_model->get_all_item_category();
-//        $get_all_item_status   = $this->item6_model->get_all_item_status();
-//        $viewData->get_all_item_category = $get_all_item_category;
-//        $viewData->get_all_item_status   = $get_all_item_status;
+        $get_all_item_ann = $this->item6_model->get_all_item_ann();
+        $viewData->get_all_item_ann      = $get_all_item_ann;
+        $get_all_item_category = $this->item6_model->get_all_item_category();
+        $get_all_item_status   = $this->item6_model->get_all_item_status();
+        $viewData->get_all_item_category = $get_all_item_category;
+        $viewData->get_all_item_status   = $get_all_item_status;
 
         $viewData->single_item   = $item;
 

@@ -1,6 +1,25 @@
 <?php $this->load->view('user/includes/header'); ?>
 
-<section class="section gb nopadtop">
+
+      <section class="section db p120">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-32">
+              <div class="tagline-message page-title text-center">
+                <h3>ADNSU haqqında</h3>
+                <ul class="breadcrumb">
+                    <li><a href="<?php echo base_url('index');?>">Ana Səhifə</a></li>
+                    <li class="active">
+                      ADNSU haqqında
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gb nopadtop">
         <div class="container">
           <div class="boxed">
             <div class="row">
@@ -15,14 +34,14 @@
                         <div class="col-md-32 shop-media">
                           <div class="img-responsive article-head-img asoiu-image">
                             <img
-                              src="<?php echo base_url('assets/user/img/upload')?>soiu-image.jpg"
+                              src="<?php echo base_url('assets/user/img/upload/') ?>asoiu-image.jpg"
                               alt=""
                               class="img-responsive img-rounded"
                             />
                             <div class="magnifier">
                               <a
                                 rel="prettyPhoto[inline]"
-                                href="../upload/elan-1-3.jpeg"
+                                href="<?php echo base_url('assets/user/img/upload/') ?>elan-1-3.jpeg"
                                 title=""
                                 ><i class="flaticon-add"></i
                               ></a>
@@ -70,14 +89,14 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="box m30 fakulte">
                 <div>
-                 <a href="http://fct.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload')?>/ktf.png" alt=""></a>
-                 <a href="http://fpe.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload')?>/ef.png" alt=""></a>
-                 <a href="http://fge.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload')?>/gkf.png" alt=""></a>
+                 <a href="http://fct.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload/') ?>ktf.png" alt=""></a>
+                 <a href="http://fpe.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload/') ?>ef.png" alt=""></a>
+                 <a href="http://fge.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload/') ?>gkf.png" alt=""></a>
                 </div>
                 <div>
-                 <a href="http://fem.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload')?>/imf.png" alt=""></a>
-                 <a href="http://fome.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload')?>/nmf.png" alt=""></a>
-                 <a href="http://fogp.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload')?>/qnmf.png" alt=""></a>
+                 <a href="http://fem.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload/') ?>imf.png" alt=""></a>
+                 <a href="http://fome.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload/') ?>nmf.png" alt=""></a>
+                 <a href="http://fogp.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload/') ?>qnmf.png" alt=""></a>
                 </div>
               </div>
             </div>
@@ -138,9 +157,9 @@
                     <h1>Layihələrimiz</h1>
                   </div>
                   <div class="img">
-                   <a href="http://career.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload')?>/adnsu-karyera-merkezi.jpg" alt=""></a>
-                   <a href="http://academy.asoiu.edu.az//"><img src="<?php echo base_url('assets/user/img/upload')?>ITclub.png" alt=""></a>
-                   <a href="http://asoiu.edu.az/az/page/31-eazi-start"><img src="<?php echo base_url('assets/user/img/upload')?>eazistart.png" alt=""></a>
+                   <a href="http://career.asoiu.edu.az/"><img src="<?php echo base_url('assets/user/img/upload/') ?>adnsu-karyera-merkezi.jpg" alt=""></a>
+                   <a href="http://academy.asoiu.edu.az//"><img src="<?php echo base_url('assets/user/img/upload/') ?>ITclub.png" alt=""></a>
+                   <a href="http://asoiu.edu.az/az/page/31-eazi-start"><img src="<?php echo base_url('assets/user/img/upload/') ?>eazistart.png" alt=""></a>
                   </div>
                 </div>
               </div>
@@ -212,7 +231,7 @@
                           <div class="col-md-32 shop-media">
                             <div class="img-responsive article-head-img ne-edirik">
                               <img
-                                src="../upload/about.jpg"
+                                src="<?php echo base_url('assets/user/img/upload/') ?>about.jpg"
                                 alt=""
                                 class="img-responsive img-rounded"
                               />
@@ -267,7 +286,7 @@
                           <div class="col-md-32 shop-media">
                             <div class="img-responsive article-head-img student">
                               <img
-                                src="<?php echo base_url('assets/user/img/upload')?>student.jpg"
+                                src="<?php echo base_url('assets/user/img/upload/') ?>student.jpg"
                                 alt=""
                                 class="img-responsive img-rounded"
                               />

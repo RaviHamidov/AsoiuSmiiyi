@@ -31,19 +31,18 @@
                                         <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><i class="flaticon-add"></i></a>
                                     </div>
                                 </div>
-                                <div class="course-details">
-                                    <h4>
-
+                                <div class="course-details" style = "height:200px!important;overflow: hidden!important;height: 3.6em;line-height: 1.2em;">
+                                    <h5>
                                         <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><?php echo $events['title']; ?>
                                         </a>
-                                    </h4>
-                                    <p><?php echo $events['description']; ?></p>
+                                    </h5>
+                                    
+                                   
                                 </div>
                                 <div class="course-footer clearfix">
                                     <div class="pull-left">
                                         <ul class="list-inline">
                                             <li><i class="fa fa-clock-o"></i> <?php echo date('d-m-Y', strtotime($events['date']));?></li>
-                                            
                                         </ul>
                                     </div>
                                 </div>

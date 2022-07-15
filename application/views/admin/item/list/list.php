@@ -8,7 +8,16 @@
 <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
 
+<style>
 
+    #make_short{
+        display: block;
+        white-space: nowrap;
+        width: 30em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
 <script type="text/javascript" src="<?php echo base_url('assets/admin/') ?>assets/scripts/jQueryScript.js"></script>
 
 <div class="row">
@@ -48,7 +57,10 @@
                             <?php $itemCount = 1; $for_switch=0; foreach ($items as $item){ $for_switch++; ?>
                                 <tr>
                                     <td class="text-center text-muted"><?php echo $itemCount++; ?></td>
-                                    <td><?php echo $item->title; ?></td>
+                                    <!-- <td id = "make_short"><?php echo $item->title; ?></td> -->
+                                    <td><div style="height: 5vh; margin-top:5px;">
+                                        <span id="make_short"><?php echo $item->title; ?></span>
+                                    </div></td>
                                     <td class="text-center"><?php echo date("d-m-Y", strtotime($item->date)); ?></td>
 
                                     <td class="text-center">

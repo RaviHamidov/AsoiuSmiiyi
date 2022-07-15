@@ -37,12 +37,12 @@
                                     </div>
                                     <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <ul class="y-h-ul">
-                                                <li><a href="http://"> 050606- “Neft-qaz mühəndisliyi”
-                                                    </a></li>
-                                                <li><a href="http://">
+                                            <ul class="list-group">
+                                                <li class="list-group-item" style="color: black;"> 050606- “Neft-qaz mühəndisliyi”
+                                                    </li>
+                                                <li class="list-group-item" style="color: black;">
                                                         050405- “Sənayenin təşkili və idarə edilməsi”
-                                                    </a></li>
+                                                   </li>
 
                                             </ul>
                                         </div>
@@ -60,13 +60,13 @@
                                     <div id="collapseThree" class="panel-collapse collapse">
                                         <div class="panel-body">
 
-                                            <ul class="y-h-ul">
-                                                <li><a href="http://">040507- “Neft və qaz emalı”
-                                                    </a></li>
-                                                <li><a href="http://">040407- “Menecment”
-                                                    </a></li>
-                                                <li><a href="http://">040510- “Elektrik təchizatı”
-                                                    </a></li>
+                                            <ul class="list-group">
+                                                <li class="list-group-item" style="color: black;">040507- “Neft və qaz emalı”
+                                                   </li>
+                                                <li class="list-group-item" style="color: black;">040407- “Menecment”
+                                                    </li>
+                                                <li class="list-group-item" style="color: black;">040510- “Elektrik təchizatı”
+                                                    </li>
 
                                             </ul>
                                         </div>
@@ -75,8 +75,6 @@
                             </div>
                         </div>
                     </div>
-                    <p style="color: red; padding-top: 30px; font-style: italic;">* (Qeyd: Lazım olan ixtisası seçib
-                        tədris qrafikini yükləyə bilərsiniz)</p>
                 </div>
                 <div class="dark-light fabs">
                     <i class='bx bx-moon moon fab'></i>

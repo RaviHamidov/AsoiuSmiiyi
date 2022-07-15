@@ -129,6 +129,7 @@
                     <li><a href="<?php echo base_url('asoiu') ?>">ADNSU Haqqında</a></li>
                     <li><a href="<?php echo base_url('smiiyi') ?>">SMİİYİ Haqqında</a></li>
                     <li><a href="<?php echo base_url('rector') ?>">Rektor Haqqında</a></li>
+                    <li><a href="<?php echo base_url('director') ?>">Direktor Haqqında</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo base_url('announcement') ?>">Elanlar</a></li>
@@ -193,7 +194,7 @@
                       >
                     </li>
                     <li>
-                      <a href="elektron-jurnal">Müəllimin ELektron Jurnalı</a>
+                      <a href="https://azerbaijanstateoilacade-my.sharepoint.com/:x:/g/personal/smiiyi_asoiu_edu_az/EcSP-HJuZBBBs1tc_uUW1esB4u6CAOLpJ_pQzLBM-k1b8Q?e=AcTWb8">Müəllimin ELektron Jurnalı</a>
                     </li>
                   </ul>
                 </li>
@@ -245,8 +246,8 @@
                       <a href="<?php echo base_url('uni_admission')?>">Universitetə Qəbul</a>
                     </li>
                     <li>
-                      <a href="komputer-hazirligi"
-                        >Kompüter Hazırlığı üçün Elektron Qeydiyyat</a
+                      <a href="<?php echo base_url('qeydiyyat')?>"
+                        >İnstituta qəbul üçün Elektron Qeydiyyat</a
                       >
                     </li>
                   </ul>

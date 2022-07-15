@@ -5,6 +5,7 @@ class UserController extends CI_controller
 	public function index()
 	{
 		$data['items']  = $this->db->order_by('sl_id','DESC')->get('items6')->result_array();
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('date','DESC')->get('items')->result_array();
 	
 		$this->load->view('user/index',$data);
 	}
@@ -17,6 +18,10 @@ class UserController extends CI_controller
 	public function contact()
 	{
 		$this->load->view('user/contact');
+	}
+	public function qeydiyyat()
+	{
+		$this->load->view('user/qeydiyyat');
 	}
 
 	public function about_asoiu()
@@ -31,6 +36,10 @@ class UserController extends CI_controller
 	public function about_rector()
 	{
 		$this->load->view('user/about/rector');
+	}
+	public function about_director()
+	{
+		$this->load->view('user/about/director');
 	}
 	
 	public function tt_tedris_plani()
@@ -163,7 +172,18 @@ class UserController extends CI_controller
 	public function ann_form($id)
 	{
 		$data['x']  = $this->db->where('id',$id)->order_by('id','DESC')->get('items')->row();
-		$this->load->view('user/announcement/ann',$data);
+		
+		$query =  $this->db->where('id',$id)->order_by('id','DESC')->get('items');
+		if ($query->num_rows() > 0){
+			$this->load->view('user/announcement/ann',$data);
+		}
+		else{
+			redirect(base_url('index'));
+		}
+		
+		
+
+
 	}
 
 

@@ -5,6 +5,7 @@ class Item6_model extends CI_Model{
     public $tableName = "items6";
     public $categoryTableName = "item_category6";
     public $statusTableName = "item_status";
+    public $annTableName = "items";
 
 
     public function __construct()
@@ -33,6 +34,10 @@ class Item6_model extends CI_Model{
     public function get_all_item_status()
     {
         return $this->db->get($this->statusTableName)->result();
+    }
+    public function get_all_item_ann()
+    {
+        return $this->db->select('id,title')->get($this->annTableName)->result();
     }
 
     public function add($data = array()){

@@ -41,9 +41,9 @@
                                     <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul class="y-h-ul">
-                                                <li><a href="http://"> 050606- “Neft-qaz mühəndisliyi”
+                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_tp/').'tedris_qrafiki_Neft-qaz_muhendisliyi.pdf';?>"> 050606- “Neft-qaz mühəndisliyi”
                                                     </a></li>
-                                                <li><a href="http://">
+                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_tp/').'tedris_qrafiki_Senayenin_teshkili.pdf';?>">
                                                         050405- “Sənayenin təşkili və idarə edilməsi”
                                                     </a></li>
 
@@ -64,11 +64,11 @@
                                         <div class="panel-body">
 
                                             <ul class="y-h-ul">
-                                                <li><a href="http://">040507- “Neft və qaz emalı”
+                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_tp/').'tedris_qrafiki_Neft-qaz_emali.pdf';?>">040507- “Neft və qaz emalı”
                                                     </a></li>
-                                                <li><a href="http://">040407- “Menecment”
+                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_tp/').'tedris_qrafiki_Menecment.pdf';?>">040407- “Menecment”
                                                     </a></li>
-                                                <li><a href="http://">040510- “Elektrik təchizatı”
+                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_tp/').'tedris_qrafiki_Elektrik_techizati.pdf';?>">040510- “Elektrik təchizatı”
                                                     </a></li>
 
                                             </ul>

@@ -118,6 +118,17 @@
                         <?php } ?>
                         <!-- form validation end display show -->
                     </div> 
+                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 noBlock">
+                        <div class="row">
+                            <label for="ann_id">Elan</label>
+                            <select id="ann_id" class="form-control" name="ann_id">
+                                <option value="">-Seçim edin-</option> 
+                                <?php foreach ($get_all_item_ann as $ann){ ?>
+                                    <option <?php if($single_item->ann_id == $ann->id){ echo "SELECTED"; }  ?> value="<?php echo $ann->id; ?>"><?php echo $ann->title; ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
+                    </div> 
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 noBlock">
                         

@@ -170,13 +170,14 @@ $route['admin_deleteItem_ce/(.*)']    = 'Item8Controller/delete/$1';
 $route['admin_detail_form_ce/(.*)']   = 'Item8Controller/detail_form/$1';
 $route['admin_is_active_set_item_ce'] = 'Item8Controller/isActiveSet';
 
-$route['selectStudents/(.*)'] 	 		  = 'Item8Controller/selectStudents/$1';
+$route['selectStudents/(.*)'] 	 		    = 'Item8Controller/selectStudents/$1';
 $route['selectStudents_list/(.*)'] 	 	    = 'Item8Controller/selectStudents_list/$1';
-$route['get_all_students_by_group_id/(.*)']= 'Item8Controller/get_all_students_by_group_id/$1';
+$route['get_all_students_by_group_id/(.*)'] = 'Item8Controller/get_all_students_by_group_id/$1';
 
+$route['selectStudents2/(.*)'] 	 		    = 'Item2Controller/selectStudents/$1';
 
 $route['admin_point_update/(.*)']     = 'Item8Controller/admin_point_update/$1';
-$route['admin_poin/(.*)']     = 'Item8Controller/poin/$1';
+$route['admin_poin/(.*)']     		  = 'Item8Controller/poin/$1';
 
 
 // Admin Register
@@ -193,10 +194,13 @@ $route['admin_is_active_set_item_re'] = 'Item9Controller/isActiveSet';
 $route['contact']                            = 'UserController/contact';
 $route['index']                            	 = 'UserController/index';
 $route['uni_admission']						 = 'UserController/uni_admission';
+$route['qeydiyyat']                          = 'UserController/qeydiyyat';
 
 $route['rector']                             = 'UserController/about_rector';
+$route['director']                           = 'UserController/about_director';
 $route['smiiyi']                             = 'UserController/about_smiiyi';
 $route['asoiu']                            	 = 'UserController/about_asoiu';
+
 
 $route['tekrar_tehsil_tedris_plani']		 = 'UserController/tt_tedris_plani';
 $route['tekrar_tehsil_ixtisaslar']           = 'UserController/tt_ixtisaslar';

@@ -1,5 +1,41 @@
 
 <?php $this->load->view('user/includes/header');?>
+
+<style>
+              .imgHeightSlider{
+                width:100%!important;
+                height: 700px!important;
+                object-fit:contain ;
+              }
+
+              @media screen and (max-width: 768px) {
+                .imgHeightSlider {
+                  height: 350px!important;
+                }
+              }
+            
+         
+
+              .parent {
+                  position: relative;
+                  }
+                  .child {
+                    font-weight: bold;
+                  font-size: 17px;
+                  padding: 16px 40px;
+                  padding: 8px 40px;
+                  border-width: 1px;
+                  border-style: solid;
+                  color: #fff;
+                  background-color: #f7ca18;
+                  border-color: #f7ca18;
+                  position: absolute;
+                  top: 90%;
+                  left: 48%;
+                  margin: -35px 0 0 -35px;
+                  }
+            </style>
+
 <section class="section mar" style="padding-top: 2rem !important">
         <div class="container-fluid">
          <div class="row">
@@ -19,25 +55,13 @@
               <?php }?>
             </ol>
 
-
-            <style>
-              .imgHeightSlider{
-                width:100%!important;
-                height: 700px!important;
-                object-fit:cover;
-              }
-
-              @media screen and (max-width: 768px) {
-                .imgHeightSlider {
-                  height: 350px!important;
-                }
-              }
-            </style>
-
             <div class="carousel-inner" role="listbox">
             <?php foreach ($items as $item){?>
-              <div class="item  <?php if($item['sl_category'] == 1){echo 'active';}?>">
+              <div class="item parent  <?php if($item['sl_category'] == 1){echo 'active';}?>">
                 <img class="imgHeightSlider" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"/>
+                <a href = "<?php echo base_url('ann_detail_form/'.$item['ann_id']); ?>"><div class = "child" id = "content-block">
+                  ƏTRAFLI
+                </div></a>
               </div>
               
               <?php }?>
@@ -71,7 +95,50 @@
          </div>
         </div>
       </section>
+      <section class="section gb">
+        <div class="container">
+          <div class="section-title text-center">
+            <h3>Elanlar</h3>
+          </div>
+          <!-- end title -->
 
+           <?php foreach($event as $events){ ?>
+                        
+                        <div class="col-md-4">
+                       
+                            <div class="course-box">
+                                <div class="image-wrap entry">
+                                    <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" alt="image not found" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+                                </div>
+                                <div class="course-details" style = "height:200px!important;overflow: hidden!important;height: 3.6em;line-height: 1.2em;">
+                                    <h5>
+                                        <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><?php echo $events['title']; ?>
+                                        </a>
+                                    </h5>
+                                    
+                                   
+                                </div>
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-clock-o"></i> <?php echo date('d-m-Y', strtotime($events['date']));?></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <?php } ?>
+
+          <hr class="invis" />
+
+          <div class="section-button text-center">
+            <a href="./announcement/" class="btn btn-primary">Bütün Elanlar</a>
+          </div>
+        </div>
       <section class="section gb nopadtop">
         <div class="container">
           <hr class="invis" />
@@ -90,7 +157,7 @@
                   Azərbaycan Dövlət Neft və Sənaye Universitetinin rektoru,
                   texnika elmləri doktoru, professor
                 </p>
-                <a href="./about/rector.html" class="readmore">Ətraflı</a>
+                <a href="<?php echo base_url('rector') ?>" class="readmore">Ətraflı</a>
               </div>
             </div>
 
@@ -100,8 +167,8 @@
                 <img
                   src="<?php echo base_url('assets/user/img/') ?>hamlet6.jpg"
                   alt=""
-                  width="300"
                   height="200"
+                  object-fit:contain ;
                 />
                 <h4>Hamlet Hüseynov</h4>
                 <p>
@@ -109,7 +176,7 @@
                   İşçilərinin İxtisasartırma və Yenidənhazırlama İnstitutunun
                   direktoru
                 </p>
-                <a href="./about/director.html" class="readmore">Ətraflı</a>
+                <a href="<?php echo base_url('director') ?>" class="readmore">Ətraflı</a>
               </div>
             </div>
           </div>
@@ -131,414 +198,17 @@
           <div class="row about-smiiyi">
             <div class="col-md-10">
               <div class="box m30">
-                <h4>Lorem ipsum dolor sit.</h4>
+                <h4>Sənaye Müəssisələri İşçilərinin İxtisasartırma və Yenidənhazırlanma İnstitutu</h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Provident, blanditiis!
+                ADNSU-nun tərkibində fəaliyyət göstərən SMİİY intitutu tədris, təlim tərbiyə hissəsinin sturuktur bölməsidir. İnstitut 1996-cı il tarixdən hal-hazıra kimi ADNSU-nun tərkibində qanunvericiliyin tələblərinə uyğun, onun sturuktur bölməsi kimi fəaliyyət göstərir. Qanunvericiliyin dəyişməsi ilə əlaqədar institutun fəaliyyətində ona uyğunlaşdırlır.
                 </p>
-                <a href="./about/smiiyi.html" class="readmore">Ətraflı</a>
+                <a href="<?php echo base_url('smiiyi');?>" class="readmore">Ətraflı</a>
               </div>
             </div>
           </div>
           <hr class="invis" />
         </div>
       </section>
-      <section class="section db">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-lg-4 col-md-4">
-              <div class="stat-count">
-                <h4 class="stat-timer">50</h4>
-                <h3><i class="flaticon-online-course"></i> İxtisaslar</h3>
-                <p>Ümumi İxtisas Sayı</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-              <div class="stat-count">
-                <h4 class="stat-timer">1000</h4>
-                <h3>
-                  <i
-                    class="flaticon-black-graduation-cap-tool-of-university-student-for-head"
-                  ></i>
-                  Tələbələr
-                </h3>
-                <p>Ümumi Tələbə Sayı</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-              <div class="stat-count">
-                <h4 class="stat-timer">120</h4>
-                <h3><i class="flaticon-online-course"></i> Müəllimlər</h3>
-                <p>Ümumi Müəllim Sayı</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section gb">
-        <div class="container">
-          <div class="section-title text-center">
-            <h3>Elanlar</h3>
-          </div>
-          <!-- end title -->
-
-          <div id="owl-01" class="owl-carousel owl-theme owl-theme-01">
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="./announcement/ann.html" title=""
-                      ><i class="flaticon-add"></i
-                    ></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="./announcement/ann.html" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="./announcement/ann.html" title=""
-                      ><i class="flaticon-add"></i
-                    ></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="./announcement/ann.html" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="#" title=""><i class="flaticon-add"></i></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="#" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="#" title=""><i class="flaticon-add"></i></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="#" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="#" title=""><i class="flaticon-add"></i></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="#" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="#" title=""><i class="flaticon-add"></i></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="#" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="#" title=""><i class="flaticon-add"></i></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="#" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="#" title=""><i class="flaticon-add"></i></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="#" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="#" title=""><i class="flaticon-add"></i></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="#" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="caro-item">
-              <div class="course-box">
-                <div class="image-wrap entry">
-                  <img
-                    src="<?php echo base_url('assets/user/img/upload/') ?>elan-1-2.jpeg"
-                    alt=""
-                    class="img-responsive"
-                  />
-                  <div class="magnifier">
-                    <a href="./announcement/ann.html" title=""
-                      ><i class="flaticon-add"></i
-                    ></a>
-                  </div>
-                </div>
-                <div class="course-details">
-                  <h4>
-                    <a href="./announcement/ann.html" title=""
-                      >Azərbaycan-Fransız Universitetində Məzun günü</a
-                    >
-                  </h4>
-                  <p>
-                    İyunun 28-də Azərbaycan Dövlət Neft və Sənaye
-                    Universitetinin (ADNSU) nəzdində fəaliyyət göstərən
-                    Azərbaycan-Fransız Universitetində (UFAZ) Məzun Günü
-                    keçirilib.
-                  </p>
-                </div>
-                <div class="course-footer clearfix">
-                  <div class="pull-left">
-                    <ul class="list-inline">
-                      <li><i class="fa fa-clock-o"></i> 15/06/2022</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr class="invis" />
-
-          <div class="section-button text-center">
-            <a href="./announcement/" class="btn btn-primary">Bütün Elanlar</a>
-          </div>
-        </div>
         <div class="dark-light fabs">
             <i class='bx bx-moon moon fab'></i>
             <i class='bx bx-sun sun fab'></i>
