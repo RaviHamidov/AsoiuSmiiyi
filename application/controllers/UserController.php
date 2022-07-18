@@ -187,6 +187,16 @@ class UserController extends CI_controller
 	}
 
 
+	
+	public function fovqelade()
+	{
+
+		$data['teacher']  = $this->db->where('t_speciality',1)->order_by('t_id','DESC')->get('items3')->result_array();
+		
+		$this->load->view('user/teachers/index',$data);
+
+
+	}
 
 	
 

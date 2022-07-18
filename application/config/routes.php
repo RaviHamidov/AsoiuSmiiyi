@@ -225,3 +225,7 @@ $route['exam_lesson']           			 = 'Lesson_exam_table/index';
 $route['index_act']           			 	 = 'Lesson_exam_table/index_act';
 $route['exam_list']           			 	 = 'Lesson_exam_table/exam_list';
 $route['exam_delete/(.*)']           		 = 'Lesson_exam_table/exam_delete/$1';
+
+
+//teachers
+$route['fovqelade']                            = 'UserController/fovqelade';

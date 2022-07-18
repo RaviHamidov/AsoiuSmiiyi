@@ -144,7 +144,7 @@
                   ></a>
                   <ul class="dropdown-menu" role="menu">
                     <li>
-                      <a href="../teachers/"
+                      <a href="<?php echo base_url('fovqelade') ?>"
                         >Fövqəladə hallar və həyat fəaliyətinin təhlükəsizliyi
                       </a>
                     </li>
