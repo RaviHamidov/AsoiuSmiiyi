@@ -92,7 +92,7 @@
                             <br>
 
                             <label for="qr">Fənn</label>
-                            <select name="group" id="group_id" class="form-control">
+                            <select name="subject" id="subject_id" class="form-control">
                                 <option value="">-Seçim edin-</option>
                                 <?php foreach($get_all_item_category as $get_all_item_subjects_key){ ?>
                                     <option value="<?php echo $get_all_item_subjects_key->ab_id ; ?>"><?php echo $get_all_item_subjects_key->subject_name; ?></option>
@@ -137,10 +137,34 @@
 
     $(document).on('click',".sendScore",function (){
         var studentId = $(this).attr('data-studentId');
+        // console.log(studentId);
         var entrance_score = $(document).find('.entrance_score_'+studentId).val();
         var exam_score = $(document).find('.exam_score_'+studentId).val();
 
-        console.log(studentId,entrance_score,exam_score)
+        var subject = $(document).find('#subject_id').val();
+        var group_id = $(document).find('#group_id').val();
+        
+        // console.log(studentId,entrance_score,exam_score,subject)
+       var dataString = {'studentId' :studentId, 'entrance_score':entrance_score, 'exam_score':exam_score,'subject':subject, 'group_id':group_id};
+       $.ajax({
+				url: "<?php echo base_url("point_inserting");?>",
+				type: "POST",
+				data: dataString,
+				cache: false,
+				success:function(res){
+                    // console.log(res);
+                }
+			});
+
+        // $data = [
+        //     'po_student_id' => $studentId,
+        //     // 'po_group_id'   => $,
+        //     'po_subject_id' => $subject,
+        //     'po_enter_point'=> $entrance_score,
+        //     'po_exam_point' => $exam_score
+
+        // ];
+        // $this->db->insert('point',$data);
 
 
 

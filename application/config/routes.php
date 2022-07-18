@@ -169,6 +169,8 @@ $route['admin_updateItem_ceAct/(.*)'] = 'Item8Controller/updateItemAct/$1';
 $route['admin_deleteItem_ce/(.*)']    = 'Item8Controller/delete/$1';
 $route['admin_detail_form_ce/(.*)']   = 'Item8Controller/detail_form/$1';
 $route['admin_is_active_set_item_ce'] = 'Item8Controller/isActiveSet';
+$route['point_inserting']             = 'Item8Controller/point_inserting';
+
 
 $route['selectStudents/(.*)'] 	 		    = 'Item8Controller/selectStudents/$1';
 $route['selectStudents_list/(.*)'] 	 	    = 'Item8Controller/selectStudents_list/$1';

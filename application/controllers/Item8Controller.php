@@ -118,6 +118,31 @@ class Item8Controller extends CI_Controller{
     }
     
 
+    public function point_inserting(){
+       
+            
+			$studentId=$this->input->post('studentId');
+			$entrance_score=$this->input->post('entrance_score');
+			$exam_score=$this->input->post('exam_score');
+			$subject=$this->input->post('subject');
+            $group_id=$this->input->post('group_id');
+            $data= [
+                'po_student_id'  => $studentId,
+                'po_group_id'    => $group_id,
+                'po_subject_id'  => $subject,
+                'po_enter_point' => $entrance_score,
+                'po_exam_point'  => $exam_score
+            ];
+            $data = $this->security->xss_clean($data);
+            $this->db->insert('point',$data);
+           
+			// echo json_encode(array(
+			// 	"statusCode"=>200
+			// ));
+		
+
+    }
+
     public function createItemAct(){
 
     //     $this->form_validation->set_rules("point", "POİNT", "required|trim");

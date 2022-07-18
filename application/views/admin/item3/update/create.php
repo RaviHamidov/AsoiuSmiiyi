@@ -219,7 +219,7 @@
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 noBlock">
                             <div class="row">
 
-                                <button type="submit" class="btn btn-info btn-block" style="margin-top: 23px; height: 40px;">SEND</button>
+                                <button type="submit" class="btn btn-info btn-block" style="margin-top: 23px; height: 40px;">Göndər</button>
                             </div>
                         </div>
                     </form>
