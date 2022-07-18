@@ -1685,14 +1685,10 @@ TESTIMONIAL
     padding: 0;
     font-size: 34px;
     margin: 0;
-    color: #ffffff;
+    color: #ffffff !important;
     font-weight: bold;
 }
 
-.section.lb .tagline-message h3,
-.section.gb .tagline-message h3 {
-    color: #000;
-}
 
 .callout h3 {
     font-size: 90px;
@@ -1875,7 +1871,85 @@ SHOP
     display: flex;
     justify-content: center;
 }
+.fakulte{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow:  0px 30px 50px 0 rgba(1, 1, 1, 0.18);
+}
+.fakulte div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
+}
+.fakulte div a img{
+    opacity: 0.3;
+}
+.fakulte div a img:hover{
+    opacity: 1;
+}
+.qebul{
+    font-size: 44px;
+    color: white !important;
+    padding-bottom: 30px;
+}
+.qebul-p{
+    font-size: 22px;
+    color: white !important;
+    text-align: center;
+}
+.layihe{
+    margin-top: 60px !important;
+    box-shadow: 0 30px 50px 0 rgba(1, 1, 1, 0.18);
+}
+.layihe-h1{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-bottom: 30px;
+}
+.layihe div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.layihe div a img{
+    width: 90%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ixtisas-10{
+    padding-bottom: 30px;
+    color: #000 !important;
+}
+.top-ixtisas{
+    box-shadow: 0 30px 50px 0 rgba(1, 1, 1, 0.18);
+}
+.ixtisaslar{
+    display: flex;
+    justify-content: space-around;
+}
+.ixtisaslar h2{
+    font-size: 24px;
+}
+.ixtisaslar ul li{
+    list-style: none;
+
+}
+.chart{
+    width: 100%;
+    background-color: #000;
+}
+.asoiu-image img, .ne-edirik img, .student img{
+    width: 70%;
+}
+.qebul-div{
+    padding-bottom: 30px;
+}
 /******************************************
 FOOTER
 ******************************************/
@@ -1915,6 +1989,33 @@ footer hr{
 @media (max-width: 991px){
     .footer{
         display: none;
+    }
+    .fakulte{
+        flex-direction: inherit;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    .fakulte div{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .ixtisaslar{
+        flex-direction: column;
+    }
+    .ixtisaslar h2{
+        text-align: center;
+    }
+}
+@media (max-width: 550px){
+    .fakulte{
+        flex-direction: column;
+    }
+    .fakulte div{
+        width: 100%;
+        align-items: center;
+    }
+    .img{
+        flex-direction: column;
     }
 }
 /*Collapse*/
@@ -2241,7 +2342,7 @@ mark,
         width: 100%;
     }
     .navbar-brand img {
-        width: 110px;
+        width: 95px;
         padding-top: 10px;
     }
    

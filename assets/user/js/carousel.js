@@ -3280,6 +3280,7 @@
               owl.owlCarousel({
                 margin: 15,
                 nav: true,
+				
                 dots: false,
                 loop: true,
                 responsive: {
@@ -3287,10 +3288,10 @@
                     items: 1
                   },
                   800: {
-                    items: 3
+                    items: 2
                   },
-                  1000: {
-                    items: 4
+                  1200: {
+                    items: 3
                   }
                 }
               })

@@ -13,8 +13,7 @@
                   height: 350px!important;
                 }
               }
-            
-         
+                   
 
               .parent {
                   position: relative;
@@ -95,6 +94,8 @@
          </div>
         </div>
       </section>
+
+
       <section class="section gb">
         <div class="container">
           <div class="section-title text-center">
@@ -102,11 +103,10 @@
           </div>
           <!-- end title -->
 
-           <?php foreach($event as $events){ ?>
-                        
-                        <div class="col-md-4">
-                       
-                            <div class="course-box">
+          <div id="owl-01" class="owl-carousel owl-theme owl-theme-01">
+          <?php foreach($event as $events){ ?>
+
+            <div class="course-box">
                                 <div class="image-wrap entry">
                                     <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" alt="image not found" class="img-responsive">
                                     <div class="magnifier">
@@ -129,17 +129,22 @@
                                     </div>
                                 </div>
                             </div>
-                           
-                        </div>
-                        <?php } ?>
-
+          
+            <?php } ?>
+          </div>
           <hr class="invis" />
-
           <div class="section-button text-center">
             <a href="./announcement/" class="btn btn-primary">Bütün Elanlar</a>
           </div>
         </div>
-      <section class="section gb nopadtop">
+  
+      </section>
+
+
+
+
+
+  <section class="section gb nopadtop">
         <div class="container">
           <hr class="invis" />
 
@@ -167,6 +172,7 @@
                 <img
                   src="<?php echo base_url('assets/user/img/') ?>hamlet6.jpg"
                   alt=""
+                  width="300"
                   height="200"
                   object-fit:contain ;
                 />
@@ -200,7 +206,7 @@
               <div class="box m30">
                 <h4>Sənaye Müəssisələri İşçilərinin İxtisasartırma və Yenidənhazırlanma İnstitutu</h4>
                 <p>
-                ADNSU-nun tərkibində fəaliyyət göstərən SMİİY intitutu tədris, təlim tərbiyə hissəsinin sturuktur bölməsidir. İnstitut 1996-cı il tarixdən hal-hazıra kimi ADNSU-nun tərkibində qanunvericiliyin tələblərinə uyğun, onun sturuktur bölməsi kimi fəaliyyət göstərir. Qanunvericiliyin dəyişməsi ilə əlaqədar institutun fəaliyyətində ona uyğunlaşdırlır.
+                ADNSU-nun tərkibində fəaliyyət göstərən SMİİY institutu tədris, təlim tərbiyə hissəsinin sturuktur bölməsidir. İnstitut 1996-cı il tarixdən hal-hazıra kimi ADNSU-nun tərkibində qanunvericiliyin tələblərinə uyğun, onun sturuktur bölməsi kimi fəaliyyət göstərir. Qanunvericiliyin dəyişməsi ilə əlaqədar institutun fəaliyyətində ona uyğunlaşdırlır.
                 </p>
                 <a href="<?php echo base_url('smiiyi');?>" class="readmore">Ətraflı</a>
               </div>

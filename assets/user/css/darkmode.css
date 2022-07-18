@@ -16,8 +16,8 @@ body.dark{
 }
 body.dark .navbar-brand img{
     content:url("../img/logo-dark.png");
-    width: 90px;
-    padding-top: 20px;
+    width: 70px;
+    padding-top: 25px;
 }
 body.dark .header-normal , body.dark footer{
     background-color: var(--nav-color) !important;
@@ -103,8 +103,11 @@ body.dark .section.db{
 
 @media (max-width: 768px) {
     
-    .navbar-brand img{
-        width: 80px !important;
-        padding-top: 20px !important;
+   
+    .body-dark .navbar-brand img{
+        content: url("../img/logo-dark.png");
+        width: 49px !important;
+        height: 76px !important;
+        padding-top: 38px !important;
     }
 }
