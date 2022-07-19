@@ -46,7 +46,17 @@ class Item8_model extends CI_Model{
     {
         return $this->db->where('s_group_id',$group_id)->get($this->studentTableName)->result();
     }
+    public function get_all_students_by_gid_sid($group_id,$subject_id)
+    {
+        
+        $sql = "select * from items2 where c_id not in (select po_student_id from point where po_group_id = $group_id and po_subject_id = $subject_id) and s_group_id = $group_id;";
 
+        $query = $this->db->query($sql)->result();
+
+        return $query;
+    }
+
+    
     public function add($data = array()){
         $this->db->insert($this->tableName, $data);
     }

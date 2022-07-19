@@ -32,7 +32,68 @@ class Item8Controller extends CI_Controller{
 
 
 
+    public function list_edit(){
+        $data['get_all_item_group'] = $this->db->get('item_category2')->result();
+        $data['get_all_item_category'] = $this->db->get('items4')->result();
 
+        $this->load->view('admin/item8/add/edit',$data);
+    }
+
+    public function selectStudentsPoint(){
+        $groupId    = $_POST['group'];
+        $subjectId  = $_POST['subject'];
+        if(!empty($groupId) && !empty($subjectId)){
+            
+            $data = [
+                'po_group_id'   => $groupId ,
+                'po_subject_id' => $subjectId,
+            ];
+            $data['get_student_list'] = $this->db
+            ->join('items2','items2.c_id = point.po_student_id','left')
+            ->where($data)->get('point')->result();
+            
+            $this->load->view('admin/item8/add/student_list2',$data);
+        }else{
+            $this->session->set_flashdata('err', 'Diqqət! Boşluq buraxmayın!');
+            redirect($_SERVER['HTTP_REFERER']);
+        }
+    }
+
+    public function update_page($id){
+       $data['single_student'] = $this->db
+       ->select('po_id,po_student_id,po_group_id,po_subject_id,po_enter_point,po_exam_point,s_name,s_surname,s_patronimic')
+       ->join('items2','items2.c_id = point.po_student_id','left')
+       ->where('po_student_id',$id)->get('point')->row();
+       $this->load->view('admin/item8/add/student_list2edit',$data);
+    //    print_r("<pre>");
+    //    print_r($data['single_student']);
+
+    }
+
+
+    public function student_update_key_act($id){
+
+        $entrance_score = $_POST['entrance_score'];
+        $exam_score =  $_POST['exam_score'];
+
+
+        if(!empty($entrance_score) && !empty($exam_score)){
+            
+            $data = [
+                'po_enter_point'   => $entrance_score ,
+                'po_exam_point' => $exam_score,
+            ];
+           
+          
+            $this->db->where('po_id',$id)->update('point',$data);
+            $this->session->set_flashdata('success', 'Qiymet ugurla yenilendi!');
+            redirect(base_url('list_edit'));
+          
+        }else{
+            $this->session->set_flashdata('err', 'Diqqət! Boşluq buraxmayın!');
+            redirect($_SERVER['HTTP_REFERER']);
+        }
+    }
 
 
     public function createItem(){
@@ -52,14 +113,26 @@ class Item8Controller extends CI_Controller{
     }
 
 
-    public function selectStudents($groupId)
+    public function selectStudents()
     {
+        $groupId    = $_POST['group'];
+        $subjectId  = $_POST['subject'];
+        // print_r($groupId);
+        // print_r($subjectId);
+        // die;
+
+
+
         $viewData = new stdClass();
 
-        $students = $this->item8_model->get_all_students_by_group_id($groupId);
+        $students = $this->item8_model->get_all_students_by_gid_sid($groupId,$subjectId);
+        // print_r("<pre>");
+        // print_r($students);
+        // die;
+
 
         $viewData->students   =$students;
-
+        $viewData->subjectId  =$subjectId;
 
         $viewData->rootFolder = $this->rootFolder;
         $viewData->viewFolder = $this->viewFolder;
@@ -67,9 +140,56 @@ class Item8Controller extends CI_Controller{
         $this->load->view("{$viewData->rootFolder}/{$viewData->viewFolder}/{$viewData->subViewFolder}/student_list",$viewData);
     }
 
-    public function selectStudents_list()
+    public function student_point_insert()
+    {
+        $student_id     = $_POST['student_id'];
+        $groupId        = $_POST['group_id'];
+        $subjectId      = $_POST['subject_id'];
+        $entrance_score = $_POST['entrance_score'];
+        $exam_score     = $_POST['exam_score'];
+
+        $data = [
+            'po_student_id'    => $student_id,
+            'po_group_id'      => $groupId,
+            'po_subject_id'    => $subjectId,
+            'po_enter_point'   => $entrance_score,
+            'po_exam_point'    => $exam_score,
+        ];
+
+        $data = $this->security->xss_clean($data);
+        $this->db->insert('point',$data);
+        redirect(base_url('selectStudentsw/'.$groupId.'/'.$subjectId));
+        
+
+        // print_r("<pre>");
+        // print_r($data);
+        // die;
+    }
+
+    public function selectStudentsw($groupId,$subjectId)
     {
         
+        // print_r($groupId);
+        // print_r($a1.' ');
+        // print_r($a2);
+        // die;
+
+
+        $viewData = new stdClass();
+
+        $students = $this->item8_model->get_all_students_by_gid_sid($groupId,$subjectId);
+        // print_r("<pre>");
+        // print_r($students);
+        // die;
+
+
+        $viewData->students   =$students;
+        $viewData->subjectId  =$subjectId;
+
+        $viewData->rootFolder = $this->rootFolder;
+        $viewData->viewFolder = $this->viewFolder;
+        $viewData->subViewFolder = "add";
+        $this->load->view("{$viewData->rootFolder}/{$viewData->viewFolder}/{$viewData->subViewFolder}/student_list",$viewData);
     }
     
     
@@ -118,30 +238,7 @@ class Item8Controller extends CI_Controller{
     }
     
 
-    public function point_inserting(){
-       
-            
-			$studentId=$this->input->post('studentId');
-			$entrance_score=$this->input->post('entrance_score');
-			$exam_score=$this->input->post('exam_score');
-			$subject=$this->input->post('subject');
-            $group_id=$this->input->post('group_id');
-            $data= [
-                'po_student_id'  => $studentId,
-                'po_group_id'    => $group_id,
-                'po_subject_id'  => $subject,
-                'po_enter_point' => $entrance_score,
-                'po_exam_point'  => $exam_score
-            ];
-            $data = $this->security->xss_clean($data);
-            $this->db->insert('point',$data);
-           
-			// echo json_encode(array(
-			// 	"statusCode"=>200
-			// ));
-		
-
-    }
+   
 
     public function createItemAct(){
 

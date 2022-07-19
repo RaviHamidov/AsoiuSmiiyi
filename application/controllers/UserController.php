@@ -138,9 +138,9 @@ class UserController extends CI_controller
 			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
 
 			$data['std_points'] =  $this->db->
-			select('subject_name,ce_enter_point,ce_exam_point')
-			->join('items8','items8.ce_student_id = items2.c_id')
-			->join('items4','items4.ab_id = items8.ce_subject_id')
+			select('subject_name,po_enter_point,po_exam_point')
+			->join('point','point.po_student_id = items2.c_id')
+			->join('items4','items4.ab_id = point.po_subject_id')
 			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
 			$this->load->view('user/cabinet/index',$data);
 

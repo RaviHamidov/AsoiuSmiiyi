@@ -66,12 +66,7 @@
             <div class="card-header">Qiymət cədvəli
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
-                    <a href="<?php echo base_url('list_edit'); ?>">
-                            <button class="btn btn-info">Düzəliş et</button>
-                        </a><pre>    </pre>
-                        <a href="<?php echo base_url('admin_item_ce_list'); ?>">
-                            <button class="btn btn-info">Back</button>
-                        </a>
+                      
                     </div>
                 </div>
             </div>
@@ -83,7 +78,7 @@
                         </div>
                 <?php } ?>
 
-                <form action="<?php  echo base_url('selectStudents'); ?>" method="post">
+                <form action="<?php  echo base_url('selectStudentsPoint'); ?>" method="post">
                         <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
                         <label for="qr">Qrup</label>
                             <select name="group" id="group_id" class="form-control">
