@@ -4,7 +4,7 @@
 <style>
               .imgHeightSlider{
                 width:100%!important;
-                height: 700px!important;
+                height: 550px!important;
                 object-fit:contain ;
               }
 
@@ -32,6 +32,36 @@
                   top: 90%;
                   left: 48%;
                   margin: -35px 0 0 -35px;
+                  }
+                  .date-and-button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px;
+                    border-top: 1px solid #eaeaea
+                  }
+                  .date-and-button div ul{
+                    list-style: none;
+                    margin: 0 !important;
+                    padding: 0;
+                  }
+                  .date-and-button .date{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                  }
+                  .date-and-button div button{
+                    background-color: #012549;
+                    padding: 5px 15px;
+                    border: none;
+                    border-radius: 5px;
+                    color: #fff;
+                  }
+                  .date-and-button div button a{
+                    color: white;
+                  }
+                  .date-and-button div button:hover{
+                    background-color: #286090
                   }
             </style>
 
@@ -112,9 +142,7 @@
                                     <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" 
                                     onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"
                                     alt="image not found" class="img-responsive">
-                                    <div class="magnifier">
-                                        <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><i class="flaticon-add"></i></a>
-                                    </div>
+                                    
                                 </div>
                                 <div class="course-details" style = "height:200px!important;overflow: hidden!important;height: 3.6em;line-height: 1.2em;">
                                     <h5>
@@ -124,11 +152,14 @@
                                     
                                    
                                 </div>
-                                <div class="course-footer clearfix">
-                                    <div class="pull-left">
-                                        <ul class="list-inline">
+                                <div class="date-and-button">
+                                    <div class="date" >
+                                        <ul >
                                             <li><i class="fa fa-clock-o"></i> <?php echo date('d-m-Y', strtotime($events['date']));?></li>
                                         </ul>
+                                    </div>
+                                    <div>
+                                    <button><a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title="">Ətraflı</a></button>
                                     </div>
                                 </div>
                             </div>

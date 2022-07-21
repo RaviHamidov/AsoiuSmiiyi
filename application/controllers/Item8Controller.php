@@ -48,10 +48,14 @@ class Item8Controller extends CI_Controller{
                 'po_group_id'   => $groupId ,
                 'po_subject_id' => $subjectId,
             ];
+
+           
             $data['get_student_list'] = $this->db
             ->join('items2','items2.c_id = point.po_student_id','left')
             ->where($data)->get('point')->result();
-            
+            // print_r('<pre>');
+            // print_r ($data['get_student_list']);
+            // die;
             $this->load->view('admin/item8/add/student_list2',$data);
         }else{
             $this->session->set_flashdata('err', 'Diqqət! Boşluq buraxmayın!');
@@ -60,10 +64,14 @@ class Item8Controller extends CI_Controller{
     }
 
     public function update_page($id){
+        
        $data['single_student'] = $this->db
        ->select('po_id,po_student_id,po_group_id,po_subject_id,po_enter_point,po_exam_point,s_name,s_surname,s_patronimic')
        ->join('items2','items2.c_id = point.po_student_id','left')
-       ->where('po_student_id',$id)->get('point')->row();
+       ->where('po_id',$id)->get('point')->row();
+
+
+
        $this->load->view('admin/item8/add/student_list2edit',$data);
     //    print_r("<pre>");
     //    print_r($data['single_student']);

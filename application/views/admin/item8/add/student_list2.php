@@ -79,9 +79,7 @@
                             <?php echo $this->session->flashdata('err'); ?>
                         </div>
                 <?php } ?>
-                <form action="<?php echo base_url('student_point_insert/'); ?>" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
-
+                
                     <table class="table" id="studentsTable">
                         <thead>
                             <tr>
@@ -93,7 +91,11 @@
                             </tr>
                             </thead>
                             <tbody>
+                                
                             <?php foreach ($get_student_list as $students_key){ ?>
+                <form action="<?php echo base_url('student_point_insert/'); ?>" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
+
                                 <tr>
                                     <th scope="row">1</th>
                                     <td><?php echo $students_key->s_name; ?> <?php echo $students_key->s_surname; ?> <?php echo $students_key->s_patronimic; ?></td>
@@ -106,15 +108,16 @@
                                         <!-- <input class="exam_score_<?php echo $students_key->c_id; ?>" type="text"  value=''> -->
                                     </td>
                                     <td>
-                                        <a href="<?php echo base_url('update_page/'.$students_key->c_id); ?>"><button type="button" data-studentId="<?php echo $students_key->c_id; ?>" class="btn btn-success sendScore">Yenilə</button></a>
+                                        <a href="<?php echo base_url('update_page/'.$students_key->po_id); ?>"><button type="button" data-studentId="<?php echo $students_key->po_id; ?>" class="btn btn-success sendScore">Yenilə</button></a>
                                     </td>
                                 </tr>
+                            </form>
                             <?php } ?>
 
 
                         </tbody>
                     </table>
-                </form>
+                
             </div>
 
         </div>

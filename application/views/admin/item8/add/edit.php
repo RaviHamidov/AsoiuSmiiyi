@@ -125,7 +125,7 @@
         if (groupId != ""){
             $.ajax({
                 type:"GET",
-                url:"<?php  echo base_url('selectStudents/'); ?>"+groupId,
+                url:"<?php  //echo base_url('selectStudents/'); ?>"+groupId,
                 success:function(res){
                     $("#studentsTable").html("").append(res)
                 }
@@ -147,7 +147,7 @@
         // console.log(studentId,entrance_score,exam_score,subject)
        var dataString = {'studentId' :studentId, 'entrance_score':entrance_score, 'exam_score':exam_score,'subject':subject, 'group_id':group_id};
        $.ajax({
-				url: "<?php echo base_url("point_inserting");?>",
+				url: "<?php //echo base_url("point_inserting");?>",
 				type: "POST",
 				data: dataString,
 				cache: false,

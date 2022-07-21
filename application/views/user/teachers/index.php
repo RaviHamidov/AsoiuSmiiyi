@@ -1,4 +1,19 @@
 <?php $this->load->view('user/includes/header'); ?>
+<style>
+    .teachers-button{
+        padding: 0  0 3rem 2rem;
+    }
+    .teachers-button button{
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #012549;
+        color: #fff;
+    }
+    .teachers-button button a{
+        color: #fff;
+    }
+</style>
         <section class="section db p120 mar">
             <div class="container">
                 <div class="row">
@@ -28,9 +43,6 @@
                                     onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"
                                     alt="notFound" class="img-responsive">
 
-                                    <div class="magnifier">
-                                        <a href="<?php echo base_url("tech_single/").$tech['t_id']?>" title=""><i class="flaticon-add"></i></a>
-                                    </div>
                                 </div>
                                 <div class="course-details">
                                     <h4>
@@ -40,8 +52,12 @@
                                     <p>Elmi adı: <?php echo $tech['i_c3_name'];?>
                                     </p>
                                     <p>
-                                        E-posta: <?php echo $tech['t_e_mail'];?>
-                                    </p>                                </div>
+                                        E-posta:<br> <?php echo $tech['t_e_mail'];?>
+                                    </p>                                
+                                </div>
+                                <div class="teachers-button">
+                            <button><a href="<?php echo base_url("tech_single/").$tech['t_id']?>" title="">Ətraflı</a></button>
+                           </div>
                            </div>
                         </div>
                         <?php }?>
