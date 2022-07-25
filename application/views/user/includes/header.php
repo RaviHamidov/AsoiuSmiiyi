@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
@@ -16,10 +19,14 @@
     />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>SMİİYİ</title>
 =======
     <title>Smiiyi.Az</title>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+    <title>SMİİYİ</title>
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -52,6 +59,7 @@
   </head>
 
   <body>
+    
     <div id="preloader">
       <img class="preloader" src="<?php echo base_url('assets/user/img/') ?>loader.gif" alt="" />
     </div>
@@ -152,6 +160,9 @@
                   <ul class="dropdown-menu" role="menu">
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                       <a href="<?php echo base_url('teachersubj/1') ?>"> İnformasiya texnologiyaları </a>
                     </li>
                     <li>
@@ -171,6 +182,7 @@
                     <li><a href="<?php echo base_url('teachersubj/6') ?>">Neft-qaz mühəndisliyi </a></li>
                     <li>
                       <a href="<?php echo base_url('teachersubj/7') ?>"
+<<<<<<< HEAD
 =======
                       <a href="<?php echo base_url('fovqelade') ?>"
                         >Fövqəladə hallar və həyat fəaliyətinin təhlükəsizliyi
@@ -192,16 +204,22 @@
                     <li>
                       <a href="../teachers/"
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                         >Neft-qaz qurğuları mühəndisliyi
                       </a>
                     </li>
                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                       <a href="<?php echo base_url('teachersubj/8') ?>"
                         >Sənayenin təşkili və idarə edilməsi
                       </a>
                     </li>
                     <li><a href="<?php echo base_url('teachersubj/9') ?>">Geofizika mühəndisliyi </a></li>
+<<<<<<< HEAD
 =======
                       <a href="../teachers/"
                         >Sənayenin təşkili və idarə edilməsi
@@ -209,6 +227,8 @@
                     </li>
                     <li><a href="../teachers/">Geofizika mühəndisliyi </a></li>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                   </ul>
                 </li>
                 <li class="dropdown hassubmenu">
@@ -226,9 +246,12 @@
                       >
                     </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     <li><a href="onlayn-mur">Onlayn Müraciət</a></li>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                     <li>
                       <a href="<?php echo base_url('tekrar_tehsil_ixtisaslar') ?>">İxtisasların Siyahısı</a
                       >

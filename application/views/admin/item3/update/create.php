@@ -106,6 +106,7 @@
                             <label for="t_patronimic">Ata adı</label>
                             <input type="text" name="t_patronimic" id="t_patronimic" class="form-control" placeholder="Ata adını daxil edin" value="<?php echo $single_item->t_patronimic ; ?>">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                             <!-- form validation start display show -->
                             <?php if(isset($form_error)){ ?>
@@ -113,6 +114,8 @@
                             <?php } ?>
                             <!-- form validation end display show -->
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                             <br>
                             
                             <label for="email">E-Mail</label>
@@ -144,6 +147,7 @@
                                 <label for="date">Doğum tarixi</label>
                                 <input type="date" name="date" id="date" class="form-control" value="<?php echo $single_item->t_dob; ?>">
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                                 <!-- form validation start display show -->
@@ -152,6 +156,9 @@
                                 <?php } ?>
                                 <!-- form validation end display show -->
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                             </div>
                         </div> 
 
@@ -204,9 +211,12 @@
 
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 noBlock">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                             
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                                 <label for="img">Profil şəkli <br>
                                     <img width="50px" src="https://www.iphonefaq.org/files/styles/large/public/files-a.jpg">
                                 </label>
@@ -240,10 +250,14 @@
                             <div class="row">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <button type="submit" class="btn btn-info btn-block" style="margin-top: 23px; height: 40px;">Göndər</button>
 =======
                                 <button type="submit" class="btn btn-info btn-block" style="margin-top: 23px; height: 40px;">SEND</button>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+                                <button type="submit" class="btn btn-info btn-block" style="margin-top: 23px; height: 40px;">Göndər</button>
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                             </div>
                         </div>
                     </form>

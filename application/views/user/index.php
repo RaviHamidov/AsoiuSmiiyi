@@ -3,6 +3,7 @@
 
 <style>
               .imgHeightSlider{
+<<<<<<< HEAD
                 width:100%!important;
 <<<<<<< HEAD
                 height: 550px!important;
@@ -10,14 +11,14 @@
                 height: 700px!important;
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                 object-fit:contain ;
+=======
+                width:70%;
+                height: 650px!important;
+                margin: auto;
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
               }
 
-              @media screen and (max-width: 768px) {
-                .imgHeightSlider {
-                  height: 350px!important;
-                }
-              }
-                   
+            
 
               .parent {
                   position: relative;
@@ -38,6 +39,9 @@
                   margin: -35px 0 0 -35px;
                   }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                   .date-and-button{
                     display: flex;
                     justify-content: space-between;
@@ -68,8 +72,34 @@
                   .date-and-button div button:hover{
                     background-color: #286090
                   }
+<<<<<<< HEAD
 =======
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+                  .owl-theme .owl-nav{
+                    display: none;
+                  }
+                  .mar{
+                    margin-top:70px;
+                  }
+                  @media  screen and (max-width: 1200px) {
+                    .owl-theme .owl-nav{
+                      display: block;
+                    }
+                    .mar{
+                      margin-top: 60px !important;
+                    }
+                  }
+                  @media screen and (max-width: 768px) {
+                .imgHeightSlider {
+                  height: auto!important;
+                  width: 100%!important;
+                }
+
+              }
+                   
+             
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
             </style>
 
 <section class="section mar" style="padding-top: 2rem !important">
@@ -95,11 +125,16 @@
             <?php foreach ($items as $item){?>
               <div class="item parent  <?php if($item['sl_category'] == 1){echo 'active';}?>">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <img class="imgHeightSlider" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"
                 onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"/>
 =======
                 <img class="imgHeightSlider" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"/>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+                <img class="imgHeightSlider" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"
+                onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"/>
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                 <a href = "<?php echo base_url('ann_detail_form/'.$item['ann_id']); ?>"><div class = "child" id = "content-block">
                   ƏTRAFLI
                 </div></a>
@@ -151,16 +186,22 @@
             <div class="course-box">
                                 <div class="image-wrap entry">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                                     <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" 
                                     onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"
                                     alt="image not found" class="img-responsive">
                                     
+<<<<<<< HEAD
 =======
                                     <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" alt="image not found" class="img-responsive">
                                     <div class="magnifier">
                                         <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><i class="flaticon-add"></i></a>
                                     </div>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                                 </div>
                                 <div class="course-details" style = "height:200px!important;overflow: hidden!important;height: 3.6em;line-height: 1.2em;">
                                     <h5>
@@ -170,6 +211,7 @@
                                     
                                    
                                 </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                 <div class="date-and-button">
                                     <div class="date" >
@@ -188,6 +230,17 @@
                                         </ul>
                                     </div>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+                                <div class="date-and-button">
+                                    <div class="date" >
+                                        <ul >
+                                            <li><i class="fa fa-clock-o"></i> <?php echo date('d-m-Y', strtotime($events['date']));?></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                    <button><a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title="">Ətraflı</a></button>
+                                    </div>
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                                 </div>
                             </div>
           
@@ -236,10 +289,14 @@
                   width="300"
                   height="200"
 <<<<<<< HEAD
+<<<<<<< HEAD
                   style = "object-fit:cover ;"
 =======
                   object-fit:contain ;
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+                  style = "object-fit:cover ;"
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                 />
                 <h4>Hamlet Hüseynov</h4>
                 <p>
@@ -280,10 +337,7 @@
           <hr class="invis" />
         </div>
       </section>
-        <div class="dark-light fabs">
-            <i class='bx bx-moon moon fab'></i>
-            <i class='bx bx-sun sun fab'></i>
-        </div>
+       
       </section>
 
 <?php $this->load->view('user/includes/footer'); ?>

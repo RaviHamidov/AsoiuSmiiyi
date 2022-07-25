@@ -31,10 +31,45 @@ body.dark .iconitem button{
 body.dark .section.db{
     background-color: #18191A !important;
 }
+body.dark .header-normal .nav-container .navbar-default  .navbar-collapse .navbar-right .hassubmenu .dropdown-menu{
+    background-color: var(--nav-color) !important;
+    border-top: 3px solid #ddd !important;
+}
 
+body.dark .btn-primary, body.dark .pagination>li>a, .pagination>li>span, body.dark .date-and-button div button, body.dark .teachers-button button, body.dark .image-wrap:after{
+    background-color: #18191A !important;
+}
 
-
-
+body.dark .header, body.dark footer div{
+    background-color: var(--nav-color) !important;
+}
+body.dark .navbar-expand-md{
+    background-color: #18191A !important;
+}
+body.dark .logo-img img{
+    content:url("../img/logo-dark.png");
+    width: 70px;
+    height: 60px;
+}
+body.dark .item-1 img{
+    min-width: auto;
+}
+body.dark .item-2 h4{
+    color: white;
+}
+body.dark .item-2{
+    text-align: right;
+}
+body.dark .topbar-cabinet{
+    justify-content: space-between;
+    align-items: center;
+}
+body.dark .col-lg-6{
+    background-color: #18191A !important;
+}
+body.dark .accordion .card{
+    background-color: white;
+}
 
 
 
@@ -104,10 +139,9 @@ body.dark .section.db{
 @media (max-width: 768px) {
     
    
-    .body-dark .navbar-brand img{
+    body.dark .navbar-brand img{
         content: url("../img/logo-dark.png");
-        width: 49px !important;
-        height: 76px !important;
-        padding-top: 38px !important;
+        width: 55px !important;
+         padding-top: 25px !important;
     }
 }

@@ -28,6 +28,7 @@
             height:100%!important;
         }
         
+        
     </style>
 
     <section id="main-section">
@@ -161,6 +162,7 @@
                         <tr>
                             <td><?php echo $st_p["subject_name"];?></td>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <td><?php echo $st_p["po_enter_point"];?></td>
                             <td><?php echo $st_p["po_exam_point"];?></td>
                             <td><?php echo $st_p["po_enter_point"]+$st_p["po_exam_point"];?></td>
@@ -169,6 +171,11 @@
                             <td><?php echo $st_p["ce_exam_point"];?></td>
                             <td><?php echo $st_p["ce_enter_point"]+$st_p["ce_exam_point"];?></td>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+                            <td><?php echo $st_p["po_enter_point"];?></td>
+                            <td><?php echo $st_p["po_exam_point"];?></td>
+                            <td><?php echo $st_p["po_enter_point"]+$st_p["po_exam_point"];?></td>
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                         </tr>
                         <?php }?>
                     </tbody>
@@ -187,6 +194,7 @@
         integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="<?php echo base_url('assets/user/js/') ?>toggle.js"></script>
+        <script src="<?php echo base_url('assets/user/js/') ?>darkmode.js"></script>
         
 </body>
 

@@ -2,8 +2,13 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 <<<<<<< HEAD
+<<<<<<< HEAD
 RewriteRule ^(.*)$ index.php/$1 [L]
 Options -Indexes
 =======
 RewriteRule ^(.*)$ index.php/$1 [L]
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+RewriteRule ^(.*)$ index.php/$1 [L]
+Options -Indexes
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77

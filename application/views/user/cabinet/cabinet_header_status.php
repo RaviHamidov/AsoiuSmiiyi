@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/user/css/') ?>cabinet.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/user/css/') ?>reset.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/css/') ?>darkmode.css">
     <script src="<?php echo base_url('assets/user/js/') ?>cabinet.js"></script>
     <title>İstifadəçi paneli</title>
 </head>

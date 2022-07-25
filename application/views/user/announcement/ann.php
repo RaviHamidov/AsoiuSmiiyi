@@ -86,7 +86,22 @@ a{
 a:hover, a:focus{
   text-decoration: underline;
 }
-
+.ann-img{
+  width: 70%;
+  margin: auto;
+}
+a{
+  font-size: 18px;
+}
+.ann-h3{
+  font-size: 24px !important;
+  text-align: center;
+}
+@media screen and (max-width: 500cpx){
+  .ann-img{
+    width: 95% !important;
+  }
+}
 
 </style>
 
@@ -115,8 +130,8 @@ a:hover, a:focus{
             <div class="col-md-32">
               <div class="content blog-list">
                 <div class="blog-wrapper clearfix">
-                  <div class="blog-meta">
-                    <h3><?php echo $x->title;?></h3>
+                  <div class="blog-meta ">
+                    <h3 class="ann-h3"><?php echo $x->title;?></h3>
                     <ul class="list-inline">
                       <li><i class="fa fa-clock-o"></i> <?php echo $x->date?></li>
                     </ul>
@@ -124,6 +139,7 @@ a:hover, a:focus{
                   <div class="col-md-32 shop-media">
                     <div class="row">
                       <div class="col-md-32 shop-media">
+<<<<<<< HEAD
                         <div class="img-responsive article-head-img">
 <<<<<<< HEAD
                         <img src="<?php echo base_url('upload/events/'.$x->img) ?>" 
@@ -132,6 +148,12 @@ a:hover, a:focus{
 =======
                         <img src="<?php echo base_url('upload/events/'.$x->img) ?>" alt="image not found" class="img-responsive">
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+                        <div class="img-responsive article-head-img ann-img">
+                        <img src="<?php echo base_url('upload/events/'.$x->img) ?>" 
+                        onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"
+                        alt="image not found" class="img-responsive">
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                           <div class="magnifier">
                             <a rel="prettyPhoto[inline]" href="<?php echo base_url('upload/'."elan-1-3.jpeg");?>" title=""><i
                                 class="flaticon-add"></i></a>
@@ -146,17 +168,7 @@ a:hover, a:focus{
                       <h3><?php echo $x->description;?></h3>
                     </p>
                     <hr class="invis" />
-                    <div class="row">
-                      <div class="col-md-3 col-sm-4 col-xs-4">
-                        <div class="image-wrap entry">
-                          <div class="magnifier">
-                            <a rel="prettyPhoto[inline]" href="../upload/elan-1-2.jpeg" title=""><i
-                                class="flaticon-add"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -164,10 +176,7 @@ a:hover, a:focus{
           </div>
         </div>
       </div>
-      <div class="dark-light fabs">
-        <i class='bx bx-moon moon fab'></i>
-        <i class='bx bx-sun sun fab'></i>
-    </div>
+      
     </section>
 
 

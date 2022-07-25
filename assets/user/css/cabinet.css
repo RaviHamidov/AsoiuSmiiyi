@@ -37,7 +37,7 @@ a:hover {
 }
 
 .logo-img img {
-  width: 15%;
+  width: 13%;
 }
 
 .user-name {
@@ -262,6 +262,11 @@ footer div {
 
   .header-item {
     flex-wrap: nowrap;
+  }
+}
+@media (max-width: 450px){
+  .item-2{
+    display: none;
   }
 }
 /*

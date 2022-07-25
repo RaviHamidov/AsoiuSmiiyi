@@ -57,11 +57,15 @@
                         01.11.1955-ci il
                         <h4>Doğum yeri</h4>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                         Gürcüstan Respublikası, Dmanisi rayonu Saatlı kənd
                         <h4>Əlaqə məlumatları</h4>
                         012 498-03-93 <br>
                         012 598-29-12 <br>
                         012 498-07-57 <br>
+<<<<<<< HEAD
 =======
                         Gürcüstan Respublikası, Dmanisi rayonu Saatlı kəndi
                         <h4>Ailə vəziyyəti</h4>
@@ -71,6 +75,8 @@
                         •598-29-12 <br>
                         •498-07-57 <br>
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                         
                       </p>
                       <hr class="invis" />
@@ -82,10 +88,7 @@
             </div>
           </div>
         </div>
-        <div class="dark-light fabs">
-          <i class='bx bx-moon moon fab'></i>
-          <i class='bx bx-sun sun fab'></i>
-      </div>
+        
       </section>
 
       <?php $this->load->view('user/includes/footer'); ?>

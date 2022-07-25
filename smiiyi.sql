@@ -4,10 +4,14 @@
 --
 -- Host: 127.0.0.1
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Generation Time: Jul 19, 2022 at 04:53 PM
 =======
 -- Generation Time: Jul 15, 2022 at 02:21 PM
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+-- Generation Time: Jul 19, 2022 at 04:53 PM
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -99,6 +103,7 @@ CREATE TABLE `items` (
 
 INSERT INTO `items` (`id`, `title`, `title_en`, `title_ru`, `description`, `description_en`, `description_ru`, `date`, `img`, `file`, `img_ext`, `status`) VALUES
 <<<<<<< HEAD
+<<<<<<< HEAD
 (39, 'Azərbaycan Dövlət Neft və Sənaye Universitetinin təkrar ali təhsil üzrə qiyabi şöbəsində təhsil alan tələbələrin 2021/2022-ci tədris ilinin yaz semestrində imtahana qədər topladığı BALLAR CƏDVƏLI (II Mərhələ)', '', '', '<p><strong>050608– Elektroenergetika mühəndisliyi ixtisasının    </strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EYgU7rzD5RRNrc9nPBzvEIQBql1qSgoxYScxbO-ZkNp0Kw?e=ZE4fIA\"><strong>Semestr: IV              Qr.№: EM 2.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EUiBoS0ftEBKk_TRu1IDkw8Br6acRu9QuMgTfv3-pAc_Kw?e=hKybyU\"><strong>Semestr: VI              Qr.№: EEM 3.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EWPx6EJNG3xPsn1CszzKBIUBXVXpGzJFnxDk2HaElvcsXw?e=tQGKS0\"><strong>Semestr: VI              Qr.№: EM  2.20.1</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EUq-EHp29MVDnOT_B4nY72EB9AL_VkTJGCxPIY7HBkUmtA?e=MpiCgs\"><strong>Semestr: VI              Qr.№: EM  2.20.2</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EXGG6MaIyjxDqW5Yo1Tq4sABemtxMkNjt7nIQPVgRo9m2Q?e=uBZ66W\"><strong>Semestr: VIII            Qr.№: EM  3.20</strong></a><br><strong>050626– Elektrik mühəndisliyi ixtisasının</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EQnlEagygF9MiE9JpOGfnSIBBpvatCy50D-PWefh_7yzvA?e=va4U6m\"><strong>Semestr:  VIII          Qr.№: EM  2.19.1</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EXrBMnpR8apAvi0PcY5-edgBxOz3Io8rEiqWXcWeeVIscA?e=QIa7Dc\"><strong>Semestr:  VIII          Qr.№: EM 2.19.2</strong></a><br><a href=\"http://www.smiiyi.az//tedris/2022/Girishbal/merhele2/Girish_bal_Mer2_EM-3_19.pdf\"><strong>Semestr:  X              Qr.№: EM  3.19</strong></a><br><strong>050641– Kimya mühəndisliyi ixtisasının</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/Ea3DwkOVhklHqbMeg-SuHFgB3LfVobry5mKFwKWYkUmjxg?e=17sD5N\"><strong>Semestr  IV             Qr.№  KM-2.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/ERW8BQMjfAFBov-bqUZ8u_cB7OQlaayr_Ofj5bRzsf7oJw?e=MaQuE9\"><strong>Semestr  VI             Qr.№  KM-2.20</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EaIyCH4Ze9JAgicuoSp1tAEB7zplEN1N6EjHewCnUnpDUQ?e=HofdFn\"><strong>Semestr  VIII           Qr.№  KM-2.19</strong></a><br><strong>050607–Neft- qaz qurğuları mühəndisliyi ixtisasının</strong><br><a href=\"http://www.smiiyi.az//tedris/2022/Girishbal/merhele2/Girish_bal_Mer2_NQQM-2_19.pdf\"><strong>Semestr:   VIII         Qr.№: NQQM 2.19</strong></a></p>', '', '', '2022-06-19', '7a1f5dbea98bcc81e87a55e63b7d17fd.png', '', '.png', 1),
 (43, 'Azərbaycan Dövlət Neft və Sənaye Universitetinin təkrar ali təhsil üzrə qiyabi şöbəsində təhsil alan tələbələrin 2021/2022-ci tədris ilinin yaz semestrində imtahana qədər topladığı BALLAR CƏDVƏLI (III Mərhələ)', '', '', '<p><strong>İnformasiya texnologiyalar</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EVtiqbyNraJPtRf-nKZ5WE0Blur9OqNblV95XFA_con5Hg?e=3QEeRw\">Semestr IV         Qr.№  İT 2.21</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EcrO5UIYDz9NpM21-IPV0WoBNvOx4pXV-OrVOOdzF-PVsg?e=2l0PbZ\">Semestr VI         Qr.№  İT 2.20</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/ERRft1MbyhhClAcR5VCJYBoBaHnqDGyV353x1cOrQcPLtA?e=W6EDbn\">Semestr VIII      Qr.№: İT 2.19</a><br><strong>İqtisadiyyat</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EffQcR-rfJRJs8EYfy0mk4oBCco87U44yQj98nL8OAET8w?e=Uoc5Nb\">Semestr IV        Qr.№: İ 2.21</a><br><strong>Kompüter elmləri</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EZm81LEaZy9Ml1l1b8n2gSUBunnwmSwMtvHRbAHB5CV8cA?e=FFnEGW\">Semestr IV          Qr.№  KE 2.21</a><br><strong>Menecment</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EauLsFDk1R1Ekv8f_C5kWHgB433Pg33GfRp5MFqTxCC6Gg?e=w8FGvE\">Semestr IV            Qr.№: M 2.21</a><br><strong>Sənayenin təşkili və idarə olunması</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EclmiOWKV0NFk545JuvbbBwBXAhdB6U93BXI07m6JwdFag?e=fLsNf2\">Semestr VI              Qr.№: STİO 2.20.1</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EQiElgF_4LZHmmiMIJdHQrUBeVJXHUmS9_hPiUCAFHIp5A?e=DzkNBA\">Semestr VI              Qr.№: STİO 2.20.2</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EWDSSBBcxzRLh0iHf90m3_4BkR1YTOWq0HYCptgn6mdMHQ?e=O5KEpk\">Semestr VI              Qr.№: STİO 2.20.3</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EXWuas2TuFZMlL0n0bCJRocB_ojTLJpZoJuQHykkLlxnZQ?e=RCWrhg\">Semestr VI              Qr.№  STİO-3.21</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EfQp0G0O0hZCtDWVygnHRrkBAjmVeM9Gg1YYfTeEjpk3Ww?e=FdlJlv\">Semestr VIII            Qr.№: STİO 3.20</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EQzhKHc-HkFIrJLNwVe3t_EBaNcFrZSuMNYdNepPXnlv-A?e=NbV7co\">Semestr VIII            Qr.№  STİO-2.19.1</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EZwFTudcBDVGvrN1nNey_VABJptUYj88paM3JjXFV8QQmQ?e=61bPNO\">Semestr VIII            Qr.№  STİO-2.19.2</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/ERNF6oaKi5ZCgTjxpbjNKfsBqJJBTSi-sr4zqsWsUlP4Eg?e=DlUL7t\">Semestr VIII            Qr.№  STİO-2.19.3</a></p>', '', '', '2022-07-05', 'e4c456756eeecf99b66ef730b75e2535.png', '', '.png', 1);
 =======
@@ -109,6 +114,10 @@ INSERT INTO `items` (`id`, `title`, `title_en`, `title_ru`, `description`, `desc
 (41, 'Azərbaycan Dövlət Neft və Sənaye Universitetinin  əlavə təhsil üzrə qiyabi şöbəsində təhsil alan tələbələrin 2021/2022-ci tədris ilinin yaz dərs sessiyasının imtahan  <br>C Ə D V Ə L İ  III mərhələ', '', '', '<figure class=\"table\"><table><tbody><tr><td><p>       Qruplar</p><p>Tarix</p></td><td>050405 İqtisadiyyat İQ 2.21 II Kurs</td><td>050616 İnformasiya texnologiyaları İT 2.21 II kurs</td><td>050655 İnformasiya texnologiyaları İT 2.19 III kurs</td><td>050655 İnformasiya texnologiyaları İT 2.20 III kurs</td><td>050509 Kompüter elmləri KE 2.21 II kurs</td></tr><tr><td>13.07.2022</td><td>Makroiqtisadiyyat Dos.Rüstəmov İlham Saat 14.00 Otaq 1 </td><td>Kompüter arxitekturası Ass.Ağazadə Jalə Saat 9.00 Otaq 4 </td><td>Kommunikasiya vasitələri Dos.Sərdarov Yaqub Saat.9.00 Otaq 3</td><td> Sistem mühəndisliyi Dos.Abdullayev Vüqar Saat 9.00 Otaq 5* </td><td>Kompleks analiz Prof.Əliyev Araz Saat 9.00 Otaq 5</td></tr><tr><td>14.07.2022</td><td>Ehtimal nəzəriyyəsi Prof.Əliyev Araz Saat 14.00 Otaq 1/ İKT Dos.Qasımov Sərdar Saat 12.00 Otaq 2</td><td>Kompüter arxitekturası Ass.Ağazadə Jalə Saat 9.00 Otaq 4</td><td>İnformasiya sistemlərin layihələndirməsi Dos.Məmmədov Vaqif Saat 9.00 Otaq 3</td><td>Verilənlərin strukturu və alqoritmləri Dos.Hacıyev Faiq Saat 9.00 Otaq 5*</td><td>Riyazi analiz 2 Dos. Hüseynov Hamlet Saat 9.00 Otaq 4</td></tr><tr><td>15.07.2022</td><td>Xarici dildə işgüzar və akademiyası Dos.Əliyeva Sevil Saat 9.00 Otaq 1*</td><td>Kompüter arxitekturası Ass.Ağazadə Jalə Saat 9.00 Otaq 4</td><td>Rəqəmsal sistemlər Dos.Abdullayev Vüqar Saat 9.00 Otaq 3</td><td>Əməliyyat sistemləri Dos.Abdullayev Vüqar Saat 14.00 Otaq 5*</td><td>Proqramlaşdırmanın əsasları Dos.Nağıyev Həsən Saat 9.00 Otaq 4*</td></tr><tr><td>16.07.2022</td><td>Azərbaycan dilində işgüzar yazışmalar b/m Əliyev Rəfael saat 9.00 Otaq6</td><td>Fizika Prof.Musayev Musavər Saat 9.00 Otaq 4</td><td>Korporativ informasiya sistemləri Dos.Əsgərova Bahar Saat 9.00 Otaq 3</td><td>Menecmentin əsasları Ass.Kamilov İlham Saat.9.00 Otaq 5*</td><td>Əməliyyat sistemi Dos.Nağıyev Həsən Saat 9.00 Otaq 4</td></tr><tr><td>18.07.2022</td><td>Statistika Ass.Hüseynov Səfər Saat.9.00 Otaq 6</td><td>Azərbaycan dilində işgüzar yazışmalar b/m Əliyev Rəfael saat 9.00 Otaq 6</td><td>Hesablama təcrübələri Dos.Əliyeva Yeganə Saat 9.00 Otaq 3</td><td> </td><td>Xarici dildə işgüzar yazışmalar b/m Şıxıyeva Sevda saat 9.00 Otaq 4</td></tr></tbody></table></figure><p> </p>', '', '', '2022-07-05', '6f8008905fc4891b9b8808201cc37fb7.jpeg', '', '.jpeg', 1),
 (42, '2d2', '', '', '<p>wqdd</p>', '', '', '2022-07-22', '', '', '.png', 1);
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+(39, 'Azərbaycan Dövlət Neft və Sənaye Universitetinin təkrar ali təhsil üzrə qiyabi şöbəsində təhsil alan tələbələrin 2021/2022-ci tədris ilinin yaz semestrində imtahana qədər topladığı BALLAR CƏDVƏLI (II Mərhələ)', '', '', '<p><strong>050608– Elektroenergetika mühəndisliyi ixtisasının    </strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EYgU7rzD5RRNrc9nPBzvEIQBql1qSgoxYScxbO-ZkNp0Kw?e=ZE4fIA\"><strong>Semestr: IV              Qr.№: EM 2.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EUiBoS0ftEBKk_TRu1IDkw8Br6acRu9QuMgTfv3-pAc_Kw?e=hKybyU\"><strong>Semestr: VI              Qr.№: EEM 3.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EWPx6EJNG3xPsn1CszzKBIUBXVXpGzJFnxDk2HaElvcsXw?e=tQGKS0\"><strong>Semestr: VI              Qr.№: EM  2.20.1</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EUq-EHp29MVDnOT_B4nY72EB9AL_VkTJGCxPIY7HBkUmtA?e=MpiCgs\"><strong>Semestr: VI              Qr.№: EM  2.20.2</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EXGG6MaIyjxDqW5Yo1Tq4sABemtxMkNjt7nIQPVgRo9m2Q?e=uBZ66W\"><strong>Semestr: VIII            Qr.№: EM  3.20</strong></a><br><strong>050626– Elektrik mühəndisliyi ixtisasının</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EQnlEagygF9MiE9JpOGfnSIBBpvatCy50D-PWefh_7yzvA?e=va4U6m\"><strong>Semestr:  VIII          Qr.№: EM  2.19.1</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EXrBMnpR8apAvi0PcY5-edgBxOz3Io8rEiqWXcWeeVIscA?e=QIa7Dc\"><strong>Semestr:  VIII          Qr.№: EM 2.19.2</strong></a><br><a href=\"http://www.smiiyi.az//tedris/2022/Girishbal/merhele2/Girish_bal_Mer2_EM-3_19.pdf\"><strong>Semestr:  X              Qr.№: EM  3.19</strong></a><br><strong>050641– Kimya mühəndisliyi ixtisasının</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/Ea3DwkOVhklHqbMeg-SuHFgB3LfVobry5mKFwKWYkUmjxg?e=17sD5N\"><strong>Semestr  IV             Qr.№  KM-2.21</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/ERW8BQMjfAFBov-bqUZ8u_cB7OQlaayr_Ofj5bRzsf7oJw?e=MaQuE9\"><strong>Semestr  VI             Qr.№  KM-2.20</strong></a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EaIyCH4Ze9JAgicuoSp1tAEB7zplEN1N6EjHewCnUnpDUQ?e=HofdFn\"><strong>Semestr  VIII           Qr.№  KM-2.19</strong></a><br><strong>050607–Neft- qaz qurğuları mühəndisliyi ixtisasının</strong><br><a href=\"http://www.smiiyi.az//tedris/2022/Girishbal/merhele2/Girish_bal_Mer2_NQQM-2_19.pdf\"><strong>Semestr:   VIII         Qr.№: NQQM 2.19</strong></a></p>', '', '', '2022-06-19', '7a1f5dbea98bcc81e87a55e63b7d17fd.png', '', '.png', 1),
+(43, 'Azərbaycan Dövlət Neft və Sənaye Universitetinin təkrar ali təhsil üzrə qiyabi şöbəsində təhsil alan tələbələrin 2021/2022-ci tədris ilinin yaz semestrində imtahana qədər topladığı BALLAR CƏDVƏLI (III Mərhələ)', '', '', '<p><strong>İnformasiya texnologiyalar</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EVtiqbyNraJPtRf-nKZ5WE0Blur9OqNblV95XFA_con5Hg?e=3QEeRw\">Semestr IV         Qr.№  İT 2.21</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EcrO5UIYDz9NpM21-IPV0WoBNvOx4pXV-OrVOOdzF-PVsg?e=2l0PbZ\">Semestr VI         Qr.№  İT 2.20</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/ERRft1MbyhhClAcR5VCJYBoBaHnqDGyV353x1cOrQcPLtA?e=W6EDbn\">Semestr VIII      Qr.№: İT 2.19</a><br><strong>İqtisadiyyat</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EffQcR-rfJRJs8EYfy0mk4oBCco87U44yQj98nL8OAET8w?e=Uoc5Nb\">Semestr IV        Qr.№: İ 2.21</a><br><strong>Kompüter elmləri</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EZm81LEaZy9Ml1l1b8n2gSUBunnwmSwMtvHRbAHB5CV8cA?e=FFnEGW\">Semestr IV          Qr.№  KE 2.21</a><br><strong>Menecment</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EauLsFDk1R1Ekv8f_C5kWHgB433Pg33GfRp5MFqTxCC6Gg?e=w8FGvE\">Semestr IV            Qr.№: M 2.21</a><br><strong>Sənayenin təşkili və idarə olunması</strong><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EclmiOWKV0NFk545JuvbbBwBXAhdB6U93BXI07m6JwdFag?e=fLsNf2\">Semestr VI              Qr.№: STİO 2.20.1</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EQiElgF_4LZHmmiMIJdHQrUBeVJXHUmS9_hPiUCAFHIp5A?e=DzkNBA\">Semestr VI              Qr.№: STİO 2.20.2</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EWDSSBBcxzRLh0iHf90m3_4BkR1YTOWq0HYCptgn6mdMHQ?e=O5KEpk\">Semestr VI              Qr.№: STİO 2.20.3</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EXWuas2TuFZMlL0n0bCJRocB_ojTLJpZoJuQHykkLlxnZQ?e=RCWrhg\">Semestr VI              Qr.№  STİO-3.21</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EfQp0G0O0hZCtDWVygnHRrkBAjmVeM9Gg1YYfTeEjpk3Ww?e=FdlJlv\">Semestr VIII            Qr.№: STİO 3.20</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EQzhKHc-HkFIrJLNwVe3t_EBaNcFrZSuMNYdNepPXnlv-A?e=NbV7co\">Semestr VIII            Qr.№  STİO-2.19.1</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/EZwFTudcBDVGvrN1nNey_VABJptUYj88paM3JjXFV8QQmQ?e=61bPNO\">Semestr VIII            Qr.№  STİO-2.19.2</a><br><a href=\"https://azerbaijanstateoilacade-my.sharepoint.com/:b:/g/personal/smiiyi_asoiu_edu_az/ERNF6oaKi5ZCgTjxpbjNKfsBqJJBTSi-sr4zqsWsUlP4Eg?e=DlUL7t\">Semestr VIII            Qr.№  STİO-2.19.3</a></p>', '', '', '2022-07-05', 'e4c456756eeecf99b66ef730b75e2535.png', '', '.png', 1);
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 -- --------------------------------------------------------
 
@@ -168,6 +177,9 @@ CREATE TABLE `items3` (
 
 INSERT INTO `items3` (`t_id`, `t_profile_photo`, `t_name`, `t_surname`, `t_patronimic`, `t_scientific_level_id`, `t_speciality`, `t_e_mail`, `t_experience`, `t_language`, `t_skills`, `t_dob`, `t_facebook`, `t_linkedin`, `t_twitter`, `t_phone`, `t_status`) VALUES
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 (13, '', 'Yeganə', 'Sadıqova', '', 2, 3, 'yegan52@mail.ru', '', '', '', '', '', '', '', '050 324 55 65', 1),
 (14, '', 'Lətafət', 'İsmayılova', '', 2, 3, 'latifa.ismaylova@gmail.com', '', '', '', '', '', '', '', '055 420 81 45', 1),
 (15, 'bc002c173baa9381bc6a84b50d29c778.jpg', 'Osman', 'Mirzəyev', 'Həsən ', 2, 1, 'osman55@mail.ru', '', '<ul><li>Rus</li><li>Ingilis</li></ul>', '<p>M.Əzizbəyov adına Azərbaycan Neft və Kimya institutunun (1985-1990) İstehsal proseslərinin avtomatlaşdırılması fakultəsini bitirib.</p><p>2005-ci ildə texnika elmləri namizədi alimlik dərəcəsi alıb.</p><p>2007-ci ildən dosentdir.2012-ci ildə “Əməkdar Elm və Təhsil”işçisi medalı ilə təltif olunub.</p><p>57 elmi-metodik məqaləsi dərc olunub</p>', '1964-07-01', '', '', '', '', 1),
@@ -178,11 +190,14 @@ INSERT INTO `items3` (`t_id`, `t_profile_photo`, `t_name`, `t_surname`, `t_patro
 (20, '', 'Rafiq', 'Məmmədov', '', 2, 7, 'rafiq.mammadov@asoiu.edu.az', '', '', '', '', '', '', '', '050-557-66-57', 1),
 (21, 'fbf6d70572422c7452159c3cd23fa742.jpg', 'Vida', 'Muradxanlı', '', 2, 8, 'vmuradkhanova@yahoo.com', '<p>2003    Azərbaycan Dövlət Neft Akademiyası, Bakı, Azərbaycan<br>1984-1989           Azərbaycan Neft və Kimya İnstitutu, Bakı, Azərbaycan<br>Kimya-texnologiya Fakultəsi,<br>Kimyaçı-texnoloq mühəndisi, fərqlənmə diplomu<br>ELMİ ƏSƏRLƏRİ<br>33 məqalə və tezis, 1 dərs vəsaiti və 2 fənn proqramı</p>', '<ul><li>Rus</li><li>İngilis </li></ul>', '', '1967-10-23', '', '', '', '', 1),
 (22, '530a7d2775f7306d35edf93b2f3f095b.jpg', 'Müsavər', 'Musayev', '', 3, 9, 'm_musaver@yahoo.com', '<ul><li>1974-1977 –ci  illərdə BDU-nun fizika, 1977-1980-cı illərdə isə Moskva Fizika Mühəndisləri İnstitutunun Xüsusi Fizika Fakultəsi</li><li>1980-1983-cü illərdə  Moskva Fizika Mühəndisləri İnstitutunun aspirant</li><li>1984-1989 illərdə ADNSU-nun Fizika kafedrasında assistent</li><li>1989-2011  illərdə ADNSU-nun Fizika kafedrasında dosent</li><li>2011-ci ildən  ADNSU-nun Fizika kafedrasında professor</li></ul>', '<ul><li>Rus</li><li>İngilis </li></ul>', '', '', '', '', '', '012 598-41-91', 1);
+<<<<<<< HEAD
 =======
 (10, '', 'wlgiw', 'lgrjl', 'lgijlr', 3, 1, 'rlgj', '<p>rwlijg</p>', '<p>lirjgi</p>', '<p>rglji</p>', '2022-07-11', 'rlig', 'lrgj', 'rlgje', 'rwgljwiVD', 1),
 (11, '640b8983bd387168d9db4e65a71e052c.png', 'ürlgi', 'lrjg', 'reljgl', 1, 2, 'grlj', '<p>rglji</p>', 'grlji', 'grlj', '2022-07-05', 'rljgi', 'lijlgr', 'lijreh', 'lijrh', 1),
 (12, '78367624c7d75984570b73955781fec7.png', 'wewl', 'liwjlij', 'lrjliwjg', 2, 1, 'lirejlgj', '<p>lrgjlij</p>', '<p>glerjjg</p>', '<p>lwjgl</p>', '2022-07-12', 'wrljgi', 'lgwjl', 'lgrjl', 'lriwj', 1);
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 -- --------------------------------------------------------
 
@@ -206,12 +221,17 @@ CREATE TABLE `items4` (
 
 INSERT INTO `items4` (`ab_id`, `subject_name`, `syllabs`, `lecture`, `exam`, `exam_answers`, `ab_status`) VALUES
 <<<<<<< HEAD
+<<<<<<< HEAD
 (11, 'Korporativ Informasiya Sistemləri', '8f761e587fe631b6d8d8db6f2ff54081.doc', '86fe32072906ba262a251bab78d9db9e.doc', '30c02f4f187afe23b5d3e1d4ed375e78.doc', '5d59c660057a35fc5a37c9c480428725.doc', 1),
 (12, 'Infosec', '', '', '', '', 1);
 =======
 (8, 'Database', 'cf7bd98d9f759f9dee906db608b93abf.png', '2fdef61134d2671e41a44dd800289804.docx', '74f114d6b018c3c4d3d0ad7043149694.png', '4e931cef0e032be9fa43102be0bb3e0a.jpg', 1),
 (10, 'Infosec', '124bffc4c0b64845906782e1cbe18efb.docx', 'eb6fdf57f379d010e5f4e809b4d54c62.docx', '274f3182c3572c3a46134aff832db874.gif', '36462442488a4bac4adc9bd663864c2b.gif', 1);
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+(11, 'Korporativ Informasiya Sistemləri', '8f761e587fe631b6d8d8db6f2ff54081.doc', '86fe32072906ba262a251bab78d9db9e.doc', '30c02f4f187afe23b5d3e1d4ed375e78.doc', '5d59c660057a35fc5a37c9c480428725.doc', 1),
+(12, 'Infosec', '', '', '', '', 1);
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 -- --------------------------------------------------------
 
@@ -232,6 +252,7 @@ CREATE TABLE `items5` (
 
 INSERT INTO `items5` (`co_id`, `co_group_no`, `co_subject_id`, `co_status`) VALUES
 <<<<<<< HEAD
+<<<<<<< HEAD
 (9, 1, 12, 1),
 (10, 2, 12, 1),
 (11, 2, 11, 1);
@@ -240,6 +261,11 @@ INSERT INTO `items5` (`co_id`, `co_group_no`, `co_subject_id`, `co_status`) VALU
 (10, 2, 10, 1),
 (11, 2, 8, 1);
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+(9, 1, 12, 1),
+(10, 2, 12, 1),
+(11, 2, 11, 1);
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 -- --------------------------------------------------------
 
@@ -261,12 +287,17 @@ CREATE TABLE `items6` (
 
 INSERT INTO `items6` (`sl_id`, `sl_category`, `sl_img`, `ann_id`, `sl_status`) VALUES
 <<<<<<< HEAD
+<<<<<<< HEAD
 (8, 2, 'ca1daa8d5ede95bca3498446d19c5fc5.png', 39, 1),
 (9, 1, '1629a17a0b3bb6ab0420a973f079180b.png', 43, 1);
 =======
 (6, 1, 'download3.png', 0, 1),
 (8, 2, 'ca1daa8d5ede95bca3498446d19c5fc5.png', 39, 1);
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+(8, 2, 'ca1daa8d5ede95bca3498446d19c5fc5.png', 39, 1),
+(9, 1, '1629a17a0b3bb6ab0420a973f079180b.png', 43, 1);
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 -- --------------------------------------------------------
 
@@ -554,6 +585,9 @@ INSERT INTO `lesson_exam_table` (`le_id`, `lesson_table`, `lesson_ext`, `exam_ta
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 -- Table structure for table `point`
 --
 
@@ -578,8 +612,11 @@ INSERT INTO `point` (`po_id`, `po_student_id`, `po_group_id`, `po_subject_id`, `
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 =======
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 -- Table structure for table `scientific_level`
 --
 
@@ -607,6 +644,9 @@ INSERT INTO `speciality` (`speciality_id`, `speciality_name`) VALUES
 (1, 'İnformasiya texnologiyaları'),
 (2, 'Elektroenergetika mühəndisliyi'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 (3, 'Fövqəladə hallar və həyat fəaliyyətinin təhlükəsizliyi'),
 (4, 'Kimya mühəndisliyi'),
 (5, 'Texnoloji maşın və avadanlıqlar mühəndisliyi'),
@@ -614,9 +654,12 @@ INSERT INTO `speciality` (`speciality_id`, `speciality_name`) VALUES
 (7, 'Neft-qaz qurğuları mühəndisliyi'),
 (8, 'Sənayenin təşkili və idarə edilməsi'),
 (9, 'Geofizika mühəndisliyi');
+<<<<<<< HEAD
 =======
 (3, 'Fövqəladə hallar və həyat fəaliyyətinin təhlükəsizliyi');
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 -- --------------------------------------------------------
 
@@ -777,14 +820,20 @@ ALTER TABLE `lesson_exam_table`
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 -- Indexes for table `point`
 --
 ALTER TABLE `point`
   ADD PRIMARY KEY (`po_id`);
 
 --
+<<<<<<< HEAD
 =======
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 -- Indexes for table `scientific_level`
 --
 ALTER TABLE `scientific_level`
@@ -819,10 +868,14 @@ ALTER TABLE `admincategory`
 --
 ALTER TABLE `items`
 <<<<<<< HEAD
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 =======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 --
 -- AUTO_INCREMENT for table `items2`
@@ -835,20 +888,28 @@ ALTER TABLE `items2`
 --
 ALTER TABLE `items3`
 <<<<<<< HEAD
+<<<<<<< HEAD
   MODIFY `t_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 =======
   MODIFY `t_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+  MODIFY `t_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 --
 -- AUTO_INCREMENT for table `items4`
 --
 ALTER TABLE `items4`
 <<<<<<< HEAD
+<<<<<<< HEAD
   MODIFY `ab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 =======
   MODIFY `ab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+  MODIFY `ab_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 --
 -- AUTO_INCREMENT for table `items5`
@@ -861,10 +922,14 @@ ALTER TABLE `items5`
 --
 ALTER TABLE `items6`
 <<<<<<< HEAD
+<<<<<<< HEAD
   MODIFY `sl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 =======
   MODIFY `sl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+  MODIFY `sl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 --
 -- AUTO_INCREMENT for table `items7`
@@ -952,14 +1017,20 @@ ALTER TABLE `lesson_exam_table`
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 -- AUTO_INCREMENT for table `point`
 --
 ALTER TABLE `point`
   MODIFY `po_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
+<<<<<<< HEAD
 =======
 >>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
+=======
+>>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 -- AUTO_INCREMENT for table `scientific_level`
 --
 ALTER TABLE `scientific_level`

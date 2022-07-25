@@ -71,9 +71,6 @@
             </div>
           </div>
         </div>
-        <div class="dark-light fabs">
-            <i class='bx bx-moon moon fab'></i>
-            <i class='bx bx-sun sun fab'></i>
-        </div>
+        
       </section>
       <?php $this->load->view('user/includes/footer'); ?>
