@@ -12,13 +12,13 @@ class Item2_model extends CI_Model{
         parent::__construct();
     }
 
-    public function get_all($where = array())
+    public function get_all($id)
     {
         return $this->db
             ->join('item_category2', 'item_category2.group_id = items2.s_group_id')
             ->join('item_status', 'item_status.i_s_id = items2.status')
             ->join('speciality', 'speciality.speciality_id = item_category2.i_speciality_id')
-            ->where($where)->get($this->tableName)->result();
+            ->where('item_category2.group_id',$id)->get($this->tableName)->result();
     }
 
     public function get_single($where = array())

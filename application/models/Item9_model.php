@@ -16,7 +16,7 @@ class Item9_model extends CI_Model{
     public function get_all($where = array())
     {
         return $this->db
-            ->join('item_category2', 'item_category2.group_id = items9.re_group_no','left')
+            ->join('items2','items2.c_id = items9.re_student_id','left')
             ->join('items4', 'items4.ab_id = items9.re_subject_id','left')
             ->join('item_status', 'item_status.i_s_id = items9.re_status','left')
             ->where($where)->get($this->tableName)->result();
@@ -25,12 +25,17 @@ class Item9_model extends CI_Model{
     public function get_single($where = array())
     {
         return $this->db
-            ->join('item_category2', 'item_category2.group_id = items9.re_group_no')
             ->join('items4', 'items4.ab_id = items9.re_subject_id')
             ->join('item_status', 'item_status.i_s_id = items9.re_status')
             ->where($where)->get($this->tableName)->row();
     }
 
+    public function get_all_students($group)
+    {
+        return $this->db
+            ->join('item_status', 'item_status.i_s_id = items2.status')
+            ->where('s_group_id',$group)->get('items2')->result();
+    }
     public function get_all_item_category()
     {
         return $this->db->get($this->categoryTableName)->result();

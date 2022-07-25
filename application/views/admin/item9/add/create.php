@@ -64,7 +64,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="main-card mb-3 card">
-            <div class="card-header">Fənn-qrup əlaqəsi əlavə edin
+            <div class="card-header">Tələbə üçün əlavə fənnin verilməsi
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
                         <a href="<?php echo base_url('admin_item_re_list'); ?>">
@@ -89,12 +89,13 @@
 
                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 noBlock">
                         
-                            <label for="cate">Qrup</label>
+                            <label for="cate">Tələbə</label>
                             <select id="cate" class="form-control" name="category">
                                 <option value="">-Seçim edin-</option>
 
-                                <?php foreach ($get_all_item_category as $item){ ?>
-                                    <option value="<?php echo $item->group_id; ?>"><?php echo $item->group_no; ?></option>
+                                <?php foreach ($get_all_students as $telebe){ ?>
+                                    <option value="<?php echo $telebe->c_id; ?>"><?php 
+                                        echo $telebe->s_name.' '.$telebe->s_surname.' '.$telebe->s_patronimic; ?></option>
                                 <?php } ?>
 
                             </select>

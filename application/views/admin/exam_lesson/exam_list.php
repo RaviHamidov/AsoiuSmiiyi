@@ -16,7 +16,7 @@
     <div class="col-md-12">
 
         <div class="main-card mb-3 card">
-            <div class="card-header">Exam
+            <div class="card-header">Cədvəllər
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
                         <a href="<?php echo base_url('exam_lesson'); ?>">

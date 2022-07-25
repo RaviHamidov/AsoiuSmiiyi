@@ -16,10 +16,10 @@
     <div class="col-md-12">
 
         <div class="main-card mb-3 card">
-            <div class="card-header">Fənn Qrup
+            <div class="card-header">Tələbə - Fənn
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
-                        <a href="<?php echo base_url('admin_create_item_re'); ?>">
+                        <a href="<?php echo base_url('admin_group_selection'); ?>">
                           <button class="btn btn-outline-success">Yeni</button>
                         </a>
                     </div>
@@ -47,7 +47,7 @@
                             <?php $itemCount = 1; $for_switch=0; foreach ($items as $item){ $for_switch++; ?>
                                 <tr>
                                     <td class="text-center text-muted"><?php echo $itemCount++; ?></td>
-                                    <td><?php echo $item->group_no; ?></td>
+                                    <td><?php echo $item->s_name.' '.$item->s_surname.' '.$item->s_patronimic; ?></td>
                                     <td><?php echo $item->subject_name; ?></td>
 
           
@@ -58,13 +58,6 @@
                                     </td>
                                 
                                     <td class="text-center">
-                                        <a style="text-decoration: none;" href="<?php echo base_url('admin_detail_form_re/'.$item->re_id); ?>">
-                                            <button type="button" id="PopoverCustomT-1" class="btn btn-outline-primary">Ətraflı</button>
-                                        </a>
-
-                                        <a style="text-decoration: none;" href="<?php echo base_url('admin_update_form_re/'.$item->re_id); ?>">
-                                            <button class="btn-wide btn btn-outline-warning">Redaktə</button>
-                                        </a>
 
                                             <button
                                                     data-url="<?php echo base_url('admin_deleteItem_re/'.$item->re_id); ?>"

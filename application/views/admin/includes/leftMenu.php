@@ -91,12 +91,12 @@ if (empty($adminInfo['a_id'])){
                                     </a>
                                 </li>
 
-                                <li>
+                                <!-- <li>
                                     <a href="<?php echo base_url ('admin_item_tr_list');?>" >
                                         <i class="metismenu-icon pe-7s-rocket"></i>
                                         Dərs cədvəlləri
                                     </a>
-                                </li>
+                                </li> -->
 
                                 <li>
                                     <a href="<?php echo base_url('admin_create_item_ce'); ?>" >
@@ -108,7 +108,7 @@ if (empty($adminInfo['a_id'])){
                                 <li>
                                     <a href="<?php echo base_url ('admin_item_re_list');?>" >
                                         <i class="metismenu-icon pe-7s-rocket"></i>
-                                        Fənn Qrup əlaqəsi
+                                        Tələbələrə əlavə dərsin təyini
                                     </a>
                                 </li>
 

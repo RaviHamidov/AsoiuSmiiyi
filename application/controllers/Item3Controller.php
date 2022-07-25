@@ -52,21 +52,8 @@ class Item3Controller extends CI_Controller{
 
         $this->form_validation->set_rules("t_name", "Ad", "required|trim");
         $this->form_validation->set_rules("t_surname", "Soyad", "required|trim");
-<<<<<<< HEAD
-<<<<<<< HEAD
         $this->form_validation->set_rules("email", "E-Mail", "required|trim");
         $this->form_validation->set_rules("t_speciality", "İxtisas", "required|trim");
-=======
-        $this->form_validation->set_rules("t_patronimic", "Ata adı", "required|trim");
-        $this->form_validation->set_rules("email", "E-Mail", "required|trim");
-        $this->form_validation->set_rules("t_speciality", "İxtisas", "required|trim");
-
-        $this->form_validation->set_rules("date", "Tarix", "required|trim");
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-        $this->form_validation->set_rules("email", "E-Mail", "required|trim");
-        $this->form_validation->set_rules("t_speciality", "İxtisas", "required|trim");
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
         $this->form_validation->set_rules("t_sicentific", "Emli dərəcə", "required|trim");
         $this->form_validation->set_rules("status", "Status", "required|trim");
 
@@ -113,27 +100,10 @@ class Item3Controller extends CI_Controller{
 
             if ($this->upload->do_upload('user_file')){
                 $data     = $this->upload->data('file_name');
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                 $img_name = $data;
             }else{
 
                 $img_name = '';
-<<<<<<< HEAD
-=======
-                $data_ext = $this->upload->data('file_ext');
-
-                $img_name = $data;
-                $img_ext = $data_ext;
-            }else{
-
-                $img_name = '';
-                $img_ext = '.png';
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
             }
 
             $data = [
@@ -224,21 +194,8 @@ class Item3Controller extends CI_Controller{
 
         $this->form_validation->set_rules("t_name", "Ad", "required|trim");
         $this->form_validation->set_rules("t_surname", "Soyad", "required|trim");
-<<<<<<< HEAD
-<<<<<<< HEAD
         $this->form_validation->set_rules("email", "E-Mail", "required|trim");
         $this->form_validation->set_rules("t_speciality", "İxtisas", "required|trim");
-=======
-        $this->form_validation->set_rules("t_patronimic", "Ata adı", "required|trim");
-        $this->form_validation->set_rules("email", "E-Mail", "required|trim");
-        $this->form_validation->set_rules("t_speciality", "İxtisas", "required|trim");
-
-        $this->form_validation->set_rules("date", "Tarix", "required|trim");
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-        $this->form_validation->set_rules("email", "E-Mail", "required|trim");
-        $this->form_validation->set_rules("t_speciality", "İxtisas", "required|trim");
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
         $this->form_validation->set_rules("t_sicentific", "Emli dərəcə", "required|trim");
         $this->form_validation->set_rules("status", "Status", "required|trim");
 
@@ -278,21 +235,9 @@ class Item3Controller extends CI_Controller{
                 "t_id" =>$id,
             ];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             $config['upload_path']      = 'upload/teachers/';
             $config['allowed_types']     = 'gif|jpg|png|pdf|jpeg';
             $config['encrypt_name']      = true;
-=======
-            $config['up load_path']      = 'upload/teachers/';
-            $config['allowed_types']    = 'gif|jpg|png|pdf|jpeg';
-            $config['encrypt_name']     = true;
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-            $config['upload_path']      = 'upload/teachers/';
-            $config['allowed_types']     = 'gif|jpg|png|pdf|jpeg';
-            $config['encrypt_name']      = true;
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
             
 
@@ -302,32 +247,13 @@ class Item3Controller extends CI_Controller{
 
             if ($this->upload->do_upload('user_file')){
                 $data     = $this->upload->data('file_name');
-<<<<<<< HEAD
-<<<<<<< HEAD
                 $img_name = $data;
-=======
-                $data_ext = $this->upload->data('file_ext');
-
-                $img_name = $data;
-                $img_ext = $data_ext;
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-                $img_name = $data;
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
             }else{
                 $get_current_img = $this->item3_model->get_single(
                     array("t_id" => $id)
                 );
 
-<<<<<<< HEAD
-<<<<<<< HEAD
                 $img_name = $get_current_img->t_profile_photo;
-=======
-                $img_name = $get_current_img->img;
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-                $img_name = $get_current_img->t_profile_photo;
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
             }
 
             $data = [
@@ -352,14 +278,6 @@ class Item3Controller extends CI_Controller{
             $data = $this->security->xss_clean($data);
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
             if(isset($_SESSION['admin_id']) && isset($_SESSION['admin_status']) && isset($_SESSION['admin_category'])){
 
                 $this->item3_model->update($data_id, $data);

@@ -15,6 +15,22 @@ class Item9Controller extends CI_Controller{
         $this->load->model("item9_model");
     }
 
+    public function selectGroup(){
+        $viewData = new stdClass();
+        $groups = $this->item9_model->get_all_item_category();
+
+        $viewData->rootFolder = $this->rootFolder;
+        $viewData->viewFolder = $this->viewFolder;
+        $viewData->subViewFolder = "list";
+
+        $viewData->groups = $groups;
+
+        // print_r('<pre>');
+        // print_r($viewData->groups);
+        // die;
+
+        $this->load->view("{$viewData->rootFolder}/{$viewData->viewFolder}/{$viewData->subViewFolder}/selectGroup",$viewData);
+    }
     public function index(){
         $viewData = new stdClass();
 
@@ -37,10 +53,14 @@ class Item9Controller extends CI_Controller{
     public function createItem(){
         $viewData = new stdClass();
 
-        $get_all_item_category = $this->item9_model->get_all_item_category();
+        $group = $_POST['group'];
+        // print_r('<pre>');
+        // print_r($group);
+        // die;
+        $get_all_students   = $this->item9_model->get_all_students($group);
         $get_all_item_status   = $this->item9_model->get_all_item_status();
         $get_all_item_subjects = $this->item9_model->get_all_item_subjects();
-        $viewData->get_all_item_category    = $get_all_item_category;
+        $viewData->get_all_students      = $get_all_students;
         $viewData->get_all_item_status      = $get_all_item_status;
         $viewData->get_all_item_subjects    = $get_all_item_subjects;
 
@@ -67,12 +87,12 @@ class Item9Controller extends CI_Controller{
         $validate = $this->form_validation->run();
 
         if($validate){
-            $group_no = $_POST['category'];
+            $std_id = $_POST['category'];
             $subject = $_POST['subject'];
             $status   = $_POST['status'];
 
             $data = [
-                're_group_no'          => $group_no,
+                're_student_id'        => $std_id,
                 're_subject_id'        => $subject,
                 're_status'            => $status,
             ];

@@ -34,7 +34,8 @@
     <section id="main-section">
         <div class="container-fluid">
             <div id="lesson-schedule">
-                <?php if($exam_list['lesson_ext'] == ".pdf"){ ?>
+                <?php if(!empty($exam_list)){
+                 if($exam_list['lesson_ext'] == ".pdf"){ ?>
                     <iframe class="mediaQ" src="<?php echo base_url('upload/exam/'.$exam_list['lesson_table']); ?>" frameborder="0"></iframe>
                 <?php }else{ ?>
 
@@ -44,13 +45,14 @@
                        <img width="100%"  src="<?php echo base_url('assets/user/img/upload/') ?>02_team.png" alt="" class="a1">
                     <?php } ?>
                     
-                 <?php } ?>
+                 <?php } }else{echo "Dərs cədvəliniz hazırlanır...";}?>
                 
                
             </div>
 
             <div id="exam-schedule">
-            <?php if($exam_list['exam_ext'] == ".pdf"){ ?>
+            <?php if(!empty($exam_list)){
+                if($exam_list['exam_ext'] == ".pdf"){ ?>
                     <iframe class="mediaQ" src="<?php echo base_url('upload/exam/'.$exam_list['exam_table']); ?>" frameborder="0"></iframe>
                 <?php }else{ ?>
 
@@ -60,30 +62,30 @@
                        <img width="100%"  src="<?php echo base_url('assets/user/img/upload/') ?>02_team.png" alt="" class="a1">
                     <?php } ?>
                     
-                 <?php } ?>
+                 <?php } }else{echo "<h2>Imtahan cədvəliniz hazırlanır...</h2>";}?>
             </div>
 
             
             <div id="subject-list">
                 <div class="row mb-lg-5 mb-sm-0 flex-lg-nowrap flex-md-wrap">
-                <?php foreach($std_subject as $std){?>    
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 subject-item mr-lg-5 mr-sm-auto mr-xs-1 mb-sm-5">
-                        <h4><?php echo $std['subject_name'];?></h4>
+                <?php foreach($std_subject as $stds){?>    
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 subject-item mr-lg-5 mr-sm-auto mr-xs-1 mb-sm-5">
+                        <h4><?php echo $stds['subject_name'];?></h4>
                         <div class="accordion" id="accordionExample1">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left p-0" type="button" data-toggle="collapse"
-                                            data-target="#<?php echo $std['subject_name'];?>headingOne" aria-expanded="false"
+                                            data-target="#<?php echo $stds['subject_name'];?>headingOne" aria-expanded="false"
                                             aria-controls="collapseOne">
                                             Sillabus
                                         </button>  
                                     </h2>
                                 </div>
-                                <div id="<?php echo $std['subject_name'];?>headingOne" class="collapse" aria-labelledby="headingOne"
+                                <div id="<?php echo $stds['subject_name'];?>headingOne" class="collapse" aria-labelledby="headingOne"
                                     data-parent="#accordionExample1">
                                     <div class="card-body">
-                                        <a href="<?php echo base_url("upload/about/").$std['syllabs'];?>">Endir</a>  
+                                        <a href="<?php echo base_url("upload/about/").$stds['syllabs'];?>">Endir</a>  
                                     </div>
                                 </div>
                             </div>
@@ -92,16 +94,16 @@
                                 <div class="card-header" id="headingTwo">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $std['subject_name'];?>headingTwo" aria-expanded="false"
+                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingTwo" aria-expanded="false"
                                             aria-controls="collapseTwo">
                                             Mühazirə
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $std['subject_name'];?>headingTwo" class="collapse" aria-labelledby="headingTwo"
+                                <div id="<?php echo $stds['subject_name'];?>headingTwo" class="collapse" aria-labelledby="headingTwo"
                                     data-parent="#accordionExample1">
                                     <div class="card-body">
-                                        <a href="<?php echo base_url("upload/about/").$std['lecture'];?>">Endir</a>  
+                                        <a href="<?php echo base_url("upload/about/").$stds['lecture'];?>">Endir</a>  
                                     </div>
                                 </div>
                             </div>
@@ -110,16 +112,16 @@
                                 <div class="card-header" id="headingThree">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $std['subject_name'];?>headingThree" aria-expanded="false"
+                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingThree" aria-expanded="false"
                                             aria-controls="collapseThree">
                                             İmatahan sualları
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $std['subject_name'];?>headingThree" class="collapse" aria-labelledby="headingThree"
+                                <div id="<?php echo $stds['subject_name'];?>headingThree" class="collapse" aria-labelledby="headingThree"
                                     data-parent="#accordionExample1">
                                     <div class="card-body">
-                                    <a href="<?php echo base_url("upload/about/").$std['exam'];?>">Endir</a> 
+                                    <a href="<?php echo base_url("upload/about/").$stds['exam'];?>">Endir</a> 
                                     </div>
                                 </div>
                             </div>
@@ -128,24 +130,108 @@
                                 <div class="card-header" id="headingFour">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $std['subject_name'];?>headingFour" aria-expanded="false"
+                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingFour" aria-expanded="false"
                                             aria-controls="collapseFour">
                                             Imtahan cavablar
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $std['subject_name'];?>headingFour" class="collapse" aria-labelledby="headingFour"
+                                <div id="<?php echo $stds['subject_name'];?>headingFour" class="collapse" aria-labelledby="headingFour"
                                     data-parent="#accordionExample1">
                                     <div class="card-body">
-                                    <a href="<?php echo base_url("upload/about/").$std['exam_answers'];?>">Endir</a> 
+                                    <a href="<?php echo base_url("upload/about/").$stds['exam_answers'];?>">Endir</a> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div><br><br><br><br>
                     <?php }?>
+
+                    <!-- elave fenn bashlangic -->
+                    <?php foreach($std_subject_add as $stds){?>    
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 subject-item mr-lg-5 mr-sm-auto mr-xs-1 mb-sm-5">
+                        <h4><?php echo $stds['subject_name'];?></h4>
+                        <div class="accordion" id="accordionExample1">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left p-0" type="button" data-toggle="collapse"
+                                            data-target="#<?php echo $stds['subject_name'];?>headingOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Sillabus
+                                        </button>  
+                                    </h2>
+                                </div>
+                                <div id="<?php echo $stds['subject_name'];?>headingOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                        <a href="<?php echo base_url("upload/about/").$stds['syllabs'];?>">Endir</a>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left collapsed p-0" type="button"
+                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Mühazirə
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="<?php echo $stds['subject_name'];?>headingTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                        <a href="<?php echo base_url("upload/about/").$stds['lecture'];?>">Endir</a>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left collapsed p-0" type="button"
+                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            İmatahan sualları
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="<?php echo $stds['subject_name'];?>headingThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                    <a href="<?php echo base_url("upload/about/").$stds['exam'];?>">Endir</a> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left collapsed p-0" type="button"
+                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            Imtahan cavablar
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="<?php echo $stds['subject_name'];?>headingFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample1">
+                                    <div class="card-body">
+                                    <a href="<?php echo base_url("upload/about/").$stds['exam_answers'];?>">Endir</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br><br><br>
+                    <?php }?>
+
+                    <!-- elave fenn son -->
                 </div>
             </div>
+
+
 
             <div id="score-table">
                 <table class="table table-striped table-hover">
@@ -161,21 +247,9 @@
                         <?php foreach($std_points as $st_p){?>
                         <tr>
                             <td><?php echo $st_p["subject_name"];?></td>
-<<<<<<< HEAD
-<<<<<<< HEAD
                             <td><?php echo $st_p["po_enter_point"];?></td>
                             <td><?php echo $st_p["po_exam_point"];?></td>
                             <td><?php echo $st_p["po_enter_point"]+$st_p["po_exam_point"];?></td>
-=======
-                            <td><?php echo $st_p["ce_enter_point"];?></td>
-                            <td><?php echo $st_p["ce_exam_point"];?></td>
-                            <td><?php echo $st_p["ce_enter_point"]+$st_p["ce_exam_point"];?></td>
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-                            <td><?php echo $st_p["po_enter_point"];?></td>
-                            <td><?php echo $st_p["po_exam_point"];?></td>
-                            <td><?php echo $st_p["po_enter_point"]+$st_p["po_exam_point"];?></td>
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
                         </tr>
                         <?php }?>
                     </tbody>

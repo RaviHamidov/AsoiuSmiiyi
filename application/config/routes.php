@@ -100,8 +100,9 @@ $route['admin_is_active_set']  		= 'ItemController/isActiveSet';
 
 
 // Admin Course
-$route['admin_item_c_list']	        = 'Item2Controller/index';
-$route['admin_create_item_c']	    = 'Item2Controller/createItem';
+$route['admin_item_c_list']	         = 'Item2Controller/index';
+$route['admin_student_list']	     = 'Item2Controller/get_students';
+$route['admin_create_item_c']	     = 'Item2Controller/createItem';
 $route['admin_create_item_c_act']    = 'Item2Controller/createItemAct';
 $route['admin_update_form_c/(.*)']   = 'Item2Controller/update_form/$1';
 $route['admin_updateItem_cAct/(.*)'] = 'Item2Controller/updateItemAct/$1';
@@ -169,8 +170,6 @@ $route['admin_updateItem_ceAct/(.*)'] = 'Item8Controller/updateItemAct/$1';
 $route['admin_deleteItem_ce/(.*)']    = 'Item8Controller/delete/$1';
 $route['admin_detail_form_ce/(.*)']   = 'Item8Controller/detail_form/$1';
 $route['admin_is_active_set_item_ce'] = 'Item8Controller/isActiveSet';
-<<<<<<< HEAD
-<<<<<<< HEAD
 $route['point_inserting']             = 'Item8Controller/point_inserting';
 
 
@@ -184,36 +183,11 @@ $route['selectStudents2/(.*)'] 	 		    = 'Item8Controller/selectStudents/$1';
 
 $route['student_point_insert'] 	 		    = 'Item8Controller/student_point_insert';
 
-=======
-=======
-$route['point_inserting']             = 'Item8Controller/point_inserting';
-
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
-
-$route['selectStudents'] 	 		    	= 'Item8Controller/selectStudents';
-$route['selectStudentsw/(.*)/(.*)'] 	 		    	= 'Item8Controller/selectStudentsw/$1/$2';
-$route['selectStudents_list/(.*)'] 	 	    = 'Item8Controller/selectStudents_list/$1';
-$route['get_all_students_by_group_id/(.*)'] = 'Item8Controller/get_all_students_by_group_id/$1';
-
-<<<<<<< HEAD
-$route['selectStudents2/(.*)'] 	 		    = 'Item2Controller/selectStudents/$1';
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-$route['selectStudents2/(.*)'] 	 		    = 'Item8Controller/selectStudents/$1';
-
-
-$route['student_point_insert'] 	 		    = 'Item8Controller/student_point_insert';
-
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 $route['admin_point_update/(.*)']     = 'Item8Controller/admin_point_update/$1';
 $route['admin_poin/(.*)']     		  = 'Item8Controller/poin/$1';
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 $route['list_edit'] 	 		    = 'Item8Controller/list_edit';
 $route['selectStudentsPoint'] 	    = 'Item8Controller/selectStudentsPoint';
 $route['update_page/(.*)'] 	    	  = 'Item8Controller/update_page/$1';
@@ -222,11 +196,6 @@ $route['student_update_key_act/(.*)'] = 'Item8Controller/student_update_key_act/
 
 
 
-<<<<<<< HEAD
-=======
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 // Admin Register
 $route['admin_item_re_list']	      = 'Item9Controller/index';
 $route['admin_create_item_re']	      = 'Item9Controller/createItem';
@@ -236,6 +205,7 @@ $route['admin_updateItem_reAct/(.*)'] = 'Item9Controller/updateItemAct/$1';
 $route['admin_deleteItem_re/(.*)']    = 'Item9Controller/delete/$1';
 $route['admin_detail_form_re/(.*)']   = 'Item9Controller/detail_form/$1';
 $route['admin_is_active_set_item_re'] = 'Item9Controller/isActiveSet';
+$route['admin_group_selection']       = 'Item9Controller/selectGroup';
 
 //view routes
 $route['contact']                            = 'UserController/contact';
@@ -275,16 +245,6 @@ $route['exam_delete/(.*)']           		 = 'Lesson_exam_table/exam_delete/$1';
 
 
 //teachers
-<<<<<<< HEAD
-<<<<<<< HEAD
 $route['teachersubj/(.*)']                     = 'UserController/teachersubj/$1';
 
 $route['tech_single/(.*)']                     = 'UserController/tech_single/$1';
-=======
-$route['fovqelade']                            = 'UserController/fovqelade';
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-$route['teachersubj/(.*)']                     = 'UserController/teachersubj/$1';
-
-$route['tech_single/(.*)']                     = 'UserController/tech_single/$1';
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77

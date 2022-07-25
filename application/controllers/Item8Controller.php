@@ -32,10 +32,6 @@ class Item8Controller extends CI_Controller{
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
     public function list_edit(){
         $data['get_all_item_group'] = $this->db->get('item_category2')->result();
         $data['get_all_item_category'] = $this->db->get('items4')->result();
@@ -106,12 +102,6 @@ class Item8Controller extends CI_Controller{
             redirect($_SERVER['HTTP_REFERER']);
         }
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
 
     public function createItem(){
@@ -131,8 +121,6 @@ class Item8Controller extends CI_Controller{
     }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function selectStudents()
     {
         $groupId    = $_POST['group'];
@@ -153,35 +141,6 @@ class Item8Controller extends CI_Controller{
 
         $viewData->students   =$students;
         $viewData->subjectId  =$subjectId;
-=======
-    public function selectStudents($groupId)
-=======
-    public function selectStudents()
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
-    {
-        $groupId    = $_POST['group'];
-        $subjectId  = $_POST['subject'];
-        // print_r($groupId);
-        // print_r($subjectId);
-        // die;
-
-
-
-        $viewData = new stdClass();
-
-        $students = $this->item8_model->get_all_students_by_gid_sid($groupId,$subjectId);
-        // print_r("<pre>");
-        // print_r($students);
-        // die;
-
-
-        $viewData->students   =$students;
-<<<<<<< HEAD
-
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-        $viewData->subjectId  =$subjectId;
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
 
         $viewData->rootFolder = $this->rootFolder;
         $viewData->viewFolder = $this->viewFolder;
@@ -189,10 +148,6 @@ class Item8Controller extends CI_Controller{
         $this->load->view("{$viewData->rootFolder}/{$viewData->viewFolder}/{$viewData->subViewFolder}/student_list",$viewData);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
     public function student_point_insert()
     {
         $student_id     = $_POST['student_id'];
@@ -220,7 +175,6 @@ class Item8Controller extends CI_Controller{
     }
 
     public function selectStudentsw($groupId,$subjectId)
-<<<<<<< HEAD
     {
         
         // print_r($groupId);
@@ -244,36 +198,6 @@ class Item8Controller extends CI_Controller{
         $viewData->viewFolder = $this->viewFolder;
         $viewData->subViewFolder = "add";
         $this->load->view("{$viewData->rootFolder}/{$viewData->viewFolder}/{$viewData->subViewFolder}/student_list",$viewData);
-=======
-    public function selectStudents_list()
-    {
-        
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-    {
-        
-        // print_r($groupId);
-        // print_r($a1.' ');
-        // print_r($a2);
-        // die;
-
-
-        $viewData = new stdClass();
-
-        $students = $this->item8_model->get_all_students_by_gid_sid($groupId,$subjectId);
-        // print_r("<pre>");
-        // print_r($students);
-        // die;
-
-
-        $viewData->students   =$students;
-        $viewData->subjectId  =$subjectId;
-
-        $viewData->rootFolder = $this->rootFolder;
-        $viewData->viewFolder = $this->viewFolder;
-        $viewData->subViewFolder = "add";
-        $this->load->view("{$viewData->rootFolder}/{$viewData->viewFolder}/{$viewData->subViewFolder}/student_list",$viewData);
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
     }
     
     
@@ -322,16 +246,8 @@ class Item8Controller extends CI_Controller{
     }
     
 
-<<<<<<< HEAD
-<<<<<<< HEAD
    
 
-=======
->>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
-=======
-   
-
->>>>>>> 76d0150b9f64b5553f25f3a82b3e49f837971a77
     public function createItemAct(){
 
     //     $this->form_validation->set_rules("point", "POİNT", "required|trim");
