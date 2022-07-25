@@ -1,4 +1,5 @@
 <?php $this->load->view('user/includes/header'); ?>
+<<<<<<< HEAD
 <style>
     .date-and-button{
                     display: flex;
@@ -31,6 +32,8 @@
                     background-color: #286090
                   }
 </style>
+=======
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
         <section class="section db p120">
             <div class="container">
                 <div class="row">
@@ -58,10 +61,17 @@
                        
                             <div class="course-box">
                                 <div class="image-wrap entry">
+<<<<<<< HEAD
                                     <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" 
                                     onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"
                                     alt="image not found" class="img-responsive">
                                     
+=======
+                                    <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" alt="image not found" class="img-responsive">
+                                    <div class="magnifier">
+                                        <a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title=""><i class="flaticon-add"></i></a>
+                                    </div>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                                 </div>
                                 <div class="course-details" style = "height:200px!important;overflow: hidden!important;height: 3.6em;line-height: 1.2em;">
                                     <h5>
@@ -71,6 +81,7 @@
                                     
                                    
                                 </div>
+<<<<<<< HEAD
                                 <div class="date-and-button">
                                     <div class="date" >
                                         <ul >
@@ -80,6 +91,14 @@
                                     <div>
                                     <button><a href="<?php echo base_url('ann_detail_form/'.$events['id']); ?>" title="">Ətraflı</a></button>
                                     </div>
+=======
+                                <div class="course-footer clearfix">
+                                    <div class="pull-left">
+                                        <ul class="list-inline">
+                                            <li><i class="fa fa-clock-o"></i> <?php echo date('d-m-Y', strtotime($events['date']));?></li>
+                                        </ul>
+                                    </div>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                                 </div>
                             </div>
                            

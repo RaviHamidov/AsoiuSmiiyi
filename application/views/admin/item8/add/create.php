@@ -66,9 +66,12 @@
             <div class="card-header">Qiymət cədvəli
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
+<<<<<<< HEAD
                     <a href="<?php echo base_url('list_edit'); ?>">
                             <button class="btn btn-info">Düzəliş et</button>
                         </a><pre>    </pre>
+=======
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                         <a href="<?php echo base_url('admin_item_ce_list'); ?>">
                             <button class="btn btn-info">Back</button>
                         </a>
@@ -83,7 +86,11 @@
                         </div>
                 <?php } ?>
 
+<<<<<<< HEAD
                 <form action="<?php  echo base_url('selectStudents'); ?>" method="post">
+=======
+                    <form action="<?php  echo base_url('selectStudents'); ?>" method="post">
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                         <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
                         <label for="qr">Qrup</label>
                             <select name="group" id="group_id" class="form-control">
@@ -95,7 +102,11 @@
                             <br>
 
                             <label for="qr">Fənn</label>
+<<<<<<< HEAD
                             <select name="subject" id="subject_id" class="form-control">
+=======
+                            <select name="group" id="group_id" class="form-control">
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                                 <option value="">-Seçim edin-</option>
                                 <?php foreach($get_all_item_category as $get_all_item_subjects_key){ ?>
                                     <option value="<?php echo $get_all_item_subjects_key->ab_id ; ?>"><?php echo $get_all_item_subjects_key->subject_name; ?></option>
@@ -103,11 +114,17 @@
                             </select>
                             <br>
 
+<<<<<<< HEAD
                        <button type="submit" id="gogo" class="btn btn-primary">Təsdiq et</button>
                             
                 </form>
 
 
+=======
+<!--                        <button type="submit" class="btn btn-primary">Təsdiq et</button>-->
+                            
+                    </form>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                 <br>
                 <br>
                 <br>
@@ -123,7 +140,11 @@
 </div>
 <?php $this->load->view('admin/includes/footerStyle') ; ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<<<<<<< HEAD
 <!-- 
+=======
+
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
 <script>
     $("#group_id").on("change",function (){
         var groupId = $(this).val();
@@ -142,6 +163,7 @@
 
     $(document).on('click',".sendScore",function (){
         var studentId = $(this).attr('data-studentId');
+<<<<<<< HEAD
         // console.log(studentId);
         var entrance_score = $(document).find('.entrance_score_'+studentId).val();
         var exam_score = $(document).find('.exam_score_'+studentId).val();
@@ -170,6 +192,12 @@
 
         // ];
         // $this->db->insert('point',$data);
+=======
+        var entrance_score = $(document).find('.entrance_score_'+studentId).val();
+        var exam_score = $(document).find('.exam_score_'+studentId).val();
+
+        console.log(studentId,entrance_score,exam_score)
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
 
 
 
@@ -195,4 +223,8 @@
     //    })
     //
     //})
+<<<<<<< HEAD
 </script> -->
+=======
+</script>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d

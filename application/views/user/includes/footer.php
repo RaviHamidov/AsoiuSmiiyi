@@ -7,11 +7,14 @@
             </a>
           </li>
           <li>
+<<<<<<< HEAD
             <a href="https://mehriban-aliyeva.az/">
               <img src="<?php echo base_url('assets/user/img/') ?>mehriban_xanim.png" alt="" />
             </a>
           </li>
           <li>
+=======
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
             <a href="http://heydar-aliyev-foundation.org/az">
               <img src="<?php echo base_url('assets/user/img/') ?>fond.png" alt="" />
             </a>
@@ -22,8 +25,13 @@
             </a>
           </li>
           <li>
+<<<<<<< HEAD
             <a href="http://www.dim.gov.az/">
               <img src="<?php echo base_url('assets/user/img/') ?>dim.svg" alt="" />
+=======
+            <a href="http://www.tqdk.gov.az/">
+              <img src="<?php echo base_url('assets/user/img/') ?>tqdk.png" alt="" />
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
             </a>
           </li>
           <li>

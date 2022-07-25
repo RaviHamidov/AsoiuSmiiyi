@@ -456,7 +456,11 @@ $config['csrf_token_name'] = 'csrf_seba_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
+<<<<<<< HEAD
 $config['csrf_exclude_uris'] = array('admin_is_active_set','point_inserting');
+=======
+$config['csrf_exclude_uris'] = array('admin_is_active_set');
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
 
 /*
 |--------------------------------------------------------------------------

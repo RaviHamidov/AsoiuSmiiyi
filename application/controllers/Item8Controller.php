@@ -32,6 +32,7 @@ class Item8Controller extends CI_Controller{
 
 
 
+<<<<<<< HEAD
     public function list_edit(){
         $data['get_all_item_group'] = $this->db->get('item_category2')->result();
         $data['get_all_item_category'] = $this->db->get('items4')->result();
@@ -102,6 +103,9 @@ class Item8Controller extends CI_Controller{
             redirect($_SERVER['HTTP_REFERER']);
         }
     }
+=======
+
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
 
 
     public function createItem(){
@@ -121,6 +125,7 @@ class Item8Controller extends CI_Controller{
     }
 
 
+<<<<<<< HEAD
     public function selectStudents()
     {
         $groupId    = $_POST['group'];
@@ -141,6 +146,16 @@ class Item8Controller extends CI_Controller{
 
         $viewData->students   =$students;
         $viewData->subjectId  =$subjectId;
+=======
+    public function selectStudents($groupId)
+    {
+        $viewData = new stdClass();
+
+        $students = $this->item8_model->get_all_students_by_group_id($groupId);
+
+        $viewData->students   =$students;
+
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
 
         $viewData->rootFolder = $this->rootFolder;
         $viewData->viewFolder = $this->viewFolder;
@@ -148,6 +163,7 @@ class Item8Controller extends CI_Controller{
         $this->load->view("{$viewData->rootFolder}/{$viewData->viewFolder}/{$viewData->subViewFolder}/student_list",$viewData);
     }
 
+<<<<<<< HEAD
     public function student_point_insert()
     {
         $student_id     = $_POST['student_id'];
@@ -198,6 +214,11 @@ class Item8Controller extends CI_Controller{
         $viewData->viewFolder = $this->viewFolder;
         $viewData->subViewFolder = "add";
         $this->load->view("{$viewData->rootFolder}/{$viewData->viewFolder}/{$viewData->subViewFolder}/student_list",$viewData);
+=======
+    public function selectStudents_list()
+    {
+        
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
     }
     
     
@@ -246,8 +267,11 @@ class Item8Controller extends CI_Controller{
     }
     
 
+<<<<<<< HEAD
    
 
+=======
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
     public function createItemAct(){
 
     //     $this->form_validation->set_rules("point", "POİNT", "required|trim");

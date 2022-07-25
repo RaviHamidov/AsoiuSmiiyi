@@ -46,6 +46,7 @@ class Item8_model extends CI_Model{
     {
         return $this->db->where('s_group_id',$group_id)->get($this->studentTableName)->result();
     }
+<<<<<<< HEAD
     public function get_all_students_by_gid_sid($group_id,$subject_id)
     {
         
@@ -57,6 +58,9 @@ class Item8_model extends CI_Model{
     }
 
     
+=======
+
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
     public function add($data = array()){
         $this->db->insert($this->tableName, $data);
     }

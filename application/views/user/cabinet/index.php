@@ -160,9 +160,15 @@
                         <?php foreach($std_points as $st_p){?>
                         <tr>
                             <td><?php echo $st_p["subject_name"];?></td>
+<<<<<<< HEAD
                             <td><?php echo $st_p["po_enter_point"];?></td>
                             <td><?php echo $st_p["po_exam_point"];?></td>
                             <td><?php echo $st_p["po_enter_point"]+$st_p["po_exam_point"];?></td>
+=======
+                            <td><?php echo $st_p["ce_enter_point"];?></td>
+                            <td><?php echo $st_p["ce_exam_point"];?></td>
+                            <td><?php echo $st_p["ce_enter_point"]+$st_p["ce_exam_point"];?></td>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                         </tr>
                         <?php }?>
                     </tbody>

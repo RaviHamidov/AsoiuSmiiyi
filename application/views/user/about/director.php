@@ -56,11 +56,21 @@
                         <h4>Doğum tarixi</h4>
                         01.11.1955-ci il
                         <h4>Doğum yeri</h4>
+<<<<<<< HEAD
                         Gürcüstan Respublikası, Dmanisi rayonu Saatlı kənd
                         <h4>Əlaqə məlumatları</h4>
                         012 498-03-93 <br>
                         012 598-29-12 <br>
                         012 498-07-57 <br>
+=======
+                        Gürcüstan Respublikası, Dmanisi rayonu Saatlı kəndi
+                        <h4>Ailə vəziyyəti</h4>
+                        Ailəlidir. 2övladı var.
+                        <h4>Əlaqə məlumatları</h4>
+                        •498-03-93 <br>
+                        •598-29-12 <br>
+                        •498-07-57 <br>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                         
                       </p>
                       <hr class="invis" />

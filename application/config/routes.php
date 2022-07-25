@@ -169,6 +169,7 @@ $route['admin_updateItem_ceAct/(.*)'] = 'Item8Controller/updateItemAct/$1';
 $route['admin_deleteItem_ce/(.*)']    = 'Item8Controller/delete/$1';
 $route['admin_detail_form_ce/(.*)']   = 'Item8Controller/detail_form/$1';
 $route['admin_is_active_set_item_ce'] = 'Item8Controller/isActiveSet';
+<<<<<<< HEAD
 $route['point_inserting']             = 'Item8Controller/point_inserting';
 
 
@@ -182,11 +183,20 @@ $route['selectStudents2/(.*)'] 	 		    = 'Item8Controller/selectStudents/$1';
 
 $route['student_point_insert'] 	 		    = 'Item8Controller/student_point_insert';
 
+=======
+
+$route['selectStudents/(.*)'] 	 		    = 'Item8Controller/selectStudents/$1';
+$route['selectStudents_list/(.*)'] 	 	    = 'Item8Controller/selectStudents_list/$1';
+$route['get_all_students_by_group_id/(.*)'] = 'Item8Controller/get_all_students_by_group_id/$1';
+
+$route['selectStudents2/(.*)'] 	 		    = 'Item2Controller/selectStudents/$1';
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
 
 $route['admin_point_update/(.*)']     = 'Item8Controller/admin_point_update/$1';
 $route['admin_poin/(.*)']     		  = 'Item8Controller/poin/$1';
 
 
+<<<<<<< HEAD
 $route['list_edit'] 	 		    = 'Item8Controller/list_edit';
 $route['selectStudentsPoint'] 	    = 'Item8Controller/selectStudentsPoint';
 $route['update_page/(.*)'] 	    	  = 'Item8Controller/update_page/$1';
@@ -195,6 +205,8 @@ $route['student_update_key_act/(.*)'] = 'Item8Controller/student_update_key_act/
 
 
 
+=======
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
 // Admin Register
 $route['admin_item_re_list']	      = 'Item9Controller/index';
 $route['admin_create_item_re']	      = 'Item9Controller/createItem';
@@ -243,6 +255,10 @@ $route['exam_delete/(.*)']           		 = 'Lesson_exam_table/exam_delete/$1';
 
 
 //teachers
+<<<<<<< HEAD
 $route['teachersubj/(.*)']                     = 'UserController/teachersubj/$1';
 
 $route['tech_single/(.*)']                     = 'UserController/tech_single/$1';
+=======
+$route['fovqelade']                            = 'UserController/fovqelade';
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d

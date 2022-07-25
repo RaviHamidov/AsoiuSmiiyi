@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
@@ -9,7 +15,11 @@
       content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
+<<<<<<< HEAD
     <title>SMİİYİ</title>
+=======
+    <title>Smiiyi.Az</title>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -141,6 +151,7 @@
                   ></a>
                   <ul class="dropdown-menu" role="menu">
                     <li>
+<<<<<<< HEAD
                       <a href="<?php echo base_url('teachersubj/1') ?>"> İnformasiya texnologiyaları </a>
                     </li>
                     <li>
@@ -160,15 +171,44 @@
                     <li><a href="<?php echo base_url('teachersubj/6') ?>">Neft-qaz mühəndisliyi </a></li>
                     <li>
                       <a href="<?php echo base_url('teachersubj/7') ?>"
+=======
+                      <a href="<?php echo base_url('fovqelade') ?>"
+                        >Fövqəladə hallar və həyat fəaliyətinin təhlükəsizliyi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../teachers/"> İnformasiya texnologiyaları </a>
+                    </li>
+                    <li>
+                      <a href="../teachers/">Elektroenergetika mühəndisliyi </a>
+                    </li>
+                    <li><a href="../teachers/"> Kimya mühəndisliyi </a></li>
+                    <li>
+                      <a href="../teachers/"
+                        >Texnoloji maşın və avadanlıqlar mühəndisliyi
+                      </a>
+                    </li>
+                    <li><a href="../teachers/">Neft-qaz mühəndisliyi </a></li>
+                    <li>
+                      <a href="../teachers/"
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                         >Neft-qaz qurğuları mühəndisliyi
                       </a>
                     </li>
                     <li>
+<<<<<<< HEAD
                       <a href="<?php echo base_url('teachersubj/8') ?>"
                         >Sənayenin təşkili və idarə edilməsi
                       </a>
                     </li>
                     <li><a href="<?php echo base_url('teachersubj/9') ?>">Geofizika mühəndisliyi </a></li>
+=======
+                      <a href="../teachers/"
+                        >Sənayenin təşkili və idarə edilməsi
+                      </a>
+                    </li>
+                    <li><a href="../teachers/">Geofizika mühəndisliyi </a></li>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                   </ul>
                 </li>
                 <li class="dropdown hassubmenu">
@@ -185,6 +225,10 @@
                       <a href="<?php echo base_url('tekrar_tehsil_tedris_plani') ?>">Tədris Planları</a
                       >
                     </li>
+<<<<<<< HEAD
+=======
+                    <li><a href="onlayn-mur">Onlayn Müraciət</a></li>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
                     <li>
                       <a href="<?php echo base_url('tekrar_tehsil_ixtisaslar') ?>">İxtisasların Siyahısı</a
                       >

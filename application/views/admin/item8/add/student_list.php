@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php $this->load->view('admin/includes/headerStyle'); ?>
 
 <?php $this->load->view('admin/includes/leftMenu'); ?>
@@ -129,3 +130,35 @@
 </div>
 <?php $this->load->view('admin/includes/footerStyle') ; ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+=======
+
+
+<thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Giriş balı</th>
+        <th scope="col">İmtahan balı</th>
+        <th scope="col">Tesdiq</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($students as $students_key){ ?>
+        <tr>
+            <th scope="row">1</th>
+            <td><?php echo $students_key->s_name; ?> <?php echo $students_key->s_surname; ?> <?php echo $students_key->s_patronimic; ?></td>
+            <td>
+                <input class="entrance_score_<?php echo $students_key->c_id; ?>" type="text">
+            </td>
+            <td>
+                <input class="exam_score_<?php echo $students_key->c_id; ?>" type="text">
+            </td>
+            <td>
+                <button type="button" data-studentId="<?php echo $students_key->c_id; ?>" class="btn btn-success sendScore">Send</button>
+            </td>
+        </tr>
+    <?php } ?>
+
+
+    </tbody>
+>>>>>>> f4056484192eded866d6ef619ac442ba62e2ca1d
