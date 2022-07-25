@@ -105,11 +105,7 @@
 
                         <label for="t_patronimic">Ata adı</label>
                         <input type="text" name="t_patronimic" id="t_patronimic" class="form-control" placeholder="Ata adını daxil edin">
-                        <!-- form validation start display show -->
-                        <?php if(isset($form_error)){ ?>
-                            <small class="form_error_style"><?php echo form_error("t_patronimic"); ?></small>
-                        <?php } ?>
-                        <!-- form validation end display show -->
+
                         <br>
                         
                         <label for="email">E-Mail</label>
@@ -140,11 +136,7 @@
                         <div class="row">
                             <label for="date">Doğum tarixi</label>
                             <input type="date" name="date" id="date" class="form-control">
-                            <!-- form validation start display show -->
-                            <?php if(isset($form_error)){ ?>
-                                <small class="form_error_style"><?php echo form_error("date"); ?></small>
-                            <?php } ?>
-                            <!-- form validation end display show -->
+
                         </div>
                     </div> 
 

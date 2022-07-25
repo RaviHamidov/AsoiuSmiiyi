@@ -66,8 +66,8 @@
             <div class="card-header">Qiymət cədvəli
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
-                        <a href="<?php echo base_url('admin_create_item_ce'); ?>">
-                            <button class="btn btn-info">Back</button>
+                        <a href="<?php echo base_url('list_edit'); ?>">
+                            <button class="btn btn-info">Geri</button>
                         </a>
                     </div>
                 </div>
@@ -79,7 +79,10 @@
                             <?php echo $this->session->flashdata('err'); ?>
                         </div>
                 <?php } ?>
-                
+
+                  
+                <form action="<?php echo base_url('student_update_key_act/'.$single_student->po_id); ?>" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
 
                     <table class="table" id="studentsTable">
                         <thead>
@@ -92,33 +95,26 @@
                             </tr>
                             </thead>
                             <tbody> 
-                            <?php foreach ($students as $students_key){?>
-                                <form action="<?php echo base_url('student_point_insert'); ?>" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
-
-                    <input name="group_id" class="group_id" type="hidden" value="<?php echo $students['0']->s_group_id ?>">
-                    <input name="subject_id" class="subject_id" type="hidden" value="<?php echo $subjectId; ?>">
+                           
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td><?php echo $students_key->s_name; ?> <?php echo $students_key->s_surname; ?> <?php echo $students_key->s_patronimic; ?></td>
-                                    <td><input name="student_id" class="student_id" type="hidden" value="<?php echo $students_key->c_id; ?>"></td>
+                                    <td><?php echo $single_student->s_name; ?> <?php echo $single_student->s_surname; ?> <?php echo $single_student->s_patronimic; ?></td>
                                     <td>
-                                        <input name="entrance_score" class="entrance_score_<?php echo $students_key->c_id; ?>" type="text">
+                                        <input name="entrance_score" class="entrance_score_<?php echo $single_student->po_id; ?>" type="text" value="<?php echo $single_student->po_enter_point; ?>">
                                     </td>
                                     <td>
-                                        <input  name="exam_score" class="exam_score_<?php echo $students_key->c_id; ?>" type="text">
+                                        <input name="exam_score" class="exam_score_<?php echo $single_student->po_id; ?>" type="text" value="<?php echo $single_student->po_exam_point; ?>">
                                     </td>
                                     <td>
-                                        <button type="submit" data-studentId="<?php echo $students_key->c_id; ?>" class="btn btn-success sendScore">Göndər</button>
+                                        <button type="submit" data-studentId="<?php echo $single_student->po_id; ?>" class="btn btn-warning sendScore">Yenile</button>
                                     </td>
                                 </tr>
-                                </form>
-                            <?php } ?>
+                            
 
 
                         </tbody>
                     </table>
-               
+                </form>
             </div>
 
         </div>

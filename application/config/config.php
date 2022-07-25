@@ -456,7 +456,7 @@ $config['csrf_token_name'] = 'csrf_seba_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
-$config['csrf_exclude_uris'] = array('admin_is_active_set');
+$config['csrf_exclude_uris'] = array('admin_is_active_set','point_inserting');
 
 /*
 |--------------------------------------------------------------------------

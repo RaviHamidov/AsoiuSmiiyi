@@ -169,15 +169,30 @@ $route['admin_updateItem_ceAct/(.*)'] = 'Item8Controller/updateItemAct/$1';
 $route['admin_deleteItem_ce/(.*)']    = 'Item8Controller/delete/$1';
 $route['admin_detail_form_ce/(.*)']   = 'Item8Controller/detail_form/$1';
 $route['admin_is_active_set_item_ce'] = 'Item8Controller/isActiveSet';
+$route['point_inserting']             = 'Item8Controller/point_inserting';
 
-$route['selectStudents/(.*)'] 	 		    = 'Item8Controller/selectStudents/$1';
+
+$route['selectStudents'] 	 		    	= 'Item8Controller/selectStudents';
+$route['selectStudentsw/(.*)/(.*)'] 	 		    	= 'Item8Controller/selectStudentsw/$1/$2';
 $route['selectStudents_list/(.*)'] 	 	    = 'Item8Controller/selectStudents_list/$1';
 $route['get_all_students_by_group_id/(.*)'] = 'Item8Controller/get_all_students_by_group_id/$1';
 
-$route['selectStudents2/(.*)'] 	 		    = 'Item2Controller/selectStudents/$1';
+$route['selectStudents2/(.*)'] 	 		    = 'Item8Controller/selectStudents/$1';
+
+
+$route['student_point_insert'] 	 		    = 'Item8Controller/student_point_insert';
+
 
 $route['admin_point_update/(.*)']     = 'Item8Controller/admin_point_update/$1';
 $route['admin_poin/(.*)']     		  = 'Item8Controller/poin/$1';
+
+
+$route['list_edit'] 	 		    = 'Item8Controller/list_edit';
+$route['selectStudentsPoint'] 	    = 'Item8Controller/selectStudentsPoint';
+$route['update_page/(.*)'] 	    	  = 'Item8Controller/update_page/$1';
+$route['student_update_key_act/(.*)'] = 'Item8Controller/student_update_key_act/$1';
+
+
 
 
 // Admin Register
@@ -228,4 +243,6 @@ $route['exam_delete/(.*)']           		 = 'Lesson_exam_table/exam_delete/$1';
 
 
 //teachers
-$route['fovqelade']                            = 'UserController/fovqelade';
+$route['teachersubj/(.*)']                     = 'UserController/teachersubj/$1';
+
+$route['tech_single/(.*)']                     = 'UserController/tech_single/$1';

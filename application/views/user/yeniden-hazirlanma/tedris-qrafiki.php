@@ -81,9 +81,6 @@
                     <p style="color: red; padding-top: 30px; font-style: italic;">* (Qeyd: Lazım olan ixtisası seçib
                         tədris qrafikini yükləyə bilərsiniz)</p>
                 </div>
-                <div class="dark-light fabs">
-                    <i class='bx bx-moon moon fab'></i>
-                    <i class='bx bx-sun sun fab'></i>
-                </div>
+                
         </section>
         <?php $this->load->view('user/includes/footer'); ?>

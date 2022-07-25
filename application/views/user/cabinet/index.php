@@ -28,6 +28,7 @@
             height:100%!important;
         }
         
+        
     </style>
 
     <section id="main-section">
@@ -160,9 +161,9 @@
                         <?php foreach($std_points as $st_p){?>
                         <tr>
                             <td><?php echo $st_p["subject_name"];?></td>
-                            <td><?php echo $st_p["ce_enter_point"];?></td>
-                            <td><?php echo $st_p["ce_exam_point"];?></td>
-                            <td><?php echo $st_p["ce_enter_point"]+$st_p["ce_exam_point"];?></td>
+                            <td><?php echo $st_p["po_enter_point"];?></td>
+                            <td><?php echo $st_p["po_exam_point"];?></td>
+                            <td><?php echo $st_p["po_enter_point"]+$st_p["po_exam_point"];?></td>
                         </tr>
                         <?php }?>
                     </tbody>
@@ -181,6 +182,7 @@
         integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="<?php echo base_url('assets/user/js/') ?>toggle.js"></script>
+        <script src="<?php echo base_url('assets/user/js/') ?>darkmode.js"></script>
         
 </body>
 

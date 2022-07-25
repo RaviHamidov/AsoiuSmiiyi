@@ -105,11 +105,6 @@
 
                             <label for="t_patronimic">Ata adı</label>
                             <input type="text" name="t_patronimic" id="t_patronimic" class="form-control" placeholder="Ata adını daxil edin" value="<?php echo $single_item->t_patronimic ; ?>">
-                            <!-- form validation start display show -->
-                            <?php if(isset($form_error)){ ?>
-                                <small class="form_error_style"><?php echo form_error("t_patronimic"); ?></small>
-                            <?php } ?>
-                            <!-- form validation end display show -->
                             <br>
                             
                             <label for="email">E-Mail</label>
@@ -140,11 +135,7 @@
                             <div class="row">
                                 <label for="date">Doğum tarixi</label>
                                 <input type="date" name="date" id="date" class="form-control" value="<?php echo $single_item->t_dob; ?>">
-                                <!-- form validation start display show -->
-                                <?php if(isset($form_error)){ ?>
-                                    <small class="form_error_style"><?php echo form_error("date"); ?></small>
-                                <?php } ?>
-                                <!-- form validation end display show -->
+
                             </div>
                         </div> 
 
@@ -196,7 +187,6 @@
                         </div> 
 
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 noBlock">
-                            
                                 <label for="img">Profil şəkli <br>
                                     <img width="50px" src="https://www.iphonefaq.org/files/styles/large/public/files-a.jpg">
                                 </label>
@@ -229,7 +219,7 @@
                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 noBlock">
                             <div class="row">
 
-                                <button type="submit" class="btn btn-info btn-block" style="margin-top: 23px; height: 40px;">SEND</button>
+                                <button type="submit" class="btn btn-info btn-block" style="margin-top: 23px; height: 40px;">Göndər</button>
                             </div>
                         </div>
                     </form>

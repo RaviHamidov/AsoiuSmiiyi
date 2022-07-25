@@ -66,7 +66,7 @@
             <div class="card-header">Qiymət cədvəli
                 <div class="btn-actions-pane-right">
                     <div role="group" class="btn-group-sm btn-group">
-                        <a href="<?php echo base_url('admin_create_item_ce'); ?>">
+                    <a href="<?php echo base_url('list_edit'); ?>">
                             <button class="btn btn-info">Back</button>
                         </a>
                     </div>
@@ -80,7 +80,6 @@
                         </div>
                 <?php } ?>
                 
-
                     <table class="table" id="studentsTable">
                         <thead>
                             <tr>
@@ -88,37 +87,37 @@
                                 <th scope="col">First</th>
                                 <th scope="col">Giriş balı</th>
                                 <th scope="col">İmtahan balı</th>
-                                <th scope="col">Tesdiq</th>
+                                <th scope="col">Əməliyyatlar</th>
                             </tr>
                             </thead>
-                            <tbody> 
-                            <?php foreach ($students as $students_key){?>
-                                <form action="<?php echo base_url('student_point_insert'); ?>" method="post" enctype="multipart/form-data">
+                            <tbody>
+                                
+                            <?php foreach ($get_student_list as $students_key){ ?>
+                <form action="<?php echo base_url('student_point_insert/'); ?>" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
 
-                    <input name="group_id" class="group_id" type="hidden" value="<?php echo $students['0']->s_group_id ?>">
-                    <input name="subject_id" class="subject_id" type="hidden" value="<?php echo $subjectId; ?>">
                                 <tr>
                                     <th scope="row">1</th>
                                     <td><?php echo $students_key->s_name; ?> <?php echo $students_key->s_surname; ?> <?php echo $students_key->s_patronimic; ?></td>
-                                    <td><input name="student_id" class="student_id" type="hidden" value="<?php echo $students_key->c_id; ?>"></td>
                                     <td>
-                                        <input name="entrance_score" class="entrance_score_<?php echo $students_key->c_id; ?>" type="text">
+                                        <p><?php echo $students_key->po_enter_point; ?></p>
+                                        <!-- <input class="entrance_score_<?php echo $students_key->c_id; ?>" type="text"  value=''> -->
                                     </td>
                                     <td>
-                                        <input  name="exam_score" class="exam_score_<?php echo $students_key->c_id; ?>" type="text">
+                                        <p><?php echo $students_key->po_exam_point; ?></p>
+                                        <!-- <input class="exam_score_<?php echo $students_key->c_id; ?>" type="text"  value=''> -->
                                     </td>
                                     <td>
-                                        <button type="submit" data-studentId="<?php echo $students_key->c_id; ?>" class="btn btn-success sendScore">Göndər</button>
+                                        <a href="<?php echo base_url('update_page/'.$students_key->po_id); ?>"><button type="button" data-studentId="<?php echo $students_key->po_id; ?>" class="btn btn-success sendScore">Yenilə</button></a>
                                     </td>
                                 </tr>
-                                </form>
+                            </form>
                             <?php } ?>
 
 
                         </tbody>
                     </table>
-               
+                
             </div>
 
         </div>

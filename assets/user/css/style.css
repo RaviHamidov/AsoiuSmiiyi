@@ -2282,11 +2282,17 @@ mark,
     box-shadow: inset 0 100px 0 0 #74a632;
     border-color: #74a632;
 }
+.owl-theme .owl-dots, .owl-theme .owl-nav{
+    display: none !important ;
+}
 
 @media (max-width: 1200px) {
     .nav>li>a {
         padding: 1em 0.7em;
         font-size: 1vw !important;
+    }
+    .owl-theme .owl-dots, .owl-theme .owl-nav{
+        display: block;
     }
 }
 

@@ -138,9 +138,9 @@ class UserController extends CI_controller
 			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
 
 			$data['std_points'] =  $this->db->
-			select('subject_name,ce_enter_point,ce_exam_point')
-			->join('items8','items8.ce_student_id = items2.c_id')
-			->join('items4','items4.ab_id = items8.ce_subject_id')
+			select('subject_name,po_enter_point,po_exam_point')
+			->join('point','point.po_student_id = items2.c_id')
+			->join('items4','items4.ab_id = point.po_subject_id')
 			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
 			$this->load->view('user/cabinet/index',$data);
 
@@ -188,16 +188,31 @@ class UserController extends CI_controller
 
 
 	
-	public function fovqelade()
+	public function teachersubj($id)
 	{
 
-		$data['teacher']  = $this->db->where('t_speciality',1)->order_by('t_id','DESC')->get('items3')->result_array();
+		$data['teacher']  = $this->db
+		->join('item_category3','item_category3.i_c3_id = items3.t_scientific_level_id')
+		->where('t_speciality',$id)->order_by('t_id','DESC')->get('items3')->result_array();
 		
 		$this->load->view('user/teachers/index',$data);
 
 
 	}
 
+
+public function tech_single($id)
+	{
+
+		$data['teacher1']  = $this->db
+		->join('speciality','speciality.speciality_id = items3.t_speciality')
+		->join('item_category3','item_category3.i_c3_id = items3.t_scientific_level_id')
+		->where('t_id',$id)->order_by('t_id','DESC')->get('items3')->row();
+		
+		$this->load->view('user/teachers/teachersingle',$data);
+
+
+	}
 	
 
 }

@@ -1,4 +1,5 @@
 <?php $this->load->view('user/includes/header'); ?>
+
         <section class="section db p120">
             <div class="container">
                 <div class="row">
@@ -123,9 +124,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dark-light fabs">
-                        <i class='bx bx-moon moon fab'></i>
-                        <i class='bx bx-sun sun fab'></i>
-                    </div>
+                    
         </section>
         <?php $this->load->view('user/includes/footer'); ?>
