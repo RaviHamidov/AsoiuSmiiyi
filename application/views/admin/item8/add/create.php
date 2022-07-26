@@ -68,9 +68,6 @@
                     <div role="group" class="btn-group-sm btn-group">
                     <a href="<?php echo base_url('list_edit'); ?>">
                             <button class="btn btn-info">Düzəliş et</button>
-                        </a><pre>    </pre>
-                        <a href="<?php echo base_url('admin_item_ce_list'); ?>">
-                            <button class="btn btn-info">Back</button>
                         </a>
                     </div>
                 </div>

@@ -68,166 +68,169 @@
             
             <div id="subject-list">
                 <div class="row mb-lg-5 mb-sm-0 flex-lg-nowrap flex-md-wrap">
-                <?php foreach($std_subject as $stds){?>    
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 subject-item mr-lg-5 mr-sm-auto mr-xs-1 mb-sm-5">
+                <?php foreach($std_subject as $stds){ ?>    
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 subject-item mb-sm-5">
                         <h4><?php echo $stds['subject_name'];?></h4>
-                        <div class="accordion" id="accordionExample1">
+                        <!-- Collapse6 -->
+                        <div class="accordion" id="accordionExample<?php echo $stds['co_id']; ?>">
                             <div class="card">
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header" id="headingSixteen">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left p-0" type="button" data-toggle="collapse"
-                                            data-target="#<?php echo $stds['subject_name'];?>headingOne" aria-expanded="false"
-                                            aria-controls="collapseOne">
+                                            data-target="#collapseSixteen<?php echo $stds['co_id']; ?>" aria-expanded="false"
+                                            aria-controls="collapseSixteen">
                                             Sillabus
-                                        </button>  
+                                        </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $stds['subject_name'];?>headingOne" class="collapse" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample1">
+                                <div id="collapseSixteen<?php echo $stds['co_id']; ?>" class="collapse" aria-labelledby="headingSixteen"
+                                    data-parent="#accordionExample<?php echo $stds['co_id']; ?>">
                                     <div class="card-body">
-                                        <a href="<?php echo base_url("upload/about/").$stds['syllabs'];?>">Endir</a>  
+                                        <a target = "_blank" href="<?php echo base_url("upload/about/").$stds['syllabs'];?>">Endir</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingTwo">
+                                <div class="card-header" id="headingSeventeen<?php echo $stds['co_id']; ?>">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
+                                            data-toggle="collapse" data-target="#collapseSeventeen<?php echo $stds['co_id']; ?>"
+                                            aria-expanded="false" aria-controls="collapseSeventeen">
                                             Mühazirə
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $stds['subject_name'];?>headingTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample1">
+                                <div id="collapseSeventeen<?php echo $stds['co_id']; ?>" class="collapse" aria-labelledby="headingSeventeen<?php echo $stds['co_id']; ?>"
+                                    data-parent="#accordionExample<?php echo $stds['co_id']; ?>">
                                     <div class="card-body">
-                                        <a href="<?php echo base_url("upload/about/").$stds['lecture'];?>">Endir</a>  
+                                        <a target = "_blank" href="<?php echo base_url("upload/about/").$stds['lecture'];?>">Endir</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingThree">
+                                <div class="card-header" id="headingEighteen">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
+                                            data-toggle="collapse" data-target="#collapseEighteen<?php echo $stds['co_id']; ?>" aria-expanded="false"
+                                            aria-controls="collapseEighteen">
                                             İmatahan sualları
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $stds['subject_name'];?>headingThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample1">
+                                <div id="collapseEighteen<?php echo $stds['co_id']; ?>" class="collapse" aria-labelledby="headingEighteen"
+                                    data-parent="#accordionExample<?php echo $stds['co_id']; ?>">
                                     <div class="card-body">
-                                    <a href="<?php echo base_url("upload/about/").$stds['exam'];?>">Endir</a> 
+                                        <a target = "_blank" href="<?php echo base_url("upload/about/").$stds['exam'];?>">Endir</a> 
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingFour">
+                                <div class="card-header" id="headingNineteen">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingFour" aria-expanded="false"
-                                            aria-controls="collapseFour">
-                                            Imtahan cavablar
+                                            data-toggle="collapse" data-target="#collapseNineteen<?php echo $stds['co_id']; ?>" aria-expanded="false"
+                                            aria-controls="collapseNineteen">
+                                            İmatahan cavabları
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $stds['subject_name'];?>headingFour" class="collapse" aria-labelledby="headingFour"
-                                    data-parent="#accordionExample1">
+                                <div id="collapseNineteen<?php echo $stds['co_id']; ?>" class="collapse" aria-labelledby="headingNineteen"
+                                    data-parent="#accordionExample<?php echo $stds['co_id']; ?>">
                                     <div class="card-body">
-                                    <a href="<?php echo base_url("upload/about/").$stds['exam_answers'];?>">Endir</a> 
+                                        <a target = "_blank" href="<?php echo base_url("upload/about/").$stds['exam_answers'];?>">Endir</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div><br><br><br><br>
+                        <!-- Collapse6 end -->
+                    </div>
                     <?php }?>
+                </div>
 
-                    <!-- elave fenn bashlangic -->
-                    <?php foreach($std_subject_add as $stds){?>    
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 subject-item mr-lg-5 mr-sm-auto mr-xs-1 mb-sm-5">
-                        <h4><?php echo $stds['subject_name'];?></h4>
-                        <div class="accordion" id="accordionExample1">
+                <div class="row mb-lg-5 mb-sm-0 flex-lg-nowrap flex-md-wrap">
+                <?php foreach($std_subject_add as $std){ ?>    
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 subject-item mb-sm-5">
+                        <h4><?php echo $std['subject_name'];?></h4>
+                        <!-- Collapse6 -->
+                        <div class="accordion" id="accordionExampleadd<?php echo $std['re_id']; ?>">
                             <div class="card">
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header" id="headingSixteenadd">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left p-0" type="button" data-toggle="collapse"
-                                            data-target="#<?php echo $stds['subject_name'];?>headingOne" aria-expanded="false"
-                                            aria-controls="collapseOne">
+                                            data-target="#collapseSixteenadd<?php echo $std['re_id']; ?>" aria-expanded="false"
+                                            aria-controls="collapseSixteenadd">
                                             Sillabus
-                                        </button>  
+                                        </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $stds['subject_name'];?>headingOne" class="collapse" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample1">
+                                <div id="collapseSixteenadd<?php echo $std['re_id']; ?>" class="collapse" aria-labelledby="headingSixteenadd"
+                                    data-parent="#accordionExampleadd<?php echo $std['re_id']; ?>">
                                     <div class="card-body">
-                                        <a href="<?php echo base_url("upload/about/").$stds['syllabs'];?>">Endir</a>  
+                                        <a target = "_blank" href="<?php echo base_url("upload/about/").$std['syllabs'];?>">Endir</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingTwo">
+                                <div class="card-header" id="headingSeventeenadd<?php echo $std['re_id']; ?>">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
+                                            data-toggle="collapse" data-target="#collapseSeventeenadd<?php echo $std['re_id']; ?>"
+                                            aria-expanded="false" aria-controls="collapseSeventeenadd">
                                             Mühazirə
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $stds['subject_name'];?>headingTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample1">
+                                <div id="collapseSeventeenadd<?php echo $std['re_id']; ?>" class="collapse" aria-labelledby="headingSeventeenadd<?php echo $std['re_id']; ?>"
+                                    data-parent="#accordionExampleadd<?php echo $std['re_id']; ?>">
                                     <div class="card-body">
-                                        <a href="<?php echo base_url("upload/about/").$stds['lecture'];?>">Endir</a>  
+                                        <a target = "_blank" href="<?php echo base_url("upload/about/").$std['lecture'];?>">Endir</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingThree">
+                                <div class="card-header" id="headingEighteenadd">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
+                                            data-toggle="collapse" data-target="#collapseEighteenadd<?php echo $std['re_id']; ?>" aria-expanded="false"
+                                            aria-controls="collapseEighteenadd">
                                             İmatahan sualları
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $stds['subject_name'];?>headingThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample1">
+                                <div id="collapseEighteenadd<?php echo $std['re_id']; ?>" class="collapse" aria-labelledby="headingEighteenadd"
+                                    data-parent="#accordionExampleadd<?php echo $std['re_id']; ?>">
                                     <div class="card-body">
-                                    <a href="<?php echo base_url("upload/about/").$stds['exam'];?>">Endir</a> 
+                                        <a target = "_blank" href="<?php echo base_url("upload/about/").$std['exam'];?>">Endir</a> 
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingFour">
+                                <div class="card-header" id="headingNineteenadd">
                                     <h2 class="mb-0">
                                         <button class="btn btn-block text-left collapsed p-0" type="button"
-                                            data-toggle="collapse" data-target="#<?php echo $stds['subject_name'];?>headingFour" aria-expanded="false"
-                                            aria-controls="collapseFour">
-                                            Imtahan cavablar
+                                            data-toggle="collapse" data-target="#collapseNineteenadd<?php echo $std['re_id']; ?>" aria-expanded="false"
+                                            aria-controls="collapseNineteenadd">
+                                            İmatahan cavabları
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="<?php echo $stds['subject_name'];?>headingFour" class="collapse" aria-labelledby="headingFour"
-                                    data-parent="#accordionExample1">
+                                <div id="collapseNineteenadd<?php echo $std['re_id']; ?>" class="collapse" aria-labelledby="headingNineteenadd"
+                                    data-parent="#accordionExampleadd<?php echo $std['re_id']; ?>">
                                     <div class="card-body">
-                                    <a href="<?php echo base_url("upload/about/").$stds['exam_answers'];?>">Endir</a> 
+                                        <a target = "_blank" href="<?php echo base_url("upload/about/").$std['exam_answers'];?>">Endir</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Collapse6 end -->
                     </div><br><br><br><br>
                     <?php }?>
-
-                    <!-- elave fenn son -->
                 </div>
             </div>
 

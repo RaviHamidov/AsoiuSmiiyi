@@ -131,19 +131,19 @@ class UserController extends CI_controller
 			$user_id = $this->db->select('s_group_id')->where('c_id',$_SESSION['user_id'])->get('items2')->row_array();
 			$data['exam_list'] = $this->db->where("le_group_no",$user_id['s_group_id'])->get('lesson_exam_table')->row_array();
 
-			$data['std_subject'] =  $this->db->
-			select('subject_name,syllabs,lecture,exam,exam_answers')
+			$data['std_subject'] =  $this->db
+			->select('co_id,subject_name,syllabs,lecture,exam,exam_answers')
 			->join('items5','items5.co_group_no = items2.s_group_id')
 			->join('items4','items4.ab_id = items5.co_subject_id')
 			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
 
-			$data['std_subject_add'] =  $this->db->
-			select('subject_name,syllabs,lecture,exam,exam_answers')
+			$data['std_subject_add'] =  $this->db
+			->select('re_id,subject_name,syllabs,lecture,exam,exam_answers')
 			->join('items4','items4.ab_id = items9.re_subject_id')
 			->where('re_student_id',$_SESSION['user_id'])->get('items9')->result_array();
 
-			$data['std_points'] =  $this->db->
-			select('subject_name,po_enter_point,po_exam_point')
+			$data['std_points'] =  $this->db
+			->select('subject_name,po_enter_point,po_exam_point')
 			->join('point','point.po_student_id = items2.c_id')
 			->join('items4','items4.ab_id = point.po_subject_id')
 			->where('c_id',$_SESSION['user_id'])->get('items2')->result_array();
@@ -151,7 +151,7 @@ class UserController extends CI_controller
 
 		
 			// print_r('<pre>');
-			// print_r($user_id);
+			// print_r($std_subject);
 			// die();
 		
 			// print_r('<pre>');

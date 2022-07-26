@@ -1,202 +1,67 @@
 
 <?php $this->load->view('user/includes/header');?>
 
-<!-- <style>
-              .imgHeightSlider{
-                width:70%;
-                height: 500px!important;
-                margin: auto;
-              }
-              .slideree{
-                width:75%!important;
-              }
-              .parent {
-                  position: relative;
-                  }
-                  .child {
-                    font-weight: bold;
-                  font-size: 17px;
-                  padding: 16px 40px;
-                  padding: 8px 40px;
-                  border-width: 1px;
-                  border-style: solid;
-                  color: #fff;
-                  background-color: #f7ca18;
-                  border-color: #f7ca18;
-                  position: absolute;
-                  top: 90%;
-                  left: 48%;
-                  margin: -35px 0 0 -35px;
-                  }
-                  .date-and-button{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 15px;
-                    border-top: 1px solid #eaeaea
-                  }
-                  .date-and-button div ul{
-                    list-style: none;
-                    margin: 0 !important;
-                    padding: 0;
-                  }
-                  .date-and-button .date{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                  }
-                  .date-and-button div button{
-                    background-color: #012549;
-                    padding: 5px 15px;
-                    border: none;
-                    border-radius: 5px;
-                    color: #fff;
-                  }
-                  .date-and-button div button a{
-                    color: white;
-                  }
-                  .date-and-button div button:hover{
-                    background-color: #286090
-                  }
-                  .owl-theme .owl-nav{
-                    display: none;
-                  }
-                  .mar{
-                    margin-top:70px;
-                  }
-                  @media  screen and (max-width: 1200px) {
-                    .owl-theme .owl-nav{
-                      display: block;
-                    }
-                    .mar{
-                      margin-top: 60px !important;
-                    }
-                  }
-                  @media screen and (max-width: 768px) {
-                .imgHeightSlider {
-                height: auto!important;
-                  width: 70%!important;
-                }
 
-              }
-                   
-             
-            </style> -->
-            
-<style>
+    <style> 
+        .c{
+            width: 100%;
+            height: 400px!important;
+            object-fit: contain!important;
+        }
 
-.slideree {
-  margin: 0 auto;
-        margin-top: 50px;
-        position: relative;
-        width: 70%;
-        margin:auto;
-        padding:auto;
-        border-radius:10px ; 
-}
+        .carousel-control.left{
+            background-image: none;
+        }
 
-.slideree .slide{
-  position: absolute;
-        width: 100%;;
-        height: 100%;
-}
-.slideree .slide img{
-  width: 100%;
-        height: 100%;
-}
-.imgHeightSlider{
-object-fit:fill;
-height:100%;
+        .carousel-control.right{
+            background-image: none;
+        }
 
-margin:auto;
-        padding:auto;
-}
-@media screen and (max-width: 685px){
-    .container{
-        border: none;
-        width: 100%;
-        height: 0;
-        padding-bottom: 55%; 
-    }    
-    
-    label span { font-size: 50pt; }
-    
-    .prev, .next{
-        width: 15%;
-    }    
-    
-}
-@media screen  and(min-width: 970px){
-    .me{ display: none;}
-}
-
-            </style>
+        #myCarousel{
+            /* background: red; */
+            margin-top:90px;
+        }
 
 
 
+        @media only screen and (max-width: 900px) , (max-width: 600px) {
+            .c{
+                height: 282px!important;
+            }
+        }
 
-            <section class="section mar maxwid" style="padding-top: 2rem !important">
-<div class="container-fluid ">
- <div class="row">
- <div
-    id="carousel-example-generic"
-    class="carousel slide"
-    data-ride="carousel"
-  >
-    <ol class="carousel-indicators">
-  <?php $itemCount = 0;foreach ($items as $item){
-    ?>
-      <li
-        data-target="#carousel-example-generic"
-        data-slide-to="<?php echo $itemCount++; ?>"
-        <?php if($item['sl_category'] == 1){echo 'class = "active"';}?>
-      ></li>
+    </style>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+        <?php $itemCount = 0;foreach ($items as $item){?>
+          <li data-target="#myCarousel" data-slide-to="<?php echo $itemCount++; ?>" <?php if($item['sl_category'] == 1){echo 'class = "active"';}?>></li>
+          <?php }?>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+        <?php foreach ($items as $item){?>
+          <div class="item <?php if($item['sl_category'] == 1){echo 'active';}?>">
+          <a href = "<?php echo base_url('ann_detail_form/'.$item['ann_id']); ?>"> <img class="c" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"
+            onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"/>
+          </a>
+        </div>
+      
       <?php }?>
-    </ol>
-
-    <div class="carousel-inner slideree" role="listbox">
-    <?php foreach ($items as $item){?>
-      <div class="item parent  <?php if($item['sl_category'] == 1){echo 'active';}?>">
-      <a href = "<?php echo base_url('ann_detail_form/'.$item['ann_id']); ?>"> <img class="imgHeightSlider" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"
-        onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"/>
-       
-      </a>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      
-      <?php }?>
-    </div>
-
-    <a
-      class="left carousel-control"
-      href="#carousel-example-generic"
-      role="button"
-      data-slide="prev"
-    >
-      <span
-        class="glyphicon glyphicon-chevron-left"
-        aria-hidden="true"
-      ></span>
-      <span class="sr-only">Geri</span>
-    </a>
-    <a
-      class="right carousel-control"
-      href="#carousel-example-generic"
-      role="button"
-      data-slide="next"
-    >
-      <span
-        class="glyphicon glyphicon-chevron-right"
-        aria-hidden="true"
-      ></span>
-      <span class="sr-only">İrəli</span>
-    </a>
-  </div>
- </div>
-</div>
-</section>
-
-
-      
 
 
       <section class="section gb">
