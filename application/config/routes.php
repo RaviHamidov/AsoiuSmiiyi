@@ -222,7 +222,7 @@ $route['asoiu']                            	 = 'UserController/about_asoiu';
 $route['tekrar_tehsil_tedris_plani']		 = 'UserController/tt_tedris_plani';
 $route['tekrar_tehsil_ixtisaslar']           = 'UserController/tt_ixtisaslar';
 
-$route['yeni_h_tedris_plani']           	 = 'UserController/yh_tedris_plani';
+$route['tt_isci_plan']           	         = 'UserController/tt_isci_plan';
 $route['yeni_h_tedris_qrafiki']        		 = 'UserController/yh_tedris_qrafiki';
 $route['yeni_hazir_imtahan_sual']            = 'UserController/yh_imtahan_sual';
 $route['yh_ixtisaslar']           			 = 'UserController/yh_ixtisaslar';

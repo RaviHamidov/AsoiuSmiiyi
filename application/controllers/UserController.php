@@ -51,9 +51,9 @@ class UserController extends CI_controller
 		$this->load->view('user/tekrar-ali-tehsil/ixtisaslar');
 	}
 
-	public function yh_tedris_plani()
+	public function tt_isci_plan()
 	{
-		$this->load->view('user/yeniden-hazirlanma/tedris-plani');
+		$this->load->view('user/tekrar-ali-tehsil/işçi plan');
 	}
 	
 	public function yh_tedris_qrafiki()

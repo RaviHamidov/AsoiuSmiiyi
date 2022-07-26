@@ -5,10 +5,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="tagline-message page-title text-center">
-                            <h3>Yenidən Hazırlanma - Tədris Planları</h3>
+                            <h3>Təkrar ali təhsil - Tədris Planları</h3>
                             <ul class="breadcrumb">
-                                <li><a href="./index.html">Ana Səhifə</a></li>
-                                <li class="active">Yenidən Hazırlanma</li>
+                                <li><a href="<?php echo base_url('index');?>">Ana Səhifə</a></li>
+                                <li class="active">Təkrar ali təhsil</li>
                             </ul>
                         </div>
                     </div>
@@ -47,34 +47,34 @@
                                                 BAKALAVR SƏVIYYƏSINDƏ 5 illik İŞÇİ TƏDRİS PLANI
                                             </h4>
                                             <ul class="y-h-ul">
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050651.pdf';?>"> 050651-FÖVQƏLADƏ HALLAR VƏ HƏYAT FƏALIYYƏTININ
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050651.pdf';?>"> 050651-FÖVQƏLADƏ HALLAR VƏ HƏYAT FƏALIYYƏTININ
                                                         TƏHLÜKƏSIZLIYI MÜHƏNDISLIYI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050641.pdf';?>">050641-KIMYA MÜHƏNDISLIYI
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050641.pdf';?>">050641-KIMYA MÜHƏNDISLIYI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050604.pdf';?>">050604-GEOFIZIKA MÜHƏNDISLIYI
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050604.pdf';?>">050604-GEOFIZIKA MÜHƏNDISLIYI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050655.pdf';?>">050655-İNFORMASİYA TEXNOLOGİYALARI
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050655.pdf';?>">050655-İNFORMASİYA TEXNOLOGİYALARI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050405.pdf';?>">050405-SƏNAYENIN TƏŞKILI VƏ IDARƏ EDILMƏSI
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050405.pdf';?>">050405-SƏNAYENIN TƏŞKILI VƏ IDARƏ EDILMƏSI
                                                         MÜHƏNDISLIYI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050608.pdf';?>">050608-ELEKTROENERGETIKA MÜHƏNDISLIYI
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050608.pdf';?>">050608-ELEKTROENERGETIKA MÜHƏNDISLIYI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050607.pdf';?>">050607-NEFT-QAZ QURĞULARI MÜHƏNDISLIYI
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050607.pdf';?>">050607-NEFT-QAZ QURĞULARI MÜHƏNDISLIYI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050606.pdf';?>">050606-NEFT-QAZ MÜHƏNDISLIYI
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050606.pdf';?>">050606-NEFT-QAZ MÜHƏNDISLIYI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050625.pdf';?>">
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050625.pdf';?>">
                                                         050625-TEXNOLOJI MAŞIN VƏ AVADANLIQLAR MÜHƏNDISLIYI</a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt_050647.pdf';?>">
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt_050647.pdf';?>">
                                                         050647-METROLOGIYA, STANDARTLAŞDIRMA VƏ SERTIFIKASIYA
                                                         MÜHƏNDISLIYI</a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt_050509.pdf';?>">050509-KOMPÜTER ELMLƏRİ
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt_050509.pdf';?>">050509-KOMPÜTER ELMLƏRİ
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050626.pdf';?>">050626-ELEKTRIK MÜHƏNDISLIYI
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050626.pdf';?>">050626-ELEKTRIK MÜHƏNDISLIYI
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050630.pdf';?>">050630-MEXANİKA MÜHƏNDİSLİYİ
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma2020/').'tedris_qrafiki_ixt-050630.pdf';?>">050630-MEXANİKA MÜHƏNDİSLİYİ
                                                     </a></li>
                                             </ul>
                                         </div>
@@ -97,24 +97,24 @@
                                                 (2021-2026-cı illər üzrə)
                                                 BAKALAVR SƏVIYYƏSINDƏ 5 illik İŞÇİ TƏDRİS PLANI</h4>
                                             <ul class="y-h-ul">
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050628_MM_2021_5TP.pdf';?>"> 050628 - Mexanika mühəndisliyi
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050628_MM_2021_5TP.pdf';?>"> 050628 - Mexanika mühəndisliyi
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050608_EM_2021_5TP.pdf';?>">050608 - Energetika mühəndisliyi
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050608_EM_2021_5TP.pdf';?>">050608 - Energetika mühəndisliyi
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050614_HFT_2021_5TP.pdf';?>">050614 - Həyat fəaliyyətinin təhlükəsizliyi
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050614_HFT_2021_5TP.pdf';?>">050614 - Həyat fəaliyyətinin təhlükəsizliyi
                                                         mühəndisliyi
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050616_IT_2021_5TP.pdf';?>">050616 - İnformasiya texnologiyaları
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050616_IT_2021_5TP.pdf';?>">050616 - İnformasiya texnologiyaları
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050405_I_2021_5TP.pdf';?>">050405 - İqtisadiyyat
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050405_I_2021_5TP.pdf';?>">050405 - İqtisadiyyat
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050618_KM_2021_5TP.pdf';?>">050618 - Kimya mühəndisliyi
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050618_KM_2021_5TP.pdf';?>">050618 - Kimya mühəndisliyi
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050509_KE_2021_5TP.pdf';?>">050509 - Kompüter elmləri
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050509_KE_2021_5TP.pdf';?>">050509 - Kompüter elmləri
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050631_NQM_2021_5TP.pdf';?>"> 050631 - Neft-qaz mühəndisliyi
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050631_NQM_2021_5TP.pdf';?>"> 050631 - Neft-qaz mühəndisliyi
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050408_M_2021_5TP.pdf';?>"> 050408 - Menecment
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma/').'050408_M_2021_5TP.pdf';?>"> 050408 - Menecment
                                                 </a></li>
 
                                             </ul>

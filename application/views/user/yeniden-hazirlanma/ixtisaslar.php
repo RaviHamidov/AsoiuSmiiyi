@@ -7,7 +7,7 @@
                         <div class="tagline-message page-title text-center">
                             <h3>Yenidən Hazırlanma - İXTİSASLAR</h3>
                             <ul class="breadcrumb">
-                                <li><a href="./index.html">Ana Səhifə</a></li>
+                                <li><a href="<?php echo base_url('index');?>">Ana Səhifə</a></li>
                                 <li class="active">Yenidən Hazırlanma</li>
                             </ul>
                         </div>

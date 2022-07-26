@@ -6,7 +6,7 @@
                         <div class="tagline-message page-title text-center">
                             <h3>Təkrar Ali Təhsil - İXTİSASLAR</h3>
                             <ul class="breadcrumb">
-                                <li><a href="../index.html">Ana Səhifə</a></li>
+                                <li><a href="<?php echo base_url('index');?>">Ana Səhifə</a></li>
                                 <li class="active">Təkrar Ali Təhsil</li>
                             </ul>
                         </div>

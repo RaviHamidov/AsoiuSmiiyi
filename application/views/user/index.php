@@ -5,7 +5,7 @@
     <style> 
         .c{
             width: 100%;
-            height: 400px!important;
+            height: 500px!important;
             object-fit: contain!important;
         }
 

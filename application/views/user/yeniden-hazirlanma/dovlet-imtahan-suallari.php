@@ -6,7 +6,7 @@
                         <div class="tagline-message page-title text-center">
                             <h3>Yenidən Hazırlanma - Yekun Dövlət İmtahan Sualları</h3>
                             <ul class="breadcrumb">
-                                <li><a href="../index.html">Ana Səhifə</a></li>
+                                <li><a href="<?php echo base_url('index');?>">Ana Səhifə</a></li>
                                 <li class="active">Yenidən Hazırlanma</li>
                             </ul>
                         </div>
@@ -40,9 +40,9 @@
                                     <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul class="y-h-ul">
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'NQM_DAK_imtahan_suallari.pdf';?>"> 050606- “Neft-qaz mühəndisliyi”
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'NQM_DAK_imtahan_suallari.pdf';?>"> 050606- “Neft-qaz mühəndisliyi”
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'STIE_DAK_imtahan_suallari.pdf';?>">
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'STIE_DAK_imtahan_suallari.pdf';?>">
                                                         050405- “Sənayenin təşkili və idarə edilməsi”
                                                     </a></li>
 
@@ -63,11 +63,11 @@
                                         <div class="panel-body">
 
                                             <ul class="y-h-ul">
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'NQE_DAK_imtahan_suallari.pdf';?>">040507- “Neft və qaz emalı”
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'NQE_DAK_imtahan_suallari.pdf';?>">040507- “Neft və qaz emalı”
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'MENECMENT_DAK_imtahan_suallari.pdf';?>">040407- “Menecment”
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'MENECMENT_DAK_imtahan_suallari.pdf';?>">040407- “Menecment”
                                                     </a></li>
-                                                <li><a href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'ET_DAK_imtahan_suallari.pdf';?>">040510- “Elektrik təchizatı”
+                                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/yeniden_hazirlanma_dis/').'ET_DAK_imtahan_suallari.pdf';?>">040510- “Elektrik təchizatı”
                                                     </a></li>
 
                                             </ul>

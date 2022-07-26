@@ -187,6 +187,11 @@
                       >
                     </li>
                     <li>
+                      <a href="<?php echo base_url('tt_isci_plan') ?>"
+                        >İşçi planlar</a
+                      >
+                    </li>
+                    <li>
                       <a href="<?php echo base_url('tekrar_tehsil_ixtisaslar') ?>">İxtisasların Siyahısı</a
                       >
                     </li>
@@ -205,11 +210,6 @@
                     >Yenidən Hazırlanma <span class="fa fa-angle-down"></span
                   ></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li>
-                      <a href="<?php echo base_url('yeni_h_tedris_plani') ?>"
-                        >Tədris Planları</a
-                      >
-                    </li>
                     <li>
                       <a href="<?php echo base_url('yeni_h_tedris_qrafiki') ?>"
                         >Tədris Qrafikləri</a
