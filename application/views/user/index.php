@@ -1,15 +1,15 @@
 
 <?php $this->load->view('user/includes/header');?>
 
-<style>
+<!-- <style>
               .imgHeightSlider{
                 width:70%;
-                height: 650px!important;
+                height: 500px!important;
                 margin: auto;
               }
-
-            
-
+              .slideree{
+                width:75%!important;
+              }
               .parent {
                   position: relative;
                   }
@@ -74,75 +74,129 @@
                   }
                   @media screen and (max-width: 768px) {
                 .imgHeightSlider {
-                  height: auto!important;
-                  width: 100%!important;
+                height: auto!important;
+                  width: 70%!important;
                 }
 
               }
                    
              
+            </style> -->
+            
+<style>
+
+.slideree {
+  margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+        width: 70%;
+        margin:auto;
+        padding:auto;
+        border-radius:10px ; 
+}
+
+.slideree .slide{
+  position: absolute;
+        width: 100%;;
+        height: 100%;
+}
+.slideree .slide img{
+  width: 100%;
+        height: 100%;
+}
+.imgHeightSlider{
+object-fit:fill;
+height:100%;
+
+margin:auto;
+        padding:auto;
+}
+@media screen and (max-width: 685px){
+    .container{
+        border: none;
+        width: 100%;
+        height: 0;
+        padding-bottom: 55%; 
+    }    
+    
+    label span { font-size: 50pt; }
+    
+    .prev, .next{
+        width: 15%;
+    }    
+    
+}
+@media screen  and(min-width: 970px){
+    .me{ display: none;}
+}
+
             </style>
 
-<section class="section mar" style="padding-top: 2rem !important">
-        <div class="container-fluid">
-         <div class="row">
-         <div
-            id="carousel-example-generic"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-          <?php $itemCount = 0;foreach ($items as $item){
-            ?>
-              <li
-                data-target="#carousel-example-generic"
-                data-slide-to="<?php echo $itemCount++; ?>"
-                <?php if($item['sl_category'] == 1){echo 'class = "active"';}?>
-              ></li>
-              <?php }?>
-            </ol>
 
-            <div class="carousel-inner" role="listbox">
-            <?php foreach ($items as $item){?>
-              <div class="item parent  <?php if($item['sl_category'] == 1){echo 'active';}?>">
-                <img class="imgHeightSlider" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"
-                onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"/>
-                <a href = "<?php echo base_url('ann_detail_form/'.$item['ann_id']); ?>"><div class = "child" id = "content-block">
-                  ƏTRAFLI
-                </div></a>
-              </div>
-              
-              <?php }?>
-            </div>
 
-            <a
-              class="left carousel-control"
-              href="#carousel-example-generic"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="glyphicon glyphicon-chevron-left"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a
-              class="right carousel-control"
-              href="#carousel-example-generic"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="glyphicon glyphicon-chevron-right"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">İrəli</span>
-            </a>
-          </div>
-         </div>
-        </div>
-      </section>
+
+            <section class="section mar maxwid" style="padding-top: 2rem !important">
+<div class="container-fluid ">
+ <div class="row">
+ <div
+    id="carousel-example-generic"
+    class="carousel slide"
+    data-ride="carousel"
+  >
+    <ol class="carousel-indicators">
+  <?php $itemCount = 0;foreach ($items as $item){
+    ?>
+      <li
+        data-target="#carousel-example-generic"
+        data-slide-to="<?php echo $itemCount++; ?>"
+        <?php if($item['sl_category'] == 1){echo 'class = "active"';}?>
+      ></li>
+      <?php }?>
+    </ol>
+
+    <div class="carousel-inner slideree" role="listbox">
+    <?php foreach ($items as $item){?>
+      <div class="item parent  <?php if($item['sl_category'] == 1){echo 'active';}?>">
+      <a href = "<?php echo base_url('ann_detail_form/'.$item['ann_id']); ?>"> <img class="imgHeightSlider" src="<?php echo base_url('upload/slider/'.$item['sl_img']); ?>"
+        onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"/>
+       
+      </a>
+      </div>
+      
+      <?php }?>
+    </div>
+
+    <a
+      class="left carousel-control"
+      href="#carousel-example-generic"
+      role="button"
+      data-slide="prev"
+    >
+      <span
+        class="glyphicon glyphicon-chevron-left"
+        aria-hidden="true"
+      ></span>
+      <span class="sr-only">Geri</span>
+    </a>
+    <a
+      class="right carousel-control"
+      href="#carousel-example-generic"
+      role="button"
+      data-slide="next"
+    >
+      <span
+        class="glyphicon glyphicon-chevron-right"
+        aria-hidden="true"
+      ></span>
+      <span class="sr-only">İrəli</span>
+    </a>
+  </div>
+ </div>
+</div>
+</section>
+
+
+      
 
 
       <section class="section gb">
@@ -271,3 +325,6 @@
       </section>
 
 <?php $this->load->view('user/includes/footer'); ?>
+<script>
+
+</script>
