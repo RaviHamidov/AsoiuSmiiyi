@@ -38,12 +38,19 @@
                         <img src="<?php echo base_url('assets/user/img/') ?>logo.png" alt="logo.png">
                     </a>
                 </div>
-                <div class="item-2">
-                    <h4>Xoş gəldiniz! <?php echo $student['s_name']; ?></h4>
+                <div class="item-3">
+                    <h4 class="pr-sm-5">Xoş gəldiniz! <?php echo $student['s_name']; ?></h4>
                 </div>
                 <a href="<?php echo base_url('logout'); ?>">
                     <button type="button" class="btn btn-danger">Exit</button>
                 </a>
-                
+                <div class = "pl-sm-5">
+                <form action="<?php echo base_url('renewpass'); ?>" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
+                    <input type="hidden" name="std_id" value="<?= $_SESSION['user_id']?>" />
+                    <button type="submit" class="btn btn-info btn-block" style="height: 60px;">Şifrənizi yeniləyin</button>
+                </form>
+                    
+                </div>
         </div>
     </header>

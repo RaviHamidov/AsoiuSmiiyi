@@ -2,6 +2,7 @@
 
 class UserController extends CI_controller
 {
+
 	public function index()
 	{
 		$data['items']  = $this->db->order_by('sl_id','DESC')->get('items6')->result_array();
@@ -218,6 +219,63 @@ public function tech_single($id)
 
 
 	}
+	public function renewpass(){
+		if(isset($_SESSION['user_id'])){
+			$x =$_SESSION['user_id'];
+		}else{
+			$x = $_POST['std_id'];
+		}
+		
+		$student['std'] = $this->db->select('c_id')->where('c_id',$x)->get('items2')->row_array();
+
+		$this->load->view('user/cabinet/passrenew',$student);
+
+	}
+	public function renewpass_act(){
+		$current = $_POST['current'];
+		$new1	 = $_POST['new1'];
+		$new2	 = $_POST['new2'];
+
+	
+		if(isset($_SESSION['user_id'])){
+
+		$std1 = $this->db->select('c_id,s_password')->where('c_id',$_SESSION['user_id'])->get('items2')->row_array();
+
+			if($current!='' && $new1!='' && $new2!=''){
+				if(md5(sha1($current."smii")) == $std1['s_password']){	
+					if($new1 != $new2){
+						$this->session->set_flashdata('err',"Diqqət! Yeni şifrənizlə onun təkrarı uyğun gəlmir");
+						redirect(base_url('renewpass'));
+					}
+					else{
+						$data = [
+							's_password'      => md5(sha1($new1."smii"))
+						];
+						$data = $this->security->xss_clean($data);
+
+						$this->db->where('c_id',$_SESSION['user_id'])->update('items2', $data);
+						unset($_SESSION['user_id']);
+						$this->session->set_flashdata('success',"Şifrəniz uğurla dəyişdirildi, zəhmət olmasa yeni şifrənizlə daxil olun");
+						redirect(base_url('login'));
+					}
+				}else{
+					$this->session->set_flashdata('err',"Diqqət! Cari şifrənizi düzgün daxil edin, unutmusunuzsa rəhbərliyə müraciət edə bilərsiniz!");
+					redirect(base_url('renewpass'));
+				}
+			}else{
+				$this->session->set_flashdata('err',"Diqqət! Xanaları boş saxlamayın!");
+				redirect(base_url('renewpass'));
+			}
+		}else{
+			$this->session->set_flashdata('err',"Sistemə yenidən daxil olmalısınız");
+			redirect(base_url('login'));
+		}
+		
+			
+		
+       
+	}
+	
 	
 
 }

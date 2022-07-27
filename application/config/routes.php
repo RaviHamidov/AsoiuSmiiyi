@@ -248,3 +248,7 @@ $route['exam_delete/(.*)']           		 = 'Lesson_exam_table/exam_delete/$1';
 $route['teachersubj/(.*)']                     = 'UserController/teachersubj/$1';
 
 $route['tech_single/(.*)']                     = 'UserController/tech_single/$1';
+
+//rrenew pass
+$route['renewpass']                            = 'UserController/renewpass';
+$route['renewpass_act']                        = 'UserController/renewpass_act';

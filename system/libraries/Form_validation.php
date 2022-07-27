@@ -707,6 +707,7 @@ class CI_Form_validation {
 				continue;
 			}
 
+			
 			// Call the function that corresponds to the rule
 			if ($callback OR $callable !== FALSE)
 			{
