@@ -3,6 +3,39 @@
 
 
     <style> 
+    .date-and-button{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px;
+                    border-top: 1px solid #eaeaea
+                  }
+                  .date-and-button div ul{
+                    list-style: none;
+                    margin: 0 !important;
+                    padding: 0;
+                  }
+                  .date-and-button .date{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                  }
+                  .date-and-button div button{
+                    background-color: #012549;
+                    padding: 5px 15px;
+                    border: none;
+                    border-radius: 5px;
+                    color: #fff;
+                  }
+                  .date-and-button div button a{
+                    color: white;
+                  }
+                  .date-and-button div button:hover{
+                    background-color: #286090
+                  }
+                  .owl-theme .owl-nav{
+                    display: block !important;
+                  }
         .c{
             width: 100%;
             height: 500px!important;
