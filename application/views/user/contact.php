@@ -66,9 +66,16 @@
                   <h4>Sosial Media Hesabları</h4>
                   <small>Twitter: @smiiyi</small>
                   <small>Facebook: facebook.com/smiyi</small>
+                  
                 </div>
               </div>
             </div>
+            <p style = "margin:10px 60px">Əgər siz də institutda təhsil almaq istəyirsinizsə, əlaqə bölməsinə keçərək məlumat əldə edə və ya aşağıdaki formanı dolduraraq 
+                      bir başa müraciət edə bilərsiniz</p>
+                      <br>
+                      <a style = "color:blue;margin:10px 60px" href="<?php echo base_url('qeydiyyat')?>"
+                        >İnstituta qəbul üçün Elektron Qeydiyyat</a
+                      >
           </div>
         </div>
         

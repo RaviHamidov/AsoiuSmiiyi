@@ -100,8 +100,9 @@
       <section class="section gb">
         <div class="container">
           <div class="section-title text-center">
-            <h3>Elanlar</h3>
+            <h1>Elanlar</h1>
           </div>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray; border-radius: 15px; ">
           <!-- end title -->
 
           <div id="owl-01" class="owl-carousel owl-theme owl-theme-01">
@@ -109,7 +110,7 @@
 
             <div class="course-box">
                                 <div class="image-wrap entry">
-                                    <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" 
+                                    <img style="height: 250px; object-fit: contain;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" 
                                     onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"
                                     alt="image not found" class="img-responsive">
                                     
@@ -149,9 +150,9 @@
 
 
   <section class="section gb nopadtop">
+    
         <div class="container">
           <hr class="invis" />
-
           <div class="row">
             <div class="col-md-6">
               <div class="box">
@@ -182,7 +183,7 @@
                 />
                 <h4>Hamlet Hüseynov</h4>
                 <p>
-                  Pedaqoji elmləri namizədi, dosent Sənaye Müəssisələri
+                  Pedaqoji elmlər namizədi, dosent Sənaye Müəssisələri
                   İşçilərinin İxtisasartırma və Yenidənhazırlama İnstitutunun
                   direktoru
                 </p>

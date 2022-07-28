@@ -58,7 +58,7 @@
                        
                             <div class="course-box">
                                 <div class="image-wrap entry">
-                                    <img style="height: 250px; object-fit: cover;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" 
+                                    <img style="height: 250px; object-fit: contain;" src="<?php echo base_url('upload/events/'.$events['img']) ?>" 
                                     onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"
                                     alt="image not found" class="img-responsive">
                                     
@@ -87,18 +87,7 @@
                         <?php } ?>
                         <hr class="invis">
                         
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <ul class="pagination ">
-                                    <li class="disabled"><a href="javascript:void(0)">&laquo;</a></li>
-                                    <li class="active"><a href="javascript:void(0)">1</a></li>
-                                    <li><a href="javascript:void(0)">2</a></li>
-                                    <li><a href="javascript:void(0)">3</a></li>
-                                    <li><a href="javascript:void(0)">...</a></li>
-                                    <li><a href="javascript:void(0)">&raquo;</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                     </div>
                     
                     

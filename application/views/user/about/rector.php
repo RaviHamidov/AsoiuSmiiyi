@@ -44,7 +44,7 @@
                       </div>
                     </div>
 
-                    <div class="blog-desc-big mt-2">
+                    <div class="blog-desc-big mt-2" style = "margin:10px 60px; color:#333333;">
                         <h3>Azərbaycan Dövlət Neft və Sənaye Universitetinin rektoru, texnika elmləri doktoru, professor</h3>
                       <p>
                        <h3> Həyatı</h3>
@@ -63,13 +63,26 @@
                         <br>
                         AMEA-nın müxbir üzvü Məhəmməd Babanlının kiçik qardaşı, azərbaycanlı yazıçı Vidadi Babanlının əmisi nəvəsidir.
                         <h3>Elmi işlərinin istiqaməti</h3>
-                        •Massiv amorf ərintilərin işlənməsi. <br>
-                        •Forma yaddaşlı ərintilərin işlənməsi. <br>
-                        •Materialların yeni texnologiyalarla hazırlanması. <br>
-                        •Nanoquruluşlu forma yaddaşlı ərintilərin işlənməsi.  <br><br>
+                        <ul>
+                        <li>Massiv amorf ərintilərin işlənməsi </li>
+                        <li>Forma yaddaşlı ərintilərin işlənməsi </li>
+                        <li>Materialların yeni texnologiyalarla hazırlanması</li>
+                        <li>Nanoquruluşlu forma yaddaşlı ərintilərin işlənməsi</li>
+                        </ul>
                         M. Babanlının çap olunmuş 138 elmi və elmi-metodik işi vardır. Müdafiədən sonra M. Babanlının 56 elmi və elmi-metodik işi, o cümlədən 2 patent, 20 beynəlxalq və respublika elmi-texniki konfrans materialları, 1 dərslik, 2 dərs vəsaiti, 1 monoqrafiya və 3 fənn proqramı nəşr olunmuşdur.
+                        <br><br>1994-cü ildən etibarən Ukrayna Milli Elmlər Akademiyası Metallar Fizikası İnstitutu (Kiyev, Ukrayna), Fransa Ali Kimya Məktəbi (Paris, Fransa), Fransa Elmi Araşdırmalar Mərkəzi (Vitri, Fransa), Balear adaları Universiteti (Palma de Malyorka, İspaniya), Frayberq Texniki Universiteti (Frayberq, Almaniya) ilə sıx elmi əməkdaşlıq edir. 
+                        <br><h4>Bu əməkdaşlıq nəticəsində Professor Mustafa Babanlı aşağıda qeyd edilən beynəlxalq elmi layihələrə rəhbərlik edib:</h4>
                         <br>
-                        1994-cü ildən etibarən Ukrayna Milli Elmlər Akademiyası Metallar Fizikası İnstitutu (Kiyev, Ukrayna), Fransa Ali Kimya Məktəbi (Paris, Fransa), Fransa Elmi Araşdırmalar Mərkəzi (Vitri, Fransa), Balear adaları Universiteti (Palma de Malyorka, İspaniya), Frayberq Texniki Universiteti (Frayberq, Almaniya) ilə sıx elmi əməkdaşlıq edir. Bu əməkdaşlıq nəticəsində “STCU-453” (1997-1999), “DNİPRO” (1999-2002), “ECONET” (2002-2005), “STCU-3520” (2006-2009), “CNRS-ANAS” (2009-2010), “CNRS-ANAS” (2010-2011) “STCU-5078” (2010-2011) və “STCU-5595” (2012-2013) kimi beynəlxalq elmi layihələrə rəhbərlik etmişdir.                      
+                        <ul>
+                        <li>“STCU-453” (1997-1999)</li>
+                        <li>“DNİPRO” (1999-2002)</li>
+                        <li>“ECONET” (2002-2005)</li>
+                        <li>“STCU-3520” (2006-2009)</li>
+                        <li>“CNRS-ANAS” (2009-2010)</li>
+                        <li>“CNRS-ANAS” (2010-2011) </li>
+                        <li>“STCU-5078” (2010-2011) </li>
+                        <li>“STCU-5595” (2012-2013) </li>
+                        </ul>             
                       </p>
                       <hr class="invis" />
                       

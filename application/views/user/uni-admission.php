@@ -31,7 +31,7 @@
                                        </div>
                     </div>
 
-                    <div class="blog-desc-big mt-2">
+                    <div class="blog-desc-big mt-2" style = "padding:60px">
                         <h3 class="text-center">Azərbaycan Dövlət Neft və Sənaye Universiteti
                             2022/2023-cü tədris ilində aşağıdakı ixtisaslar üzrə ödənişli əsaslarla qiyabi formada
                             təkrar ali təhsil almaq üçün sənəd qəbulu elan edir:</h3><br>
@@ -76,7 +76,12 @@
                          Qəbul Komissiyası. <br>                        
                         </h4>
                        <hr class="invis" />
-                      
+                      <h4>Əgər siz də institutda təhsil almaq istəyirsinizsə, əlaqə bölməsinə keçərək məlumat əldə edə və ya aşağıdaki formanı dolduraraq 
+                      bir başa müraciət edə bilərsiniz</h4>
+                      <br>
+                      <a href="<?php echo base_url('qeydiyyat')?>"
+                        ><h4 style = "color:blue;">İnstituta qəbul üçün Elektron Qeydiyyat</h4></a
+                      >
                     </div>
                   </div>
                 </div>

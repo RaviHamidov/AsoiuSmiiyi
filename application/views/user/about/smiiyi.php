@@ -49,7 +49,10 @@
                       </div>
                     </div>
 
-                    <div class="blog-desc-big mt-2">
+                    <div class="blog-desc-big mt-2" style = "padding:10px 60px;">
+                    <div style = "float:left;">
+                    <img style="margin-right:40px!important; height:320px;" src ="<?php echo base_url('assets/user/img/')."asoiu.jpg" ?>"/>
+                    </div>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Azərbaycan Respublikası <i>“Xalq Təsərrüfatı Mütəxəsis və Rəhbər İşçilərinin İxtisasının Artırılması və Yenidən Hazırlanması”</i> institutu 
                       Nazirlər Kabinetinin 18 oktyabr 1991-ci il tarixli 348 saylı qərarı ilə təşkil edilmiş və onun “Nizamnaməsi” 1992-ci ildə Təhsil Nazirliyi 
                       tərəfindən təsdiq edilmişdir.<br><br>
@@ -64,7 +67,14 @@
                       <br><br>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADNSU-nun tərkibində fəaliyyət göstərən SMİİY intitutu tədris, təlim tərbiyə hissəsinin sturuktur bölməsidir. İnstitut 1996-cı il tarixdən hal-hazıra kimi ADNSU-nun tərkibində qanunvericiliyin tələblərinə uyğun, onun sturuktur bölməsi kimi fəaliyyət göstərir. Qanunvericiliyin dəyişməsi ilə əlaqədar institutun fəaliyyətində ona uyğunlaşdırlır.
                       <br><br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;İnstitutun əsasnaməsi yenidən işlənib ADNSU-nın elmi şurasında qəbul edilərək universitetin Rektoru tərəfindən təsdiq edilmişdir.</p>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;İnstitutun əsasnaməsi yenidən işlənib ADNSU-nın elmi şurasında qəbul edilərək universitetin Rektoru tərəfindən təsdiq edilmişdir.
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Əgər siz də institutda təhsil almaq istəyirsinizsə, əlaqə bölməsinə keçərək məlumat əldə edə və ya aşağıdaki formanı dolduraraq 
+                      bir başa müraciət edə bilərsiniz</p>
+                      <br>
+                      <a style = "color:blue;" href="<?php echo base_url('qeydiyyat')?>"
+                        >İnstituta qəbul üçün Elektron Qeydiyyat</a
+                      >
+                    </p>
                       <hr class="invis" />
                       
                     </div>
