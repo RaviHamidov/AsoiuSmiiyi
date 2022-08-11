@@ -1,4 +1,5 @@
-<?php $this->load->view('user/includes/header'); ?>
+<?php $this->load->view('user/includes/header');?>
+	<?php $this->load->view('user/includes/header_style');?>
 
       <section>
       <style>
@@ -15,5 +16,6 @@
       </section>
 
       <div style = "position:relative;">
-      <?php $this->load->view('user/includes/footer'); ?>
+      <?php $this->load->view('user/includes/footer');?>
+	<?php $this->load->view('user/includes/footer_style');?>
       <div>

@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/user/css/') ?>cabinet.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/user/css/') ?>reset.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/user/css/') ?>darkmode.css">
+    <link rel="icon" href="<?php echo base_url('assets/user/images');?>/logo.png">
     <script src="<?php echo base_url('assets/user/js/') ?>cabinet.js"></script>
     <title>İstifadəçi paneli</title>
 </head>
@@ -35,22 +36,22 @@
             <div class="topbar-cabinet container-fluid">
                 <div class="item-1 logo-img">
                     <a href="<?php echo base_url('index') ?>">
-                        <img src="<?php echo base_url('assets/user/img/') ?>logo.png" alt="logo.png">
+                        <img style = "max-width:100px;"src="<?php echo base_url('assets/user/images/') ?>logo.png" alt="logo.png">
                     </a>
                 </div>
-                <div class="item-3">
-                    <h4 class="pr-sm-5">Xoş gəldiniz! <?php echo $student['s_name']; ?></h4>
+                
+                <div class="item-3" style = "margin-left: auto; margin-right: 0;">
+                    <h4 class="pr-sm-5 ml-sm-5">Xoş gəldiniz! <?php echo $student['s_name']; ?></h4>
                 </div>
                 <a href="<?php echo base_url('logout'); ?>">
                     <button type="button" class="btn btn-danger">Exit</button>
                 </a>
-                <div class = "pl-sm-5">
+                <div class = "pl-sm-5 mr-sm-1">
                 <form action="<?php echo base_url('renewpass'); ?>" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash();?>" />
                     <input type="hidden" name="std_id" value="<?= $_SESSION['user_id']?>" />
                     <button type="submit" class="btn btn-info btn-block" style="height: 60px;">Şifrənizi yeniləyin</button>
                 </form>
-                    
                 </div>
         </div>
     </header>

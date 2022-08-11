@@ -118,7 +118,7 @@
                         <br>
                         
 
-                        <label for="experience">Tərübə</label>
+                        <label for="experience">Təcrübə</label>
                         <textarea name="experience" rows="10" cols="50" id="daze" class="ckeditor"></textarea>
                         <br>
 

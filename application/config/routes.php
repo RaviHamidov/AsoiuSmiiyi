@@ -56,6 +56,7 @@ $route['default_controller'] = 'UserController';
 $route['index'] = 'UserController/index';
 $route['single'] = 'UserController/single';
 $route['contact'] = 'UserController/contact';
+
 			// User end
 
 			
@@ -207,22 +208,34 @@ $route['admin_detail_form_re/(.*)']   = 'Item9Controller/detail_form/$1';
 $route['admin_is_active_set_item_re'] = 'Item9Controller/isActiveSet';
 $route['admin_group_selection']       = 'Item9Controller/selectGroup';
 
+
+
+// Admin Administration
+$route['admin_item_ad_list']	       = 'administration_controller/index';
+$route['admin_create_item_ad']	       = 'administration_controller/createItem';
+$route['admin_create_item_ad_act']     = 'administration_controller/createItemAct';
+$route['admin_update_form_ad/(.*)']    = 'administration_controller/update_form/$1';
+$route['admin_updateItem_adAct/(.*)']  = 'administration_controller/updateItemAct/$1';
+$route['admin_deleteItem_ad/(.*)']     = 'administration_controller/delete/$1';
+$route['admin_detail_form_ad/(.*)']    = 'administration_controller/detail_form/$1';
+$route['admin_is_active_set_item_ad']  = 'administration_controller/isActiveSet';
+
 //view routes
 $route['contact']                            = 'UserController/contact';
 $route['index']                            	 = 'UserController/index';
 $route['uni_admission']						 = 'UserController/uni_admission';
 $route['qeydiyyat']                          = 'UserController/qeydiyyat';
 
-$route['rector']                             = 'UserController/about_rector';
-$route['director']                           = 'UserController/about_director';
+
 $route['smiiyi']                             = 'UserController/about_smiiyi';
 $route['asoiu']                            	 = 'UserController/about_asoiu';
+$route['rehberlik']                          = 'UserController/rehberlik';
 
 
 $route['tekrar_tehsil_tedris_plani']		 = 'UserController/tt_tedris_plani';
 $route['tekrar_tehsil_ixtisaslar']           = 'UserController/tt_ixtisaslar';
-
 $route['tt_isci_plan']           	         = 'UserController/tt_isci_plan';
+
 $route['yeni_h_tedris_qrafiki']        		 = 'UserController/yh_tedris_qrafiki';
 $route['yeni_hazir_imtahan_sual']            = 'UserController/yh_imtahan_sual';
 $route['yh_ixtisaslar']           			 = 'UserController/yh_ixtisaslar';
@@ -249,6 +262,16 @@ $route['teachersubj/(.*)']                     = 'UserController/teachersubj/$1'
 
 $route['tech_single/(.*)']                     = 'UserController/tech_single/$1';
 
+$route['teachers/(.*)'] 					   = 'UserController/teachers/$1';
 //rrenew pass
 $route['renewpass']                            = 'UserController/renewpass';
 $route['renewpass_act']                        = 'UserController/renewpass_act';
+
+
+//new
+
+$route['team']                                 = 'UserController/team';
+$route['team_single/(.*)']                     = 'UserController/team_single/$1';
+
+$route['blog']                                 = 'UserController/blog';
+$route['blog_single/(.*)']                     = 'UserController/blog_single/$1';

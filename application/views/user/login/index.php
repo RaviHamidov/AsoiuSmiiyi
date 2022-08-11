@@ -7,6 +7,8 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    
+    <link rel="icon" href="<?php echo base_url('assets/user/images');?>/logo.png">
     <link rel="stylesheet" href="<?php echo base_url('assets/user/css/'); ?>/login.css" />
     <title>Smiiyi.Az | İstifadəçi Girişi</title>
   </head>
@@ -48,7 +50,7 @@
           <div class="content">
             <a href="<?php echo base_url('index') ?>"><button class="back-button">Ana Səhifə</button></a>
           </div>
-          <img src="<?php echo base_url('assets/user/img/') ?>login.svg" class="image" alt="" />
+          <img src="<?php echo base_url('assets/user/images/') ?>login.svg" class="image" alt="" />
         </div>
         
       </div>

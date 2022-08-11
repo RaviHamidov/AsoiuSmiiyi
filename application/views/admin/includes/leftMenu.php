@@ -71,6 +71,13 @@ if (empty($adminInfo['a_id'])){
                                 </li>
 
                                 <li>
+                                    <a href="<?php echo base_url ('admin_item_ad_list');?>" >
+                                        <i class="metismenu-icon pe-7s-rocket"></i>
+                                        Rəhbərlik
+                                    </a>
+                                </li>
+
+                                <li>
                                     <a href="<?php echo base_url ('admin_item_ab_list');?>" >
                                         <i class="metismenu-icon pe-7s-rocket"></i>
                                         Fənnlər

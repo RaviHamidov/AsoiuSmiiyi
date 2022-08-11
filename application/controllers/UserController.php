@@ -5,9 +5,24 @@ class UserController extends CI_controller
 
 	public function index()
 	{
-		$data['items']  = $this->db->order_by('sl_id','DESC')->get('items6')->result_array();
-		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('date','DESC')->get('items')->result_array();
-	
+		$data['teachers']  = $this->db->select('t_id,t_name,t_surname,i_c3_name,t_e_mail,t_profile_photo')
+		->join('item_category3','item_category3.i_c3_id = items3.t_scientific_level_id')
+		->limit(4)
+		->where('length(t_profile_photo)>1')
+		->order_by('t_id','RANDOM')->get('items3')->result_array();		
+
+		$data['slides']     = $this->db
+		->select("items.id,items.title,sl_img")
+		->join("items","items6.ann_id = items.id")
+		->limit(2)
+		->order_by('sl_id','DESC')->get('items6')->result_array();
+
+		$data['event']     = $this->db->limit(3)->where('status','1')->order_by('date','DESC')->get('items')->result_array();
+
+		$data['adm']       = $this->db->select('ad_id,ad_name,ad_surname,duty,ad_mail,ad_img')
+		->join('item_category3','item_category3.i_c3_id = administration.ad_scientific_level_id')
+		->limit(4)
+		->order_by('ad_id','asc')->get('administration')->result_array();	
 		$this->load->view('user/index',$data);
 	}
 	
@@ -27,49 +42,67 @@ class UserController extends CI_controller
 
 	public function about_asoiu()
 	{
-		$this->load->view('user/about/adnsu');
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$this->load->view('user/about/adnsu',$data);
 	}
 
 	public function about_smiiyi()
 	{
-		$this->load->view('user/about/smiiyi');
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$this->load->view('user/about/smiiyi',$data);
 	}
-	public function about_rector()
+	
+	public function rehberlik()
 	{
-		$this->load->view('user/about/rector');
-	}
-	public function about_director()
-	{
-		$this->load->view('user/about/director');
+		$data['adm']       = $this->db->select('ad_id,ad_name,ad_surname,duty,ad_mail,ad_img')
+		->join('item_category3','item_category3.i_c3_id = administration.ad_scientific_level_id')
+		->limit(4)
+		->order_by('ad_id','asc')->get('administration')->result_array();	
+
+		$this->load->view('user/about/rehberlik',$data);
 	}
 	
 	public function tt_tedris_plani()
 	{
-		$this->load->view('user/tekrar-ali-tehsil/tedris-plani');
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$this->load->view('user/tekrar_tehsil/tedrisplani',$data);
 	}
 	public function tt_ixtisaslar()
 	{
-		$this->load->view('user/tekrar-ali-tehsil/ixtisaslar');
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$this->load->view('user/tekrar_tehsil/ixtisaslar',$data);
 	}
 
 	public function tt_isci_plan()
 	{
-		$this->load->view('user/tekrar-ali-tehsil/işçi plan');
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$this->load->view('user/tekrar_tehsil/ishciplan',$data);
 	}
 	
 	public function yh_tedris_qrafiki()
 	{
-		$this->load->view('user/yeniden-hazirlanma/tedris-qrafiki');
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$this->load->view('user/yenidenhazirlanma/tedris_qrafiki',$data);
 	}
 	
 	public function yh_imtahan_sual()
 	{
-		$this->load->view('user/yeniden-hazirlanma/dovlet-imtahan-suallari');
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$this->load->view('user/yenidenhazirlanma/dis',$data);
 	}
 	
 	public function yh_ixtisaslar()
 	{
-		$this->load->view('user/yeniden-hazirlanma/ixtisaslar');
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$this->load->view('user/yenidenhazirlanma/ixtisaslar',$data);
 	}
 
 	public function login()
@@ -192,33 +225,31 @@ class UserController extends CI_controller
 
 	}
 
+	public function teachers($id){
+		$data['teacher']  = $this->db
+		->select('t_id,t_name,t_surname,t_profile_photo,t_e_mail,i_c3_name,t_twitter,t_linkedin,t_facebook')
+		->join('item_category3','item_category3.i_c3_id = items3.t_scientific_level_id')
+		->join('speciality','speciality.speciality_id = items3.t_speciality')
+		->where('t_speciality',$id)
+		->order_by('t_id','DESC')->get('items3')->result_array();
+		
+		$data['spec'] = $this->db
+		->where('speciality_id',$id)
+		->get('speciality')->row();
+		$this->load->view('user/teacher',$data);
+	}
 
-	
-	public function teachersubj($id)
-	{
-
+	public function tech_single($id){
 		$data['teacher']  = $this->db
 		->join('item_category3','item_category3.i_c3_id = items3.t_scientific_level_id')
-		->where('t_speciality',$id)->order_by('t_id','DESC')->get('items3')->result_array();
-		
-		$this->load->view('user/teachers/index',$data);
-
-
+		->where('t_id',$id)
+		->order_by('t_id','DESC')->get('items3')->row();
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+		$this->load->view('user/teacher_single',$data);
 	}
 
+	
 
-public function tech_single($id)
-	{
-
-		$data['teacher1']  = $this->db
-		->join('speciality','speciality.speciality_id = items3.t_speciality')
-		->join('item_category3','item_category3.i_c3_id = items3.t_scientific_level_id')
-		->where('t_id',$id)->order_by('t_id','DESC')->get('items3')->row();
-		
-		$this->load->view('user/teachers/teachersingle',$data);
-
-
-	}
 	public function renewpass(){
 		if(isset($_SESSION['user_id'])){
 			$x =$_SESSION['user_id'];
@@ -277,6 +308,46 @@ public function tech_single($id)
 	}
 	
 	
+
+	public function team(){
+		$data['adm']  = $this->db->select('ad_id,ad_name,ad_surname,i_c3_name,ad_mail,ad_img')
+		->join('item_category3','item_category3.i_c3_id = administration.ad_scientific_level_id')
+		->order_by('ad_id','asc')->get('administration')->result_array();	
+		$this->load->view('user/about/team',$data);
+	}
+	
+	public function team_single($id)
+	{
+		$data['adm']  = $this->db
+		->join('item_category3','item_category3.i_c3_id = administration.ad_scientific_level_id')
+		->where('ad_id',$id)
+		->order_by('ad_id','asc')->get('administration')->row();	
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+		$this->load->view('user/about/team_single',$data);
+	}
+	public function blog(){
+
+		$data['event']  = $this->db->select('')->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+		
+		$this->load->view('user/blog',$data);
+	}
+	public function blog_single($id)
+	{
+		$data['x']  = $this->db->where('id',$id)->order_by('id','DESC')->get('items')->row();
+
+		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
+
+		$query =  $this->db->where('id',$id)->order_by('id','DESC')->get('items');
+		
+		if ($query->num_rows() > 0){
+			$this->load->view('user/blog_single',$data);
+		}
+		else{
+			redirect(base_url('index'));
+		}
+		
+	}
+
 
 }
 ?>

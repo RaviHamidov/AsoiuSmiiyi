@@ -1,24 +1,19 @@
-<?php $this->load->view('user/includes/header'); ?>
-      <section class="section db p120">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="tagline-message page-title text-center">
-                <h3>Əlaqə</h3>
-                <ul class="breadcrumb">
-                  <li><a href="javascript:void(0)">Ana Səhifə</a></li>
-                  <li class="active">Əlaqə</li>
-                </ul>
-              </div>
-            </div>
+<?php $this->load->view('user/includes/header_style');?>
+<?php $this->load->view('user/includes/header');?>
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('<?php echo base_url('assets/user/');?>images/bg_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Əlaqə</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Əsas səhifə <i class="ion-ios-arrow-forward"></i></a></span> <span>Əlaqə <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
-      </section>
-
-      <section class="section gb nopadtop">
-        <div class="container">
-          <div class="boxed boxedp4">
-            <div>
+      </div>
+    </section>
+    <p class = "my-sm-5" style = "text-align:center; font-size:25px;">Xəritədə bax</p>
+            <div class = "my-sm-5" style = "width:70%; margin:auto;">
               <iframe
                 id="map"
                 class="wow slideInUp"
@@ -30,54 +25,49 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
+            </div> 
+
+    <section class="ftco-section contact-section">
+      <div class="container">
+        <div class="row d-flex contact-info">
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box  text-center">
+          		<h3 class="mb-4">Ünvan</h3>
+	            <p>AZ1010, Bakı şəhəri, Azadlıq prospekti 20, ADNSU, I korpus</p>
+	          </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box text-center">
+          		<h3 class="mb-4">Telefon:</h3>
+	            <p><a href="tel://+994124980393">+994 12 498-03-93</a></p>
+              <p><a href="tel://+994125982912">+994 12 598-29-12</a></p>
+              <p><a href="tel://+994124980757">+994 12 498-07-57</a></p>
+              <p><a href="tel://+994502428415">+994 50 242-84-15</a></p>
+	          </div>
+          </div>
+
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box text-center">
+              <h3 class="mb-4">Faks:</h3>
+              <p><a href="tel://+994124980757">+994 12 498-07-57</a></p>
             </div>
+          </div>
 
-            <div class="row contactv2 text-center">
-              <div class="col-md-4">
-                <div class="small-box">
-                  <i class="flaticon-email wow fadeIn"></i>
-                  <h4>Əlaqə vasitələri</h4>
-                  <small
-                    >Telefon: (994 12) 498-03-93<br> (994 12) 598-29-12<br> (994 12)
-                    498-07-57<br> (050) 242-84-15</small
-                  >
-                  <small>Faks: (994 12) 498-07-57</small>
-                  <p><a href="mailto:smiiyi@asoiu.edu.az">smiiyi@asoiu.edu.az</a></p>
-                </div>
-                <!-- end small-box -->
-              </div>
-
-              <div class="col-md-4">
-                <div class="small-box">
-                  <i class="flaticon-map-with-position-marker wow fadeIn"></i>
-                  <h4>Ünvan</h4>
-                  <small
-                    >AZ1010, Bakı şəhəri, Azadlıq prospekti 20, ADNSU, I
-                    korpus</small
-                  >
-                  <p><a href="#">Xəritədə bax</a></p>
-                </div>
-                <!-- end small-box -->
-              </div>
-
-              <div class="col-md-4">
-                <div class="small-box">
-                  <i class="flaticon-share wow fadeIn"></i>
-                  <h4>Sosial Media Hesabları</h4>
-                  <small>Twitter: @smiiyi</small>
-                  <small>Facebook: facebook.com/smiyi</small>
-                  
-                </div>
-              </div>
-            </div>
-            <p style = "margin:10px 60px">Əgər siz də institutda təhsil almaq istəyirsinizsə, əlaqə bölməsinə keçərək məlumat əldə edə və ya aşağıdaki formanı dolduraraq 
+          <div class="col-md-3 d-flex">
+          	<div class="bg-light align-self-stretch box text-center">
+          		<h3 class="mb-4">Email</h3>
+	            <p><a href="mailto:smiiyi@asoiu.edu.az">smiiyi@asoiu.edu.az</a></p>
+	          </div>
+          </div>
+        </div> 
+      </div>
+      <p class = "my-sm-5" style = "text-align:center;">Əgər siz də institutda təhsil almaq istəyirsinizsə, əlaqə bölməsinə keçərək məlumat əldə edə və ya aşağıdaki formanı dolduraraq 
                       bir başa müraciət edə bilərsiniz</p>
                       <br>
-                      <a style = "color:blue;margin:10px 60px" href="<?php echo base_url('qeydiyyat')?>"
-                        >İnstituta qəbul üçün Elektron Qeydiyyat</a
-                      >
-          </div>
-        </div>
-        
-      </section>
-      <?php $this->load->view('user/includes/footer'); ?>
+                      <p style = "text-align:center;"><a style = "text-align:center; color:blue;margin:10px 60px" href="<?php echo base_url('qeydiyyat')?>"
+                        >İnstituta qəbul üçün Elektron Qeydiyyat</a></p>
+    </section>
+          
+
+    <?php $this->load->view('user/includes/footer');?>
+	<?php $this->load->view('user/includes/footer_style');?>

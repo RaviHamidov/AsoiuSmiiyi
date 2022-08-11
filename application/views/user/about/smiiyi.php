@@ -1,59 +1,31 @@
-<?php $this->load->view('user/includes/header'); ?>
-      <section class="section db p120">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-32">
-              <div class="tagline-message page-title text-center">
-                <h3>SMİİYİ haqqında</h3>
-                <ul class="breadcrumb">
-                    <li><a href="<?php echo base_url('index')?>">Ana Səhifə</a></li>
-                    <li class="active">
-                      SMİİYİ haqqında
-                    </li>
-                  </ul>
-              </div>
-            </div>
+<?php $this->load->view('user/includes/header_style');?>
+<?php $this->load->view('user/includes/header');?>
+   
+<section class="hero-wrap hero-wrap-2" style="background-image: url('<?php echo base_url('assets/user/images/');?>bg_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Sənaye Müəssisələri İşçilərinin İxtisasartırma və Yenidənhazırlanma İnstitutu</h1>
+             <p class="breadcrumbs"><span class="mr-2"><a href="<?php echo base_url('index');?>">Əsas səhifə <i class="ion-ios-arrow-forward"></i></a></span></p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section gb nopadtop">
-        <div class="container">
-          <div class="boxed">
-            <div class="row">
-              <div class="col-md-32">
-                <div class="content blog-list">
-                  <div class="blog-wrapper clearfix">
-                    <div class="blog-meta">
-                      <h3 class="text-center"><a href="http://smiiyi.az">Sənaye Müəssisələri İşçilərinin İxtisasartırma və Yenidənhazırlanma İnstitutu</a></h3>
-                    </div>
-                    <div class="col-md-32 shop-media">
-                      <div class="row">
-                        <div class="col-md-32 shop-media">
-                          <div class="img-responsive article-head-img">
-                            <img
-                              src="<?php echo base_url('assets/user/img/')?>adnsu.jpg"
-                              alt=""
-                              class="img-responsive img-rounded"
-                            />
-                            <div class="magnifier">
-                              <a
-                                rel="prettyPhoto[inline]"
-                                href="<?php echo base_url('assets/user/img/')?>elan-1-3.jpeg"
-                                title=""
-                                ><i class="flaticon-add"></i
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="blog-desc-big mt-2" style = "padding:10px 60px;">
-                    <div style = "float:left;">
-                    <img style="margin-right:40px!important; height:320px;" src ="<?php echo base_url('assets/user/img/')."asoiu.jpg" ?>"/>
-                    </div>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Azərbaycan Respublikası <i>“Xalq Təsərrüfatı Mütəxəsis və Rəhbər İşçilərinin İxtisasının Artırılması və Yenidən Hazırlanması”</i> institutu 
+		
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row">
+          <div class="col-lg-8 ftco-animate">
+            
+           <p>
+              <img src="<?php echo base_url('assets/user/images/')?>asoiu.jpg" 
+              onerror="this.onerror=null; this.src='<?php echo base_url('upload/teachers/').'alt.png';?>'"
+              alt="image not found" class="img-fluid">
+            </p>
+            <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Azərbaycan Respublikası <i>“Xalq Təsərrüfatı Mütəxəsis və Rəhbər İşçilərinin İxtisasının Artırılması və Yenidən Hazırlanması”</i> institutu 
                       Nazirlər Kabinetinin 18 oktyabr 1991-ci il tarixli 348 saylı qərarı ilə təşkil edilmiş və onun “Nizamnaməsi” 1992-ci ildə Təhsil Nazirliyi 
                       tərəfindən təsdiq edilmişdir.<br><br>
 
@@ -73,17 +45,15 @@
                       <br>
                       <a style = "color:blue;" href="<?php echo base_url('qeydiyyat')?>"
                         >İnstituta qəbul üçün Elektron Qeydiyyat</a
-                      >
-                    </p>
-                      <hr class="invis" />
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                      >  
+            </p>
           </div>
+
+          <?php $this->load->view('user/includes/right_side');?>
         </div>
-        
-      </section>
-      <?php $this->load->view('user/includes/footer'); ?>
+			</div>
+		</section>
+
+
+<?php $this->load->view('user/includes/footer');?>
+<?php $this->load->view('user/includes/footer_style');?>
