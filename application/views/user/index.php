@@ -338,7 +338,7 @@
 							<h3><a href="#">Neft-Qaz mühəndisliyi</a></h3>
 							<p>
 							Neft və qaz mühəndisliyi xam neft və ya təbii qaz kimi hidrokarbonların hasilatı ilə bağlı fəaliyyətlərlə məşğul olan mühəndisliyin növüdür.
-							<div style=" position: absolute;bottom: 0px;"><p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et</a></p></div>
+							<div style="bottom: 0px;"><p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et</a></p></div>
 						</div>
 					</div>
 					<div class="col-md-3 course ftco-animate">
@@ -353,7 +353,7 @@
 							<p>
 							Menecment ixtisası biznes, biznesin idarə edilməsi, uğurlu biznes menecerinin yetişdirilməsi məsələlərini özündə birləşdirir.
 							</p>
-							<div style=" position: absolute;bottom: 0px;"><p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et</a></p></div>
+							<div style="bottom: 0px;"><p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et</a></p></div>
 						</div>
 					</div>
 					<div class="col-md-3 course ftco-animate">
@@ -368,7 +368,7 @@
 							<p>
 							Kimya mühəndisliyi ixtisası istehsal olunacaq maddələrin fiziki-kimyəvi proseslərini müşahidə edilməsini
 							 və istehsalın texnoloji inkişafda daha səmərəli olmasının yollarını öyrənir.
-							 <div style=" position: absolute;bottom: 0px;"><p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et</a></p></div>
+							 <div style="bottom: 0px;"><p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et</a></p></div>
 						</div>
 					</div>
 					<div class="col-md-3 course ftco-animate">
@@ -381,7 +381,7 @@
 							</p>
 							<h3><a href="#">Materialşünaslıq</a></h3>
 							<p>Materialşünaslıq - materialların həm bərk, həm də maye halında xassələrinin müxtəlif amillərin təsiri altında dəyişməsini öyrənən elmdir. </p>
-							<div style=" position: absolute;bottom: 0px;"><p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et</a></p></div>
+							<div style="bottom: 0px;"><p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et</a></p></div>
 						</div>
 					</div>
 				</div>

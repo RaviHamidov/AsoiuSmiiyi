@@ -4006,11 +4006,11 @@ input[type="button"].btn-block {
     
     .navbr-fx {
       background: #fff;
-      width: 200px;
+      width: 300px;
       height: 100%;
       display: block;
       position: fixed;
-      left: -200px;
+      left: -300px;
       top: 0px;
       -webkit-transition: left 0.25s ease;
       -moz-transition: left 0.25s ease;
@@ -9018,6 +9018,8 @@ h1, h2, h3, h4, h5,
         top: 0;
         bottom: 0;
         left: 0;
+        overflow: scroll;
+-webkit-overflow-scrolling: touch;
         right: 0;
         background: #0d1128;
         background: -moz-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
