@@ -267,9 +267,7 @@
         </div>
       </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"
-        integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="<?php echo base_url('assets/user/js/') ?>bootstrap.min.js"></script>
         <script src="<?php echo base_url('assets/user/js/') ?>toggle.js"></script>
         <script src="<?php echo base_url('assets/user/js/') ?>darkmode.js"></script>
         

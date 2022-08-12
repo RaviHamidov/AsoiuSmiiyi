@@ -1,78 +1,88 @@
 /* ===== Google Font Import - Poppins ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-*{
-    transition: all 0.4s ease;;
+* {
+    transition: all 0.4s ease;
 }
 
 /* ===== Colors ===== */
 
-body.dark{
-    --body-color: #18191A;
+body.dark {
+    --body-color: #18191a;
     --nav-color: #242526;
     --side-nav: #242526;
-    --text-color: #CCC;
-    --button-color: #F2F2F2;
+    --text-color: #ccc;
+    --button-color: #f2f2f2;
 }
-body.dark .navbar-brand img{
-    content:url("../img/logo-dark.png");
+body.dark .navbar-brand img {
+    content: url("../img/logo-dark.png");
     width: 70px;
     padding-top: 25px;
 }
-body.dark .header-normal , body.dark footer{
+body.dark .header-normal,
+body.dark footer {
     background-color: var(--nav-color) !important;
 }
 
-body.dark .iconitem button{
+body.dark .iconitem button {
     background-color: var(--button-color) !important;
     color: var(--search-text);
-
 }
-body.dark .section.db{
-    background-color: #18191A !important;
+body.dark .section.db {
+    background-color: #18191a !important;
 }
-body.dark .header-normal .nav-container .navbar-default  .navbar-collapse .navbar-right .hassubmenu .dropdown-menu{
+body.dark
+    .header-normal
+    .nav-container
+    .navbar-default
+    .navbar-collapse
+    .navbar-right
+    .hassubmenu
+    .dropdown-menu {
     background-color: var(--nav-color) !important;
     border-top: 3px solid #ddd !important;
 }
 
-body.dark .btn-primary, body.dark .pagination>li>a, .pagination>li>span, body.dark .date-and-button div button, body.dark .teachers-button button, body.dark .image-wrap:after{
-    background-color: #18191A !important;
+body.dark .btn-primary,
+body.dark .pagination > li > a,
+.pagination > li > span,
+body.dark .date-and-button div button,
+body.dark .teachers-button button,
+body.dark .image-wrap:after {
+    background-color: #18191a !important;
 }
 
-body.dark .header, body.dark footer div{
+body.dark .header,
+body.dark footer div {
     background-color: var(--nav-color) !important;
 }
-body.dark .navbar-expand-md{
-    background-color: #18191A !important;
+body.dark .navbar-expand-md {
+    background-color: #18191a !important;
 }
-body.dark .logo-img img{
-    content:url("../img/logo-dark.png");
+body.dark .logo-img img {
+    content: url("../img/logo-dark.png");
     width: 70px;
     height: 60px;
 }
-body.dark .item-1 img{
+body.dark .item-1 img {
     min-width: auto;
 }
-body.dark .item-2 h4{
+body.dark .item-2 h4 {
     color: white;
 }
-body.dark .item-2{
+body.dark .item-2 {
     text-align: right;
 }
-body.dark .topbar-cabinet{
+body.dark .topbar-cabinet {
     justify-content: space-between;
     align-items: center;
 }
-body.dark .col-lg-6{
-    background-color: #18191A !important;
+body.dark .col-lg-6 {
+    background-color: #18191a !important;
 }
-body.dark .accordion .card{
+body.dark .accordion .card {
     background-color: white;
 }
-
-
-
 
 .fabs {
     bottom: 0;
@@ -80,9 +90,9 @@ body.dark .accordion .card{
     margin: 1em;
     right: 0;
     z-index: 998;
-  }
-  
-  .fab {
+}
+
+.fab {
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -91,57 +101,49 @@ body.dark .accordion .card{
     text-align: center;
     color: #f0f0f0;
     margin: 25px auto 0;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     cursor: pointer;
-    transition: all .1s ease-out;
+    transition: all 0.1s ease-out;
     position: relative;
     z-index: 998;
     overflow: hidden;
     background: #012549;
-  }
-  body.dark .fab{
+}
+body.dark .fab {
     background: #242526;
-  }
+}
 
-  
-  .fab i {
+.fab i {
     padding: 20px;
     font-size: 2em;
     line-height: 55px;
-    -webkit-transition: all .2s ease-out;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  } 
-.dark-light i.sun{
+    -webkit-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.dark-light i.sun {
     opacity: 0;
     pointer-events: none;
- 
 }
 
-.dark-light.active i.sun{
+.dark-light.active i.sun {
     opacity: 1;
     pointer-events: auto;
-    
 }
 
-.dark-light.active i.moon{
+.dark-light.active i.moon {
     opacity: 0;
     pointer-events: none;
-    
 }
-.fabs i:first-child{
+.fabs i:first-child {
     position: absolute;
     right: 0px;
 }
 
-
-
 @media (max-width: 768px) {
-    
-   
-    body.dark .navbar-brand img{
+    body.dark .navbar-brand img {
         content: url("../img/logo-dark.png");
         width: 55px !important;
-         padding-top: 25px !important;
+        padding-top: 25px !important;
     }
 }
