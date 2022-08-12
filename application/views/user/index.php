@@ -67,23 +67,17 @@
         </div>
 			</div>
 		</section>
-		<style>
-			.hvr:hover{
-				color:lightblue;
-			}
-		</style>
-		<section class="ftco-section bg-light">
+	
+		<section class="ftco-section bg-light" style="position:relative;z-index:1;">
 			<div class="container">
-			<div class="row justify-content-center mb-5 pb-2">
-            		<div class="col-md-8 text-center heading-section ftco-animate">
-					<h2 class="mb-4 clickme"><span>Ən son</span> 
-						<a class="hvr" href = "<?php echo base_url('blog');?>"> > <u>Elanlar</u></a> </h2>
-          			</div>
-        		</div>
+			<div class="allevents mt-4" >
+					<a href = "<?php echo base_url('blog');?>"><button>Bütün Elanlar</button></a>
+				</div>
+			
 				<div class="row">
 
         <?php foreach($event as $events){?>
-          <div class="col-md-6 col-lg-4 ftco-animate">
+          <div class="col-md-6 col-lg-4 ftco-animate blog-entry-parent">
             <div class="blog-entry" >
               <a href="<?php echo base_url('blog_single/'.$events['id']); ?>" class="block-20 d-flex align-items-end" 
               style="background-image: url('<?php echo base_url('upload/events/'.$events['img']); ?>');">
@@ -95,7 +89,7 @@
                   <span class="yr"><?php echo date('Y', strtotime($events['date']));?></span>
                 </div> 
               </a>
-              <div class="text bg-white p-1" style ="min-height:100px">
+              <div class="text bg-white p-1">
                 <h3 class="heading"><a href="<?php echo base_url('blog_single/'.$events['id']); ?>"></a></h3>
                 <p class ="keep-scrolling">
 				<?php if(strlen($events['title']) > 80){
@@ -104,11 +98,16 @@
 					echo $events['title'];
 				}  ?>
 				</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-3"><a href="<?php echo base_url('blog_single/'.$events['id']); ?>" class="btn btn-primary">Ətraflı oxu <span class="ion-ios-arrow-round-forward"></span></a></p>
-                </div>
+				<div class="align-items-center hr-btn-affect mt-4">
+					<a href="<?php echo base_url('blog_single/'.$events['id']); ?>">
+						<button>Ətraflı oxu </button>
+					</a>
+				</div>
+				
               </div>
+			  	
             </div>
+			
           </div>
         <?php }?>
 		
@@ -118,18 +117,18 @@
 				</a>
 		</div> -->
 		</div>
-			</div>
+		
 		</section>
 
 		
-		<section class="ftco-section ftco-no-pt ftc-no-pb">
+		<section class="ftco-section ftco-no-pt ftc-no-pb ftra-color" style="position:relative;z-index:-1;">
 			<div class="container">
 				<div class="row d-flex">
 					<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
 						<div class="img" style="background-image:url(<?php echo base_url('assets/user/');?>images/offer.jpeg); border"></div>
 					</div>
 					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
-          	<h2 class="mb-4">Sizə təklif edirik</h2>
+          			<h2 class="mb-4" style="color:#000">Sizə təklif edirik</h2>
 						<p>Biz gənclərin yüksək səviyyədə təhsilə yiyələnmələrini təmin etmək məqsədi ilə fəaliyyət göstəririk.</p>
 						<div class="row mt-5">
 							<div class="col-lg-6">
@@ -150,7 +149,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-6"> 
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
 									<div class="text pl-3">
@@ -256,7 +255,8 @@
 
 
 	
-    <section class="ftco-section bg-light">
+    <section class="ftco-section bg-light container">
+		
 			<div class="container-fluid px-4">
 				<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
@@ -283,7 +283,7 @@
 			</div>
 		</section>
 
-		<section class="ftco-section bg-light">
+		<section class="ftco-section bg-light container">
 			<div class="container-fluid px-4">
 				<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
@@ -316,7 +316,7 @@
 			</div>
 		</section>
 
-		<section class="ftco-section">
+		<section class="ftco-section container">
 			<div class="container-fluid pb-4 ">
 				<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
