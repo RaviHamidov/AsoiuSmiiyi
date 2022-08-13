@@ -82,6 +82,7 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
+    scroll-behavior: smooth;
 }
 .fixed-rs {
     position: fixed;
@@ -773,7 +774,7 @@ pre code {
     }
 }
 .btneal {
-    background-color: #fd7e14 !important;
+    background-color: #002f62 !important;
 }
 
 @media (min-width: 1200px) {
@@ -2939,7 +2940,6 @@ fieldset:disabled a.btn {
 .btn-primary {
     color: #fff;
     background-color: #007bff;
-    border-color: #007bff;
 }
 .btn-primary:hover {
     color: #fff;
@@ -5196,7 +5196,7 @@ input[type="button"].btn-block {
         position: absolute;
         top: 0px;
         left: 0px;
-        background: #0d1128 !important;
+        background: #151e50 !important;
         padding: 12px 0 0 10px;
         -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
         -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -11256,7 +11256,7 @@ h1 {
 }
 h2 {
     /*!*/
-    font-size: 2.44140625em;
+    font-size: 2.7em !important;
     font-weight: 700;
 }
 .page h2 {
@@ -11373,12 +11373,12 @@ h6 {
 }
 
 .ftco-navbar-light {
-    background: #0d1128 !important;
+    background: #151e50 !important;
     z-index: 3;
     padding: 0;
 }
 .ftco-navbar-light .container {
-    background: #0d1128;
+    background: #151e50;
     width: 1110px;
 }
 
@@ -11388,7 +11388,7 @@ h6 {
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light {
-        background: #0d1128 !important;
+        background: #151e50 !important;
         position: relative;
         top: 0;
         padding: 10px 15px;
@@ -11733,19 +11733,19 @@ h6 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #0d1128;
-    background: -moz-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+    background: #151e50;
+    background: -moz-linear-gradient(45deg, #151e50 0%, #fd6100 100%);
     background: -webkit-gradient(
         left bottom,
         right top,
-        color-stop(0%, #0d1128),
+        color-stop(0%, #151e50),
         color-stop(100%, #fd6100)
     );
-    background: -webkit-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-    background: -o-linear-gradient(45deg, #0d1128 0%, #007bff 100%);
-    background: -ms-linear-gradient(45deg, #0d1128 0%, #007bff 100%);
-    background: linear-gradient(45deg, #0d1128 0%, #0d1128 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1 );
+    background: -webkit-linear-gradient(45deg, #151e50 0%, #fd6100 100%);
+    background: -o-linear-gradient(45deg, #151e50 0%, #007bff 100%);
+    background: -ms-linear-gradient(45deg, #151e50 0%, #007bff 100%);
+    background: linear-gradient(45deg, #151e50 0%, #151e50 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151e50', endColorstr='#fd6100', GradientType=1 );
     opacity: 0.5;
 }
 .owl-carousel.home-slider .slider-item .slider-text {
@@ -11876,7 +11876,7 @@ h6 {
 }
 
 .bg-darken {
-    background: #0d1128 !important;
+    background: #151e50 !important;
 }
 
 .bg-white {
@@ -11900,7 +11900,7 @@ h6 {
 }
 
 .bg-fifth {
-    background: #5d50c6;
+    background: #151e50;
 }
 
 .ftc-no-pb {
@@ -11908,6 +11908,11 @@ h6 {
 }
 
 .btn {
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
     cursor: pointer;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -11924,10 +11929,11 @@ h6 {
 .btn.btn-primary {
     background: #002f62;
     color: #fff;
-}
-.btn.btn-primary {
-    background: #002f62;
-    color: #fff;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
 }
 .btn.btn-primary.btn-outline-primary {
     border: 1px solid #002f62;
@@ -12089,7 +12095,7 @@ h6 {
     width: calc(100% - 80px);
 }
 .services-2 .text h3 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 }
 
@@ -12134,11 +12140,20 @@ h6 {
 .staff {
     overflow: hidden;
     margin-bottom: 30px;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    position: relative;
+    padding: 15px 20px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 .staff .img-wrap {
     height: 400px;
@@ -12149,13 +12164,15 @@ h6 {
 }
 .staff .img {
     width: 100%;
+    height: 100%;
     display: block;
-    background-position: top center;
+    background-position: center center;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    border-radius: 10px;
 }
 .staff .text {
     position: relative;
@@ -12209,10 +12226,11 @@ h6 {
     opacity: 1;
     top: -50px;
 }
-.staff:hover .img,
-.staff:focus .img {
-    margin-top: -10px;
+
+.hr-staff-effect:hover {
+    box-shadow: 0 0 30px rgb(33 33 33 / 30%);
 }
+
 .staff:hover .text h3,
 .staff:focus .text h3 {
     color: #fd5f00;
@@ -12314,7 +12332,7 @@ h6 {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border: none;
-    background-color: #007bff;
+    background-color: #151e50;
     line-height: 3rem;
     color: #ffffff;
 }
@@ -12339,9 +12357,8 @@ h6 {
 }
 @media (min-width: 768px) {
     .blog-entry {
+        margin-top: 15px;
         margin-bottom: 30px;
-
-        margin-top: 30px !important;
     }
 }
 
@@ -12378,7 +12395,7 @@ h6 {
 
 .blog-entry .meta-date {
     display: inline-block;
-    background: #5d50c6;
+    background: #151e50;
 }
 .blog-entry .meta-date span {
     display: block;
@@ -12485,6 +12502,24 @@ textarea.form-control {
 
 .about-author .desc h3 {
     font-size: 24px;
+}
+
+.hr-Professions {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.hr-Professions > div:hover .hr-Professions_button p a span {
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .ftco-section {
@@ -12595,7 +12630,7 @@ textarea.form-control {
 .ftco-footer .subscribe-form .form-group .submit {
     color: #fff !important;
     font-size: 16px;
-    background: #5d50c6 !important;
+    background: #151e50 !important;
     border: none !important;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -12889,7 +12924,7 @@ textarea.form-control {
 }
 .testimony-wrap .quote i {
     font-size: 100px;
-    color: #5d50c6;
+    color: #151e50;
 }
 .testimony-wrap .name {
     font-weight: 400;
@@ -12975,20 +13010,20 @@ textarea.form-control {
     content: "";
     z-index: -1;
     opacity: 0.8;
-    background: #0d1128;
-    background: #0d1128;
-    background: -moz-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+    background: #151e50;
+    background: #151e50;
+    background: -moz-linear-gradient(45deg, #151e50 0%, #fd6100 100%);
     background: -webkit-gradient(
         left bottom,
         right top,
-        color-stop(0%, #0d1128),
+        color-stop(0%, #151e50),
         color-stop(100%, #fd6100)
     );
-    background: -webkit-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-    background: -o-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-    background: -ms-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-    background: linear-gradient(45deg, #0d1128 0%, #007bff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1 );
+    background: -webkit-linear-gradient(45deg, #151e50 0%, #fd6100 100%);
+    background: -o-linear-gradient(45deg, #151e50 0%, #fd6100 100%);
+    background: -ms-linear-gradient(45deg, #151e50 0%, #fd6100 100%);
+    background: linear-gradient(45deg, #151e50 0%, #007bff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151e50', endColorstr='#fd6100', GradientType=1 );
 }
 
 .ftco-counter {
@@ -13038,7 +13073,7 @@ textarea.form-control {
 }
 
 footer {
-    background: #0d1128 !important;
+    background: #151e50 !important;
     padding: 15px 0;
 }
 footer li {
@@ -13189,18 +13224,18 @@ footer hr {
     content: "";
     opacity: 0.7;
     background: #fd6100;
-    background: -moz-linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
+    background: -moz-linear-gradient(45deg, #fd6100 0%, #151e50 100%);
     background: -webkit-gradient(
         left bottom,
         right top,
         color-stop(0%, #fd6100),
-        color-stop(100%, #0d1128)
+        color-stop(100%, #151e50)
     );
-    background: -webkit-linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
-    background: -o-linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
-    background: -ms-linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
+    background: -webkit-linear-gradient(45deg, #fd6100 0%, #151e50 100%);
+    background: -o-linear-gradient(45deg, #fd6100 0%, #151e50 100%);
+    background: -ms-linear-gradient(45deg, #fd6100 0%, #151e50 100%);
     background: linear-gradient(45deg, #007bff 0%, #007bff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd6100', endColorstr='#0d1128', GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd6100', endColorstr='#151e50', GradientType=1 );
 }
 
 .appointment-form .form-group {
