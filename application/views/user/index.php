@@ -74,18 +74,18 @@
 <section class="ftco-section bg-light" style="position:relative;z-index:1;">
     <div class="container">
         <div>
-            <span class="allevents mr-1">
+            <span class="allevents mb-1 mr-1">
                 <a href="<?php echo base_url('blog');?>"><button>Bütün Elanlar</button></a>
             </span>
             <!-- #Duzeldilmeli => Demeli burdaki butonlara teyinatina uygun id verilmelidi -->
 
-            <span class="allevents mr-1">
+            <span class="allevents mb-1 mr-1">
                 <a href="<?php echo base_url('blog');?>"><button>Komyuter Muhendisliyi</button></a>
             </span>
-            <span class="allevents mr-1">
+            <span class="allevents mb-1 mr-1">
                 <a href="<?php echo base_url('blog');?>"><button>Neft-Qaz Muhendisliyi</button></a>
             </span>
-            <span class="allevents mr-1">
+            <span class="allevents mb-1 mr-1">
                 <a href="<?php echo base_url('blog');?>"><button>Geofizika Muhendisliyi</button></a>
             </span>
 
@@ -376,8 +376,8 @@
                 </p>
             </div>
         </div>
-        <div class="row hr-Professions" style="min-height:620px">
-            <div class="col-md-3 course ftco-animate">
+        <div class="row hr-Professions">
+            <div class="hr-staff-effect col-md-3 course ftco-animate slider-height">
                 <div class="img"
                     style="background-image:url(<?php echo base_url('assets/user/');?>images/course-1.jfif);"></div>
                 <div class="text pt-4">
@@ -387,16 +387,19 @@
                         <span><i class="icon-calendar mr-2"></i>3-4 İL</span>
                     </p>
                     <h3><a href="#">Neft-Qaz mühəndisliyi</a></h3>
-                    <p>
-                        Neft və qaz mühəndisliyi xam neft və ya təbii qaz kimi hidrokarbonların hasilatı ilə bağlı
-                        fəaliyyətlərlə məşğul olan mühəndisliyin növüdür.
-                    <div class="hr-Professions_button" style="bottom: 0px;">
-                        <p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et
-                                <span>></span></a></p>
+                    <div>
+                        <p>Neft və qaz mühəndisliyi xam neft və ya təbii qaz kimi hidrokarbonların hasilatı ilə bağlı
+                            fəaliyyətlərlə məşğul olan mühəndisliyin növüdür.</p>
                     </div>
+                    <div class="align-items-center hr-btn-affect mt-4">
+                        <a href="<?php echo base_url('qeydiyyat')?>">
+                            <button>Müraciət et</button>
+                        </a>
+                    </div>
+
                 </div>
             </div>
-            <div class="col-md-3 course ftco-animate">
+            <div class="hr-staff-effect col-md-3 course ftco-animate slider-height">
                 <div class="img"
                     style="background-image:url(<?php echo base_url('assets/user/');?>images/course-2.jfif);"></div>
                 <div class="text pt-4">
@@ -406,37 +409,42 @@
                         <span><i class="icon-calendar mr-2"></i>3-4 İL</span>
                     </p>
                     <h3><a href="#">Menecment</a></h3>
-                    <p>
-                        Menecment ixtisası biznes, biznesin idarə edilməsi, uğurlu biznes menecerinin yetişdirilməsi
-                        məsələlərini özündə birləşdirir.
-                    </p>
-                    <div class="hr-Professions_button" style="bottom: 0px;">
-                        <p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et
-                                <span>></span></a></p>
+                    <div>
+                        <p>
+                            Menecment ixtisası biznes, biznesin idarə edilməsi, uğurlu biznes menecerinin yetişdirilməsi
+                            məsələlərini özündə birləşdirir.
+                        </p>
+                    </div>
+                    <div class="align-items-center hr-btn-affect mt-4">
+                        <a href="<?php echo base_url('qeydiyyat')?>">
+                            <button>Müraciət et</button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 course ftco-animate">
+            <div class="hr-staff-effect col-md-3 course ftco-animate slider-height">
                 <div class="img"
                     style="background-image:url(<?php echo base_url('assets/user/');?>images/course-3.jpg);"></div>
                 <div class="text pt-4">
-                    <p class="meta d-flex">
+                    <p class="meta">
                         <span><i class="icon-user mr-2"></i>SMİİYİ</span>
                         <span><i class="icon-table mr-2"></i>20+ tələbə</span>
                         <span><i class="icon-calendar mr-2"></i>3-4 İL</span>
                     </p>
                     <h3><a href="#">Kimya mühəndisliyi</a></h3>
-                    <p>
-                        Kimya mühəndisliyi ixtisası istehsal olunacaq maddələrin fiziki-kimyəvi proseslərini müşahidə
-                        edilməsini
-                        və istehsalın texnoloji inkişafda daha səmərəli olmasının yollarını öyrənir.
-                    <div class="hr-Professions_button" style="bottom: 0px;">
-                        <p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et
-                                <span>></span></a></p>
+                    <div>
+                        <p>Kimya mühəndisliyi ixtisası istehsal olunacaq maddələrin fiziki-kimyəvi proseslərini müşahidə
+                            edilməsini </p>
+                    </div>
+
+                    <div class="align-items-center hr-btn-affect mt-4">
+                        <a href="<?php echo base_url('qeydiyyat')?>">
+                            <button>Müraciət et</button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 course ftco-animate">
+            <div class="hr-staff-effect col-md-3 course ftco-animate slider-height">
                 <div class="img"
                     style="background-image:url(<?php echo base_url('assets/user/');?>images/course-4.jpg);"></div>
                 <div class="text pt-4">
@@ -446,11 +454,15 @@
                         <span><i class="icon-calendar mr-2"></i>3-4 İL</span>
                     </p>
                     <h3><a href="#">Materialşünaslıq</a></h3>
-                    <p>Materialşünaslıq - materialların həm bərk, həm də maye halında xassələrinin müxtəlif amillərin
-                        təsiri altında dəyişməsini öyrənən elmdir. </p>
-                    <div class="hr-Professions_button" style="bottom: 0px;">
-                        <p><a href="<?php echo base_url('qeydiyyat')?>" class="btn btn-primary">Müraciət et
-                                <span>></span></a></p>
+                    <div>
+                        <p>Materialşünaslıq - materialların həm bərk, həm də maye halında xassələrinin müxtəlif
+                            amillərin
+                            təsiri altında dəyişməsini öyrənən elmdir. </p>
+                    </div>
+                    <div class="align-items-center hr-btn-affect mt-4">
+                        <a href="<?php echo base_url('qeydiyyat')?>">
+                            <button>Müraciət et</button>
+                        </a>
                     </div>
                 </div>
             </div>

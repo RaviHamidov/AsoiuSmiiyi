@@ -3525,6 +3525,18 @@ fieldset:disabled a.btn {
     margin-top: 0.5rem;
 }
 
+.hr-Professions_button p a {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    background-color: #151e50;
+    line-height: 3rem;
+    color: #ffffff;
+}
+
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
@@ -5904,7 +5916,11 @@ a.badge:focus {
     padding-right: 1rem;
 }
 
-.badge-pill {
+.slider-height {
+    height: 630px;
+    position: relative;
+}
+.hr-btn-affect .badge-pill {
     padding-right: 0.6em;
     padding-left: 0.6em;
     border-radius: 10rem;
@@ -12129,6 +12145,11 @@ h6 {
 .course .img {
     width: 100%;
     height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 @media (max-width: 991.98px) {
     .course .img {
@@ -12138,6 +12159,7 @@ h6 {
 }
 
 .staff {
+    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 30px;
     background-color: #ffffff;
@@ -12227,8 +12249,28 @@ h6 {
     top: -50px;
 }
 
+.hr-t-hite {
+    width: 100%;
+    height: 150px;
+}
+
+.hr-staff-effect {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px !important;
+}
 .hr-staff-effect:hover {
     box-shadow: 0 0 30px rgb(33 33 33 / 30%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px !important;
+    opacity: 1;
 }
 
 .staff:hover .text h3,
@@ -12291,6 +12333,7 @@ h6 {
 }
 .allevents button {
     padding: 0 1rem;
+    margin-bottom: 0.5rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -12304,26 +12347,6 @@ h6 {
     border: 1px solid #d8d8d8;
 }
 
-.hr-btn-affect {
-    transition: opacity 1s ease-out;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: opacity 1s ease-out;
-    -moz-transition: opacity 1s ease-out;
-    -ms-transition: opacity 1s ease-out;
-    -o-transition: opacity 1s ease-out;
-}
-
-.blog-entry:hover .hr-btn-affect {
-    opacity: 1;
-    height: auto;
-}
-.blog-entry:hover {
-    margin-bottom: -100px;
-    position: relative;
-    z-index: 2000;
-}
 .hr-btn-affect a button {
     width: 100% !important;
     border-radius: 10px;
@@ -12335,6 +12358,63 @@ h6 {
     background-color: #151e50;
     line-height: 3rem;
     color: #ffffff;
+}
+
+@media only screen and (min-width: 1200px) {
+    .hr-btn-affect {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: opacity 1s ease-out;
+        -moz-transition: opacity 1s ease-out;
+        -ms-transition: opacity 1s ease-out;
+        -o-transition: opacity 1s ease-out;
+    }
+
+    .blog-entry:hover .hr-btn-affect {
+        opacity: 1;
+        height: auto;
+    }
+    .blog-entry:hover {
+        margin-bottom: -100px;
+        position: relative;
+        z-index: 2000;
+    }
+
+    .hr-staff-effect:hover .hr-btn-affect {
+        opacity: 1;
+        height: auto;
+        width: 94%;
+        position: absolute;
+        bottom: 20px;
+        left: 3%;
+        right: 3%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hr-staff-effect .hr-btn-affect {
+        opacity: 1;
+        height: auto;
+        width: 94%;
+        position: absolute;
+        bottom: 20px;
+        left: 3%;
+        right: 3%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hr-btn-affect {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+        overflow: hidden;
+        -webkit-transition: opacity 1s ease-out;
+        -moz-transition: opacity 1s ease-out;
+        -ms-transition: opacity 1s ease-out;
+        -o-transition: opacity 1s ease-out;
+    }
 }
 
 .blog-entry {
@@ -12401,6 +12481,7 @@ h6 {
     display: block;
     color: #fff;
 }
+
 .blog-entry .meta-date .day {
     font-weight: 700;
     font-size: 20px;
