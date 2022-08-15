@@ -6488,6 +6488,12 @@ a.badge-dark.focus {
     }
 }
 
+@media ((max-width: 1200px) and (min-width: 992px)) {
+    .slider-height {
+        height: 725px;
+    }
+}
+
 .list-group-flush .list-group-item {
     border-right: 0;
     border-left: 0;

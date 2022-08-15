@@ -377,7 +377,7 @@
             </div>
         </div>
         <div class="row hr-Professions">
-            <div class="hr-staff-effect col-md-3 course ftco-animate slider-height">
+            <div class="hr-staff-effect col-lg-3 col-md-6 col-sm-12 course ftco-animate slider-height">
                 <div class="img"
                     style="background-image:url(<?php echo base_url('assets/user/');?>images/course-1.jfif);"></div>
                 <div class="text pt-4">
@@ -399,7 +399,7 @@
 
                 </div>
             </div>
-            <div class="hr-staff-effect col-md-3 course ftco-animate slider-height">
+            <div class="hr-staff-effect col-lg-3 col-md-6 col-sm-12 course ftco-animate slider-height">
                 <div class="img"
                     style="background-image:url(<?php echo base_url('assets/user/');?>images/course-2.jfif);"></div>
                 <div class="text pt-4">
@@ -422,7 +422,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hr-staff-effect col-md-3 course ftco-animate slider-height">
+            <div class="hr-staff-effect col-lg-3 col-md-6 col-sm-12 course ftco-animate slider-height">
                 <div class="img"
                     style="background-image:url(<?php echo base_url('assets/user/');?>images/course-3.jpg);"></div>
                 <div class="text pt-4">
@@ -444,7 +444,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hr-staff-effect col-md-3 course ftco-animate slider-height">
+            <div class="hr-staff-effect col-lg-3 col-md-6 col-sm-12 course ftco-animate slider-height">
                 <div class="img"
                     style="background-image:url(<?php echo base_url('assets/user/');?>images/course-4.jpg);"></div>
                 <div class="text pt-4">
