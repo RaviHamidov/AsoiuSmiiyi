@@ -43,7 +43,7 @@
 				<li><a href="javascript:void(0)">Haqqımızda<span class="arrow-down"></span></a>
 					<ul class="dropdown">
 						<li><a href="<?php echo base_url('asoiu') ?>">ADNSU</a></li>
-						<li><a href="<?php echo base_url('smiiyi') ?>">SMİİYİ</a></li>
+						<li><a href="<?php echo base_url('smiiyis') ?>">SMİİYİ</a></li>
 						<li><a href="<?php echo base_url('rehberlik') ?>">Rəhbərlik</a></li>
 					</ul>
 				</li>
@@ -89,6 +89,9 @@
 						</li>
 						<li>
 							<a href="<?php echo base_url('tekrar_tehsil_ixtisaslar') ?>">İxtisasların Siyahısı</a>
+						</li>
+						<li>
+							<a href="https://e-qanun.az/framework/20045">Nazirlər Kabitenitinin qərarı</a>
 						</li>
 						<li>
 							<a href="https://azerbaijanstateoilacade-my.sharepoint.com/:x:/g/personal/smiiyi_asoiu_edu_az/EcSP-HJuZBBBs1tc_uUW1esB4u6CAOLpJ_pQzLBM-k1b8Q?e=AcTWb8">Müəllimin ELektron Jurnalı</a>

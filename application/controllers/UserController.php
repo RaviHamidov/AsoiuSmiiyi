@@ -325,11 +325,26 @@ class UserController extends CI_controller
 		$data['event']  = $this->db->limit(3)->where('status','1')->order_by('id','DESC')->get('items')->result_array();
 		$this->load->view('user/about/team_single',$data);
 	}
-	public function blog(){
+	public function blog($id=0){
 
-		$data['event']  = $this->db->select('')->where('status','1')->order_by('id','DESC')->get('items')->result_array();
 		
-		$this->load->view('user/blog',$data);
+		$cnt = $this->db->count_all('items');
+		$data['pgcnt'] = ceil($cnt/9);
+		$data['curr'] = $id;
+
+		if(is_numeric($id) && $id>=0 && $id<$data['pgcnt']){
+			$data['event']  = 
+			$this->db
+			->where('status','1')
+			->limit(9,$id*9)
+			->order_by('id','DESC')->get('items')->result_array();
+	
+			$this->load->view('user/blog',$data);
+		}else{
+			redirect(base_url('blog'));
+		}
+
+		
 	}
 	public function blog_single($id)
 	{

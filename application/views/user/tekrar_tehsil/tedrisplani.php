@@ -104,8 +104,8 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                <h1 class="mb-2 bread">Təkrar ali təhsil > Tədris Planları</h1>
-                <p class="breadcrumbs"><span class="mr-2"><a href="<?php echo base_url('index'); ?>">Əsas səhifə <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="<?php echo base_url('blog'); ?>">Elanlar <i class="ion-ios-arrow-forward"></i></a></span> </p>
+                <h1 class="mb-2 bread">Təkrar ali təhsil Tədris Planları</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="<?php echo base_url('index'); ?>">Əsas səhifə <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="<?php echo base_url('blog'); ?>">Elanlar</a></span> </p>
             </div>
         </div>
     </div>
@@ -124,13 +124,46 @@
 
                 <div class="wrapper">
                     <div class="tabs">
-                        <div class="tab hgt">
-                            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-                            <label for="tab-1" class="tab-label">Əyani</label>
+
+                    <div class="tab hgt">
+                            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                            <label for="tab-2" class="tab-label">2021-2026</label>
                             <div class="tab-content tb">
                                 <h4 class="text-center">Azərbaycan Respublikası Təhsil Nazirliyi
                     Azərbaycan Dövlət Neft və Sənaye Universiteti
-                    Əlavə təhsilin ixtisaslar üzrə TƏDRİS PLANI</h4>
+                    Əlavə təhsilin ixtisaslar üzrə TƏDRİS PLANI 2020-2026 </h4>
+                                <ul class="y-h-ul">
+                                <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050405 - İqtisadiyyat';?>"> 050405 - İqtisadiyyat</a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050408 – Menecment';?>">050408 – Menecment
+                    </a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050509– Kompüter elmləri';?>">050509 – Kompüter elmləri
+                    </a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050607 -  Elektrik və elektronika mühəndisliyi';?>">050607 - Elektrik və elektronika mühəndisliyi
+                    </a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050608-Energetika mühəndisliyi';?>">050608 - Energetika mühəndisliyi
+                    </a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050614- Həyat fəaliyyətinin təhlükəsizliyi mühəndisliyi';?>">050614 -Həyat fəaliyyətinin təhlükəsizliyi mühəndisliyi
+                    </a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050616 -  İnformasiya texnologiyaları ';?>">050616 - İnformasiya texnologiyaları 
+                    </a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050618-Kimya mühəndisliyi';?>">050618-Kimya mühəndisliyi
+                    </a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050621-  Logistika və nəqliyyat texnologiyaları';?>">050621 - Logistika və nəqliyyat texnologiyaları</a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050624– Mədən mühəndisliyi';?>">050624 – Mədən mühəndisliyi</a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050628 -  Mexanika mühəndisliyi';?>">050628 - Mexanika mühəndisliyi</a></li>
+                    <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedrisplanyeni/').'050631 Neft-qaz mühəndisliyi';?>">050631 - Neft-qaz mühəndisliyi
+                    </a></li>
+                                 </ul>
+                            </div>
+                        </div>
+
+                        <div class="tab hgt">
+                            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                            <label for="tab-1" class="tab-label">2016-2020</label>
+                            <div class="tab-content tb">
+                                <h4 class="text-center">Azərbaycan Respublikası Təhsil Nazirliyi
+                    Azərbaycan Dövlət Neft və Sənaye Universiteti
+                    Əlavə təhsilin ixtisaslar üzrə TƏDRİS PLANI 2016-2020</h4>
                                     <ul class="y-h-ul">
                     <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedris_plan/').'tedris_plani_ixt-050651.pdf';?>"> 050651-Fövqəladə hallar və həyat fəaliyyətinin təhlükəsizliyi mühəndisliyi
                     </a></li>
@@ -156,24 +189,9 @@
                     </a></li>
                 </ul>
 
-
                             </div>
                         </div>
-                        <div class="tab hgt">
-                            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-                            <label for="tab-2" class="tab-label">Qiyabi</label>
-                            <div class="tab-content tb">
-                                <h4 class="text-center">İxtisaslar üzrə qiyabi təkrar orta ixtisas təhsili </h4>
-                                <ul class="y-h-ul">
-                       <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedris_plan/qiyabi/').'tedris_plan_Istismar.pdf';?>">040505- Neft və qaz yataqlarinin istismari
-                       </a></li>
-                       <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedris_plan/qiyabi/').'tedris_plan_Neft_qaz_emal.pdf';?>">040507- Neft və qaz emali
-                       </a></li>
-                       <li><a target="_blank" href="<?php echo base_url('assets/user/pdfs/tt_tedris_plan/qiyabi/').'neft_qaz_kemer_tikinti_tedris_qrafiki.pdf';?>">040505-  Neft, qaz kəmər və anbarlarinin tikintisi və istismari
-                       </a></li>
-                   </ul>
-                            </div>
-                        </div>
+                       
                     </div>
 
                 </div>
