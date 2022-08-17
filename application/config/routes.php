@@ -227,7 +227,7 @@ $route['uni_admission']						 = 'UserController/uni_admission';
 $route['qeydiyyat']                          = 'UserController/qeydiyyat';
 
 
-$route['smiiyi']                             = 'UserController/about_smiiyi';
+$route['smiiyis']                             = 'UserController/about_smiiyi';
 $route['asoiu']                            	 = 'UserController/about_asoiu';
 $route['rehberlik']                          = 'UserController/rehberlik';
 
@@ -274,4 +274,5 @@ $route['team']                                 = 'UserController/team';
 $route['team_single/(.*)']                     = 'UserController/team_single/$1';
 
 $route['blog']                                 = 'UserController/blog';
+$route['blog/(.*)']                            = 'UserController/blog/$1';
 $route['blog_single/(.*)']                     = 'UserController/blog_single/$1';

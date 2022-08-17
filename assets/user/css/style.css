@@ -87,7 +87,6 @@ body {
 .fixed-rs {
     position: fixed;
     top: 70px;
-    z-index: 1030;
 }
 .fixed-rst {
     position: fixed;
@@ -11639,7 +11638,7 @@ h6 {
     bottom: 0;
     content: "";
     opacity: 0.3;
-    background: #007bff;
+    background: #151e50;
 }
 .hero-wrap.hero-wrap-2 {
     height: 300px;
@@ -12183,8 +12182,36 @@ h6 {
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
 }
+
+.borderForStyle {
+    padding: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.text-align-left {
+        text-align: left !important;
+}
+
+.borderColorGray {
+    overflow: hidden;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 .staff .img-wrap {
-    height: 400px;
+    height: 330px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -12260,13 +12287,37 @@ h6 {
     height: 150px;
 }
 
+.border-radius-10 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+.justify-space-between {
+    justify-content: space-between !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.justify-space-around {
+    justify-content: space-around !important;
+}
+.justify-space-center {
+    justify-content: space-evenly !important;
+}
 .hr-staff-effect {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding: 15px !important;
+    padding: 10px !important;
 }
 .hr-staff-effect:hover {
     box-shadow: 0 0 30px rgb(33 33 33 / 30%);
@@ -12275,7 +12326,6 @@ h6 {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding: 15px !important;
     opacity: 1;
 }
 
@@ -12352,6 +12402,21 @@ h6 {
     font-size: 15px;
     border: 1px solid #d8d8d8;
 }
+.btnhysz {
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    background-color: #fafafa;
+    line-height: 2rem;
+    color: #b1abab;
+    font-size: 15px;
+    border: 1px solid #d8d8d8;
+}
 
 .hr-btn-affect a button {
     width: 100% !important;
@@ -12369,7 +12434,7 @@ h6 {
 @media only screen and (min-width: 1200px) {
     .hr-btn-affect {
         transition: opacity 1s ease-out;
-        opacity: 1;
+        opacity: 0;
         height: 0;
         overflow: hidden;
         -webkit-transition: opacity 1s ease-out;
@@ -12383,7 +12448,6 @@ h6 {
         height: auto;
     }
     .blog-entry:hover {
-        margin-bottom: -100px;
         position: relative;
         z-index: 2000;
     }
@@ -12434,6 +12498,7 @@ h6 {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
 .blog-entry a {
     border-radius: 10px;
     -webkit-border-radius: 10px;

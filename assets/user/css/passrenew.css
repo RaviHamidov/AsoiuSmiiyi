@@ -1,0 +1,146 @@
+body {
+    font-family: Verdana;
+    background-color: #C4DFE6;
+}
+
+.tab-content {
+    padding-top:50px;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    background-color: #003b46;
+    border-radius: 30px;
+    z-index: 1;
+
+}
+
+input[type='password'] {
+    font-family: Verdana;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 1.3em;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: black;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 1.3em;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: black;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 1.3em;
+}
+
+.tab-content button {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    opacity: 0.5;
+    border-radius: 100px;
+    color: black;
+    background-color: 07575b;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.tab-content button:hover {
+    opacity: 0.9;
+    transition: 1s;
+}
+
+
+p {
+    font-size: 0.8em;
+    margin: 10px 30px;
+}
+
+.tab-content label {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.divin input {
+    width: 70%;
+    height: 50px;
+    opacity: 0.5;
+    border-radius: 100px;
+
+}
+
+.divin {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.row {
+    text-align: center;
+}
+
+.tab-content a{
+    color:white;
+    margin-left: 30px;
+}
+.logos{
+    margin: auto;
+    width: 12%;
+    margin-bottom: -50px;
+
+}
+.logos img{
+    width: 100%;
+    background-color: #003b46;
+    z-index: 10;
+    border-radius: 100px;
+}
+@media (max-width:725px) {
+    .tab-content {
+        width: 90%;
+    }
+
+    .tab-content button {
+        opacity: 0.9;
+    }
+
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+        font-size: 0.8em;
+        /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+
+        font-size: 0.8em;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+
+        font-size: 0.8em;
+    }
+
+    .tab-content label {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 0.6em;
+    }
+}

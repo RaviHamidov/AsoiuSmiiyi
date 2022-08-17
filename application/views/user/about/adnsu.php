@@ -106,7 +106,7 @@
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
 			<div class="col-md-9 ftco-animate text-center">
 				<h1 class="mb-2 bread">Azərbaycan Dövlət Neft və Sənaye Universiteti</h1>
-				<p class="breadcrumbs"><span class="mr-2"><a href="<?php echo base_url('index'); ?>">Əsas səhifə <i class="ion-ios-arrow-forward"></i></a></span></p>
+				<p class="breadcrumbs"><span class="mr-2"><a href="<?php echo base_url('index'); ?>">Əsas səhifə</a></span></p>
 			</div>
 		</div>
 	</div>
@@ -123,38 +123,38 @@
 						<div class="col-xs-6 col-md-4  col-mds-4 box boxing">
 							<a href="http://fct.asoiu.edu.az/" class="boximg">
 								<div class="perde"></div>
-								<img src="http://asoiu.edu.az/newabout/ktf.png" alt="">
+								<img src="<?php echo base_url('upload/faculityicons/')?>ktf.png" alt="">
 							</a>
 						</div>
-						<div class="col-xs-6 col-md-4 col-mds-4 box boxing">
+						<div class="col-xs-6 col-md-4 col-mds-4 box boxing">     
 							<a href="http://fpe.asoiu.edu.az/" class="boximg">
 								<div class="perde"></div>
-								<img src="http://asoiu.edu.az/newabout/ef.png" alt="">
+								<img src="<?php echo base_url('upload/faculityicons/')?>ef.png" alt="">
 							</a>
 						</div>
 						<div class="col-xs-6 col-md-4 col-mds-4 box boxing">
 							<a href="http://fge.asoiu.edu.az/" class="boximg">
 								<div class="perde"></div>
 
-								<img src="http://asoiu.edu.az/newabout/gkf.png" alt="">
+								<img src="<?php echo base_url('upload/faculityicons/')?>gkf.png" alt="">
 							</a>
 						</div>
 						<div class="col-xs-6 col-md-4 col-mds-4 box boxing">
 							<a href="http://fem.asoiu.edu.az/" class="boximg">
 								<div class="perde"></div>
-								<img src="http://asoiu.edu.az/newabout/imf.png" alt="">
+								<img src="<?php echo base_url('upload/faculityicons/')?>imf.png" alt="">
 							</a>
 						</div>
 						<div class="col-xs-6 col-md-4 col-mds-4 box boxing">
 							<a href="http://fome.asoiu.edu.az/" class="boximg">
 								<div class="perde"></div>
-								<img src="http://asoiu.edu.az/newabout/nmf.png" alt="">
+								<img src="<?php echo base_url('upload/faculityicons/')?>nmf.png" alt="">
 							</a>
 						</div>
 						<div class="col-xs-6 col-md-4 col-mds-4 box boxing">
 							<a href="http://fogp.asoiu.edu.az/" class="boximg">
 								<div class="perde"></div>
-								<img src="http://asoiu.edu.az/newabout/qnmf.png" alt="">
+								<img src="<?php echo base_url('upload/faculityicons/')?>qnmf.png" alt="">
 							</a>
 						</div>
 					</div>

@@ -17,18 +17,12 @@
         </ul>
     </div>
 </nav>
+<script>
+$('.navbar-collapse a').click(function() {
+    $(".navbar-collapse").collapse('hide');
+});
+</script>
 
-
-<style>
-.mediaQ {
-    width: 100% !important;
-    min-height: 100vh !important;
-}
-
-.a1 {
-    height: 100% !important;
-}
-</style>
 
 <section id="main-section">
     <div class="container-fluid">
@@ -122,7 +116,7 @@
                                         data-toggle="collapse"
                                         data-target="#collapseEighteen<?php echo $stds['co_id']; ?>"
                                         aria-expanded="false" aria-controls="collapseEighteen">
-                                        İmatahan sualları
+                                        İmtahan sualları
                                     </button>
                                 </h2>
                             </div>
@@ -143,7 +137,7 @@
                                         data-toggle="collapse"
                                         data-target="#collapseNineteen<?php echo $stds['co_id']; ?>"
                                         aria-expanded="false" aria-controls="collapseNineteen">
-                                        İmatahan cavabları
+                                        İmtahan cavabları
                                     </button>
                                 </h2>
                             </div>
@@ -216,7 +210,7 @@
                                         data-toggle="collapse"
                                         data-target="#collapseEighteenadd<?php echo $std['re_id']; ?>"
                                         aria-expanded="false" aria-controls="collapseEighteenadd">
-                                        İmatahan sualları
+                                        İmtahan sualları
                                     </button>
                                 </h2>
                             </div>
@@ -237,7 +231,7 @@
                                         data-toggle="collapse"
                                         data-target="#collapseNineteenadd<?php echo $std['re_id']; ?>"
                                         aria-expanded="false" aria-controls="collapseNineteenadd">
-                                        İmatahan cavabları
+                                        İmtahan cavabları
                                     </button>
                                 </h2>
                             </div>

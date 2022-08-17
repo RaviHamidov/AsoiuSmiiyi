@@ -8,10 +8,11 @@
 /* ===== Colors ===== */
 
 body.dark {
-    --body-color: #18191a;
+    --body-color: #0373e2;
     --nav-color: #242526;
     --side-nav: #242526;
     --text-color: #ccc;
+    
     --button-color: #f2f2f2;
 }
 body.dark .navbar-brand img {

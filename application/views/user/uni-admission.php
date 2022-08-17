@@ -87,7 +87,7 @@
     <div class="row no-gutters slider-text align-items-center justify-content-center">
       <div class="col-md-9 ftco-animate text-center">
         <h1 class="mb-2 bread">Universitetə Qəbul</h1>
-        <p class="breadcrumbs"><span class="mr-2"><a href="<?php echo base_url('index'); ?>">Əsas səhifə <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="<?php echo base_url('blog'); ?>">Elanlar <i class="ion-ios-arrow-forward"></i></a></span> </p>
+        <p class="breadcrumbs"><span class="mr-2"><a href="<?php echo base_url('index'); ?>">Əsas səhifə <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="<?php echo base_url('blog'); ?>">ElanlaR</a></span> </p>
       </div>
     </div>
   </div>
@@ -121,7 +121,7 @@
               <li>050408 “Menecment”</li>
               <li>050402 “Biznesin idarə edilməsi”</li>
             </ul>
-            <p>Təkrar ali təhsil üzrə sənədlərin qəbulu <b>01.02.2022-ci</b> il tarixindən <b> 29.07.2022-ci</b> il tarixinədək davam edəcək. Qəbul olmaq istəyənlər şənbə və bazar günlərindən başqa saat <b>10.00-dan 16.00-dək </b> Universitetin əsas binasına gələrək Qəbul Komissiyasına sənədləri rəsmi qaydada təqdim edir və ilkin baza təhsilindəki tədris proqramı ilə almaq istədiyi ixtisas üzrə baza təhsilinin tədris proqramı arasındakı fərqdən asılı olaraq təkrar ali təhsil almaq hüququnu qazanırlar.
+            <p>Təkrar ali təhsil üzrə sənədlərin qəbulu <b>01.02.2022-ci</b> il tarixindən <b> 31.08.2022-ci</b> il tarixinədək davam edəcək. Qəbul olmaq istəyənlər şənbə və bazar günlərindən başqa saat <b>10.00-dan 16.00-dək </b> Universitetin əsas binasına gələrək Qəbul Komissiyasına sənədləri rəsmi qaydada təqdim edir və ilkin baza təhsilindəki tədris proqramı ilə almaq istədiyi ixtisas üzrə baza təhsilinin tədris proqramı arasındakı fərqdən asılı olaraq təkrar ali təhsil almaq hüququnu qazanırlar.
               <br> Təkrar ali təhsil almaq istəyənlər aşağıdakı sənədləri təqdim etməlidirlər:
             </p>
             <ul class="uls">

@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url('assets/user/');?>css/googlefont.css">
 
     <link rel="stylesheet" href="<?php echo base_url('assets/user/');?>css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/user/');?>css/animate.css">
@@ -24,7 +24,6 @@
     
     <link rel="stylesheet" href="<?php echo base_url('assets/user/');?>css/flaticon.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/user/');?>css/icomoon.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="<?php echo base_url('assets/user/');?>css/style.css">
   </head>
   <body>

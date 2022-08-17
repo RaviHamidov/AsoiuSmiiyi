@@ -264,6 +264,15 @@ footer div {
         flex-wrap: nowrap;
     }
 }
+@media only screen and (max-width: 600px){
+    .hideme{
+        display: none;
+    }
+    .afterhide{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 @media (max-width: 450px) {
     .item-2 {
         display: none;
